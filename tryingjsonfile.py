@@ -58,7 +58,7 @@ with open(json_dir, "r") as f:
 
         # Building the JSON object structure for every article
         article_entry = {
-            "doc_id": doc_id,
+            "doc_id": article_id,
             "url": url,
             "date": date,
             "words": []
@@ -75,6 +75,7 @@ with open(json_dir, "r") as f:
 
         # Add the entry to the forward_index dictionary
         forward_index["forward_index"].append(article_entry)
+        article_id += 1
 
 # Write the JSON structure to a file
 json_file_path = 'forward_indexing.json'
