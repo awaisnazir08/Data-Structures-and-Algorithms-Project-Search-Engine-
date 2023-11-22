@@ -1,0 +1,12897 @@
+{
+	"forward_index": [
+		{
+			"doc_id": "369news--2022-01-23--Lucifer & The FALLEN ~ From DARKNESS to LIGHT",
+			"url": "https://369news.net/2022/01/23/lucifer-the-fallen-from-darkness-to-light/",
+			"date": "2022-01-23",
+			"words": [
+				{
+					"word": "lucifer",
+					"frequency": 17,
+					"positions": [
+						0,
+						66,
+						524,
+						557,
+						583,
+						604,
+						612,
+						643,
+						669,
+						673,
+						690,
+						711,
+						720,
+						731,
+						743,
+						746,
+						1096
+					]
+				},
+				{
+					"word": "fallen",
+					"frequency": 22,
+					"positions": [
+						1,
+						46,
+						51,
+						53,
+						79,
+						109,
+						129,
+						136,
+						175,
+						180,
+						239,
+						252,
+						338,
+						378,
+						419,
+						575,
+						625,
+						653,
+						657,
+						1263,
+						1282,
+						1314
+					]
+				},
+				{
+					"word": "darkness",
+					"frequency": 1,
+					"positions": [
+						2
+					]
+				},
+				{
+					"word": "light",
+					"frequency": 5,
+					"positions": [
+						3,
+						700,
+						735,
+						738,
+						745
+					]
+				},
+				{
+					"word": "hollywood",
+					"frequency": 1,
+					"positions": [
+						4
+					]
+				},
+				{
+					"word": "los",
+					"frequency": 1,
+					"positions": [
+						5
+					]
+				},
+				{
+					"word": "angeles",
+					"frequency": 1,
+					"positions": [
+						6
+					]
+				},
+				{
+					"word": "city",
+					"frequency": 2,
+					"positions": [
+						7,
+						427
+					]
+				},
+				{
+					"word": "lost",
+					"frequency": 4,
+					"positions": [
+						8,
+						346,
+						434,
+						1132
+					]
+				},
+				{
+					"word": "angel",
+					"frequency": 37,
+					"positions": [
+						9,
+						40,
+						47,
+						54,
+						59,
+						74,
+						86,
+						100,
+						118,
+						137,
+						143,
+						176,
+						181,
+						201,
+						209,
+						228,
+						240,
+						328,
+						339,
+						348,
+						354,
+						420,
+						538,
+						603,
+						626,
+						658,
+						662,
+						762,
+						763,
+						779,
+						1062,
+						1067,
+						1083,
+						1225,
+						1266,
+						1283,
+						1317
+					]
+				},
+				{
+					"word": "countless",
+					"frequency": 1,
+					"positions": [
+						10
+					]
+				},
+				{
+					"word": "movie",
+					"frequency": 2,
+					"positions": [
+						11,
+						1026
+					]
+				},
+				{
+					"word": "created",
+					"frequency": 2,
+					"positions": [
+						12,
+						56
+					]
+				},
+				{
+					"word": "magical",
+					"frequency": 2,
+					"positions": [
+						13,
+						805
+					]
+				},
+				{
+					"word": "myth",
+					"frequency": 3,
+					"positions": [
+						14,
+						19,
+						1276
+					]
+				},
+				{
+					"word": "legend",
+					"frequency": 1,
+					"positions": [
+						15
+					]
+				},
+				{
+					"word": "told",
+					"frequency": 1,
+					"positions": [
+						16
+					]
+				},
+				{
+					"word": "ancient",
+					"frequency": 8,
+					"positions": [
+						17,
+						173,
+						185,
+						1085,
+						1099,
+						1211,
+						1218,
+						1335
+					]
+				},
+				{
+					"word": "time",
+					"frequency": 2,
+					"positions": [
+						18,
+						1328
+					]
+				},
+				{
+					"word": "fed",
+					"frequency": 1,
+					"positions": [
+						20
+					]
+				},
+				{
+					"word": "imagination",
+					"frequency": 2,
+					"positions": [
+						21,
+						1345
+					]
+				},
+				{
+					"word": "soul",
+					"frequency": 1,
+					"positions": [
+						22
+					]
+				},
+				{
+					"word": "human",
+					"frequency": 13,
+					"positions": [
+						23,
+						93,
+						102,
+						121,
+						203,
+						261,
+						279,
+						496,
+						663,
+						1226,
+						1268,
+						1330,
+						1363
+					]
+				},
+				{
+					"word": "thousand",
+					"frequency": 2,
+					"positions": [
+						24,
+						309
+					]
+				},
+				{
+					"word": "year",
+					"frequency": 2,
+					"positions": [
+						25,
+						549
+					]
+				},
+				{
+					"word": "help",
+					"frequency": 1,
+					"positions": [
+						26
+					]
+				},
+				{
+					"word": "give",
+					"frequency": 1,
+					"positions": [
+						27
+					]
+				},
+				{
+					"word": "u",
+					"frequency": 3,
+					"positions": [
+						28,
+						221,
+						1267
+					]
+				},
+				{
+					"word": "insight",
+					"frequency": 1,
+					"positions": [
+						29
+					]
+				},
+				{
+					"word": "true",
+					"frequency": 2,
+					"positions": [
+						30,
+						682
+					]
+				},
+				{
+					"word": "history",
+					"frequency": 4,
+					"positions": [
+						31,
+						1331,
+						1349,
+						1364
+					]
+				},
+				{
+					"word": "really",
+					"frequency": 1,
+					"positions": [
+						32
+					]
+				},
+				{
+					"word": "might",
+					"frequency": 2,
+					"positions": [
+						33,
+						130
+					]
+				},
+				{
+					"word": "looked",
+					"frequency": 3,
+					"positions": [
+						34,
+						676,
+						1220
+					]
+				},
+				{
+					"word": "like",
+					"frequency": 6,
+					"positions": [
+						35,
+						182,
+						596,
+						1095,
+						1230,
+						1306
+					]
+				},
+				{
+					"word": "captivating",
+					"frequency": 1,
+					"positions": [
+						36
+					]
+				},
+				{
+					"word": "story",
+					"frequency": 10,
+					"positions": [
+						37,
+						112,
+						249,
+						632,
+						892,
+						1216,
+						1273,
+						1294,
+						1297,
+						1313
+					]
+				},
+				{
+					"word": "speak",
+					"frequency": 2,
+					"positions": [
+						38,
+						42
+					]
+				},
+				{
+					"word": "celestial",
+					"frequency": 2,
+					"positions": [
+						39,
+						1284
+					]
+				},
+				{
+					"word": "others",
+					"frequency": 4,
+					"positions": [
+						41,
+						285,
+						498,
+						1228
+					]
+				},
+				{
+					"word": "expelled",
+					"frequency": 1,
+					"positions": [
+						43
+					]
+				},
+				{
+					"word": "heaven",
+					"frequency": 13,
+					"positions": [
+						44,
+						63,
+						72,
+						81,
+						211,
+						230,
+						351,
+						595,
+						1040,
+						1046,
+						1060,
+						1072,
+						1121
+					]
+				},
+				{
+					"word": "known",
+					"frequency": 6,
+					"positions": [
+						45,
+						264,
+						859,
+						965,
+						1119,
+						1367
+					]
+				},
+				{
+					"word": "watcher",
+					"frequency": 7,
+					"positions": [
+						48,
+						123,
+						200,
+						333,
+						1024,
+						1222,
+						1261
+					]
+				},
+				{
+					"word": "would",
+					"frequency": 3,
+					"positions": [
+						49,
+						89,
+						1354
+					]
+				},
+				{
+					"word": "say",
+					"frequency": 9,
+					"positions": [
+						50,
+						64,
+						90,
+						115,
+						251,
+						416,
+						488,
+						726,
+						740
+					]
+				},
+				{
+					"word": "one",
+					"frequency": 17,
+					"positions": [
+						52,
+						110,
+						215,
+						291,
+						379,
+						468,
+						471,
+						475,
+						517,
+						691,
+						850,
+						925,
+						937,
+						1125,
+						1264,
+						1274,
+						1315
+					]
+				},
+				{
+					"word": "god",
+					"frequency": 17,
+					"positions": [
+						55,
+						116,
+						140,
+						152,
+						165,
+						246,
+						337,
+						369,
+						404,
+						455,
+						683,
+						721,
+						724,
+						931,
+						1170,
+						1208,
+						1338
+					]
+				},
+				{
+					"word": "man",
+					"frequency": 1,
+					"positions": [
+						57
+					]
+				},
+				{
+					"word": "jealous",
+					"frequency": 1,
+					"positions": [
+						58
+					]
+				},
+				{
+					"word": "orchestrated",
+					"frequency": 1,
+					"positions": [
+						60
+					]
+				},
+				{
+					"word": "great",
+					"frequency": 10,
+					"positions": [
+						61,
+						178,
+						304,
+						406,
+						423,
+						567,
+						1035,
+						1048,
+						1073,
+						1248
+					]
+				},
+				{
+					"word": "rebellion",
+					"frequency": 2,
+					"positions": [
+						62,
+						245
+					]
+				},
+				{
+					"word": "name",
+					"frequency": 6,
+					"positions": [
+						65,
+						607,
+						636,
+						647,
+						1101,
+						1108
+					]
+				},
+				{
+					"word": "meaning",
+					"frequency": 2,
+					"positions": [
+						67,
+						499
+					]
+				},
+				{
+					"word": "morning",
+					"frequency": 7,
+					"positions": [
+						68,
+						536,
+						547,
+						576,
+						654,
+						701,
+						733
+					]
+				},
+				{
+					"word": "star",
+					"frequency": 7,
+					"positions": [
+						69,
+						537,
+						548,
+						577,
+						655,
+						702,
+						734
+					]
+				},
+				{
+					"word": "war",
+					"frequency": 5,
+					"positions": [
+						70,
+						271,
+						1039,
+						1059,
+						1114
+					]
+				},
+				{
+					"word": "begun",
+					"frequency": 1,
+					"positions": [
+						71
+					]
+				},
+				{
+					"word": "army",
+					"frequency": 2,
+					"positions": [
+						73,
+						1265
+					]
+				},
+				{
+					"word": "defeated",
+					"frequency": 2,
+					"positions": [
+						75,
+						1038
+					]
+				},
+				{
+					"word": "forever",
+					"frequency": 1,
+					"positions": [
+						76
+					]
+				},
+				{
+					"word": "banished",
+					"frequency": 2,
+					"positions": [
+						77,
+						84
+					]
+				},
+				{
+					"word": "paradise",
+					"frequency": 4,
+					"positions": [
+						78,
+						345,
+						433,
+						1131
+					]
+				},
+				{
+					"word": "exiled",
+					"frequency": 1,
+					"positions": [
+						80
+					]
+				},
+				{
+					"word": "wander",
+					"frequency": 1,
+					"positions": [
+						82
+					]
+				},
+				{
+					"word": "earth",
+					"frequency": 14,
+					"positions": [
+						83,
+						104,
+						119,
+						148,
+						161,
+						256,
+						266,
+						375,
+						389,
+						395,
+						413,
+						445,
+						1082,
+						1223
+					]
+				},
+				{
+					"word": "rebel",
+					"frequency": 2,
+					"positions": [
+						85,
+						347
+					]
+				},
+				{
+					"word": "abandon",
+					"frequency": 1,
+					"positions": [
+						87
+					]
+				},
+				{
+					"word": "evil",
+					"frequency": 4,
+					"positions": [
+						88,
+						723,
+						832,
+						865
+					]
+				},
+				{
+					"word": "love",
+					"frequency": 4,
+					"positions": [
+						91,
+						1111,
+						1180,
+						1194
+					]
+				},
+				{
+					"word": "lusted",
+					"frequency": 2,
+					"positions": [
+						92,
+						213
+					]
+				},
+				{
+					"word": "woman",
+					"frequency": 4,
+					"positions": [
+						94,
+						259,
+						280,
+						1210
+					]
+				},
+				{
+					"word": "mated",
+					"frequency": 1,
+					"positions": [
+						95
+					]
+				},
+				{
+					"word": "fathered",
+					"frequency": 2,
+					"positions": [
+						96,
+						202
+					]
+				},
+				{
+					"word": "abomination",
+					"frequency": 1,
+					"positions": [
+						97
+					]
+				},
+				{
+					"word": "hybrid",
+					"frequency": 3,
+					"positions": [
+						98,
+						204,
+						1281
+					]
+				},
+				{
+					"word": "child",
+					"frequency": 5,
+					"positions": [
+						99,
+						170,
+						210,
+						218,
+						222
+					]
+				},
+				{
+					"word": "corrupting",
+					"frequency": 1,
+					"positions": [
+						101
+					]
+				},
+				{
+					"word": "flooded",
+					"frequency": 1,
+					"positions": [
+						103
+					]
+				},
+				{
+					"word": "killing",
+					"frequency": 1,
+					"positions": [
+						105
+					]
+				},
+				{
+					"word": "inhabitant",
+					"frequency": 2,
+					"positions": [
+						106,
+						371
+					]
+				},
+				{
+					"word": "including",
+					"frequency": 1,
+					"positions": [
+						107
+					]
+				},
+				{
+					"word": "nephilim",
+					"frequency": 6,
+					"positions": [
+						108,
+						160,
+						206,
+						316,
+						377,
+						1206
+					]
+				},
+				{
+					"word": "version",
+					"frequency": 5,
+					"positions": [
+						111,
+						114,
+						552,
+						624,
+						1272
+					]
+				},
+				{
+					"word": "another",
+					"frequency": 3,
+					"positions": [
+						113,
+						216,
+						1044
+					]
+				},
+				{
+					"word": "sent",
+					"frequency": 2,
+					"positions": [
+						117,
+						381
+					]
+				},
+				{
+					"word": "look",
+					"frequency": 1,
+					"positions": [
+						120
+					]
+				},
+				{
+					"word": "hence",
+					"frequency": 1,
+					"positions": [
+						122
+					]
+				},
+				{
+					"word": "shortly",
+					"frequency": 1,
+					"positions": [
+						124
+					]
+				},
+				{
+					"word": "became",
+					"frequency": 6,
+					"positions": [
+						125,
+						241,
+						298,
+						301,
+						568,
+						585
+					]
+				},
+				{
+					"word": "corrupt",
+					"frequency": 2,
+					"positions": [
+						126,
+						299
+					]
+				},
+				{
+					"word": "way",
+					"frequency": 3,
+					"positions": [
+						127,
+						300,
+						1258
+					]
+				},
+				{
+					"word": "believe",
+					"frequency": 2,
+					"positions": [
+						128,
+						1237
+					]
+				},
+				{
+					"word": "survived",
+					"frequency": 1,
+					"positions": [
+						131
+					]
+				},
+				{
+					"word": "forcing",
+					"frequency": 1,
+					"positions": [
+						132
+					]
+				},
+				{
+					"word": "hide",
+					"frequency": 1,
+					"positions": [
+						133
+					]
+				},
+				{
+					"word": "underground",
+					"frequency": 1,
+					"positions": [
+						134
+					]
+				},
+				{
+					"word": "idea",
+					"frequency": 1,
+					"positions": [
+						135
+					]
+				},
+				{
+					"word": "derived",
+					"frequency": 1,
+					"positions": [
+						138
+					]
+				},
+				{
+					"word": "son",
+					"frequency": 6,
+					"positions": [
+						139,
+						151,
+						164,
+						1139,
+						1145,
+						1156
+					]
+				},
+				{
+					"word": "mentioned",
+					"frequency": 3,
+					"positions": [
+						141,
+						1151,
+						1171
+					]
+				},
+				{
+					"word": "genesis",
+					"frequency": 4,
+					"positions": [
+						142,
+						319,
+						1153,
+						1172
+					]
+				},
+				{
+					"word": "men",
+					"frequency": 8,
+					"positions": [
+						144,
+						155,
+						168,
+						219,
+						258,
+						313,
+						320,
+						1341
+					]
+				},
+				{
+					"word": "began",
+					"frequency": 3,
+					"positions": [
+						145,
+						253,
+						292
+					]
+				},
+				{
+					"word": "multiply",
+					"frequency": 1,
+					"positions": [
+						146
+					]
+				},
+				{
+					"word": "face",
+					"frequency": 4,
+					"positions": [
+						147,
+						465,
+						491,
+						509
+					]
+				},
+				{
+					"word": "daughter",
+					"frequency": 3,
+					"positions": [
+						149,
+						154,
+						167
+					]
+				},
+				{
+					"word": "born",
+					"frequency": 1,
+					"positions": [
+						150
+					]
+				},
+				{
+					"word": "saw",
+					"frequency": 2,
+					"positions": [
+						153,
+						212
+					]
+				},
+				{
+					"word": "fair",
+					"frequency": 1,
+					"positions": [
+						156
+					]
+				},
+				{
+					"word": "took",
+					"frequency": 3,
+					"positions": [
+						157,
+						287,
+						421
+					]
+				},
+				{
+					"word": "wife",
+					"frequency": 3,
+					"positions": [
+						158,
+						232,
+						289
+					]
+				},
+				{
+					"word": "chose",
+					"frequency": 2,
+					"positions": [
+						159,
+						290
+					]
+				},
+				{
+					"word": "day",
+					"frequency": 2,
+					"positions": [
+						162,
+						1337
+					]
+				},
+				{
+					"word": "also",
+					"frequency": 5,
+					"positions": [
+						163,
+						340,
+						506,
+						773,
+						1241
+					]
+				},
+				{
+					"word": "came",
+					"frequency": 1,
+					"positions": [
+						166
+					]
+				},
+				{
+					"word": "bore",
+					"frequency": 2,
+					"positions": [
+						169,
+						303
+					]
+				},
+				{
+					"word": "many",
+					"frequency": 5,
+					"positions": [
+						171,
+						705,
+						767,
+						980,
+						1270
+					]
+				},
+				{
+					"word": "different",
+					"frequency": 5,
+					"positions": [
+						172,
+						466,
+						768,
+						1271,
+						1303
+					]
+				},
+				{
+					"word": "text",
+					"frequency": 6,
+					"positions": [
+						174,
+						187,
+						770,
+						1214,
+						1305,
+						1336
+					]
+				},
+				{
+					"word": "go",
+					"frequency": 2,
+					"positions": [
+						177,
+						250
+					]
+				},
+				{
+					"word": "detail",
+					"frequency": 1,
+					"positions": [
+						179
+					]
+				},
+				{
+					"word": "book",
+					"frequency": 11,
+					"positions": [
+						183,
+						196,
+						207,
+						629,
+						638,
+						771,
+						1030,
+						1128,
+						1152,
+						1154,
+						1252
+					]
+				},
+				{
+					"word": "enoch",
+					"frequency": 9,
+					"positions": [
+						184,
+						191,
+						197,
+						208,
+						630,
+						639,
+						772,
+						1253,
+						1259
+					]
+				},
+				{
+					"word": "religious",
+					"frequency": 2,
+					"positions": [
+						186,
+						769
+					]
+				},
+				{
+					"word": "comprising",
+					"frequency": 1,
+					"positions": [
+						188
+					]
+				},
+				{
+					"word": "various",
+					"frequency": 2,
+					"positions": [
+						189,
+						784
+					]
+				},
+				{
+					"word": "tale",
+					"frequency": 1,
+					"positions": [
+						190
+					]
+				},
+				{
+					"word": "father",
+					"frequency": 2,
+					"positions": [
+						192,
+						521
+					]
+				},
+				{
+					"word": "methuselah",
+					"frequency": 1,
+					"positions": [
+						193
+					]
+				},
+				{
+					"word": "noah",
+					"frequency": 3,
+					"positions": [
+						194,
+						383,
+						1159
+					]
+				},
+				{
+					"word": "part",
+					"frequency": 2,
+					"positions": [
+						195,
+						563
+					]
+				},
+				{
+					"word": "describes",
+					"frequency": 3,
+					"positions": [
+						198,
+						1255,
+						1260
+					]
+				},
+				{
+					"word": "fall",
+					"frequency": 4,
+					"positions": [
+						199,
+						353,
+						594,
+						1321
+					]
+				},
+				{
+					"word": "called",
+					"frequency": 6,
+					"positions": [
+						205,
+						519,
+						698,
+						777,
+						952,
+						1078
+					]
+				},
+				{
+					"word": "said",
+					"frequency": 2,
+					"positions": [
+						214,
+						591
+					]
+				},
+				{
+					"word": "among",
+					"frequency": 2,
+					"positions": [
+						217,
+						1340
+					]
+				},
+				{
+					"word": "beget",
+					"frequency": 1,
+					"positions": [
+						220
+					]
+				},
+				{
+					"word": "swore",
+					"frequency": 1,
+					"positions": [
+						223
+					]
+				},
+				{
+					"word": "together",
+					"frequency": 3,
+					"positions": [
+						224,
+						286,
+						836
+					]
+				},
+				{
+					"word": "bound",
+					"frequency": 1,
+					"positions": [
+						225
+					]
+				},
+				{
+					"word": "mutual",
+					"frequency": 1,
+					"positions": [
+						226
+					]
+				},
+				{
+					"word": "imprecation",
+					"frequency": 1,
+					"positions": [
+						227
+					]
+				},
+				{
+					"word": "plunged",
+					"frequency": 1,
+					"positions": [
+						229
+					]
+				},
+				{
+					"word": "take",
+					"frequency": 1,
+					"positions": [
+						231
+					]
+				},
+				{
+					"word": "choosing",
+					"frequency": 1,
+					"positions": [
+						233
+					]
+				},
+				{
+					"word": "defying",
+					"frequency": 1,
+					"positions": [
+						234
+					]
+				},
+				{
+					"word": "creator",
+					"frequency": 1,
+					"positions": [
+						235
+					]
+				},
+				{
+					"word": "numbered",
+					"frequency": 1,
+					"positions": [
+						236
+					]
+				},
+				{
+					"word": "led",
+					"frequency": 4,
+					"positions": [
+						237,
+						243,
+						296,
+						1166
+					]
+				},
+				{
+					"word": "leader",
+					"frequency": 3,
+					"positions": [
+						238,
+						361,
+						637
+					]
+				},
+				{
+					"word": "identified",
+					"frequency": 1,
+					"positions": [
+						242
+					]
+				},
+				{
+					"word": "satan",
+					"frequency": 16,
+					"positions": [
+						244,
+						360,
+						446,
+						459,
+						489,
+						561,
+						578,
+						588,
+						593,
+						613,
+						644,
+						747,
+						839,
+						1034,
+						1080,
+						1126
+					]
+				},
+				{
+					"word": "later",
+					"frequency": 2,
+					"positions": [
+						247,
+						1103
+					]
+				},
+				{
+					"word": "christianity",
+					"frequency": 4,
+					"positions": [
+						248,
+						573,
+						589,
+						646
+					]
+				},
+				{
+					"word": "corruption",
+					"frequency": 1,
+					"positions": [
+						254
+					]
+				},
+				{
+					"word": "upon",
+					"frequency": 3,
+					"positions": [
+						255,
+						393,
+						1057
+					]
+				},
+				{
+					"word": "mortal",
+					"frequency": 1,
+					"positions": [
+						257
+					]
+				},
+				{
+					"word": "taught",
+					"frequency": 2,
+					"positions": [
+						260,
+						272
+					]
+				},
+				{
+					"word": "astrology",
+					"frequency": 1,
+					"positions": [
+						262
+					]
+				},
+				{
+					"word": "made",
+					"frequency": 1,
+					"positions": [
+						263
+					]
+				},
+				{
+					"word": "metal",
+					"frequency": 1,
+					"positions": [
+						265
+					]
+				},
+				{
+					"word": "art",
+					"frequency": 2,
+					"positions": [
+						267,
+						273
+					]
+				},
+				{
+					"word": "working",
+					"frequency": 1,
+					"positions": [
+						268
+					]
+				},
+				{
+					"word": "make",
+					"frequency": 1,
+					"positions": [
+						269
+					]
+				},
+				{
+					"word": "weapon",
+					"frequency": 1,
+					"positions": [
+						270
+					]
+				},
+				{
+					"word": "sorcery",
+					"frequency": 1,
+					"positions": [
+						274
+					]
+				},
+				{
+					"word": "enchantment",
+					"frequency": 1,
+					"positions": [
+						275
+					]
+				},
+				{
+					"word": "magick",
+					"frequency": 1,
+					"positions": [
+						276
+					]
+				},
+				{
+					"word": "grew",
+					"frequency": 1,
+					"positions": [
+						277
+					]
+				},
+				{
+					"word": "lust",
+					"frequency": 2,
+					"positions": [
+						278,
+						1181
+					]
+				},
+				{
+					"word": "could",
+					"frequency": 2,
+					"positions": [
+						281,
+						321
+					]
+				},
+				{
+					"word": "resist",
+					"frequency": 1,
+					"positions": [
+						282
+					]
+				},
+				{
+					"word": "temptation",
+					"frequency": 1,
+					"positions": [
+						283
+					]
+				},
+				{
+					"word": "mating",
+					"frequency": 1,
+					"positions": [
+						284
+					]
+				},
+				{
+					"word": "unto",
+					"frequency": 2,
+					"positions": [
+						288,
+						540
+					]
+				},
+				{
+					"word": "defile",
+					"frequency": 1,
+					"positions": [
+						293
+					]
+				},
+				{
+					"word": "committed",
+					"frequency": 1,
+					"positions": [
+						294
+					]
+				},
+				{
+					"word": "fornication",
+					"frequency": 1,
+					"positions": [
+						295
+					]
+				},
+				{
+					"word": "astray",
+					"frequency": 1,
+					"positions": [
+						297
+					]
+				},
+				{
+					"word": "pregnant",
+					"frequency": 1,
+					"positions": [
+						302
+					]
+				},
+				{
+					"word": "giant",
+					"frequency": 6,
+					"positions": [
+						305,
+						317,
+						324,
+						460,
+						1280,
+						1307
+					]
+				},
+				{
+					"word": "whose",
+					"frequency": 1,
+					"positions": [
+						306
+					]
+				},
+				{
+					"word": "height",
+					"frequency": 1,
+					"positions": [
+						307
+					]
+				},
+				{
+					"word": "three",
+					"frequency": 4,
+					"positions": [
+						308,
+						464,
+						490,
+						495
+					]
+				},
+				{
+					"word": "ell",
+					"frequency": 1,
+					"positions": [
+						310
+					]
+				},
+				{
+					"word": "consumed",
+					"frequency": 1,
+					"positions": [
+						311
+					]
+				},
+				{
+					"word": "acquisition",
+					"frequency": 1,
+					"positions": [
+						312
+					]
+				},
+				{
+					"word": "result",
+					"frequency": 2,
+					"positions": [
+						314,
+						582
+					]
+				},
+				{
+					"word": "creation",
+					"frequency": 1,
+					"positions": [
+						315
+					]
+				},
+				{
+					"word": "described",
+					"frequency": 3,
+					"positions": [
+						318,
+						652,
+						984
+					]
+				},
+				{
+					"word": "longer",
+					"frequency": 1,
+					"positions": [
+						322
+					]
+				},
+				{
+					"word": "sustain",
+					"frequency": 1,
+					"positions": [
+						323
+					]
+				},
+				{
+					"word": "turned",
+					"frequency": 1,
+					"positions": [
+						325
+					]
+				},
+				{
+					"word": "devoured",
+					"frequency": 1,
+					"positions": [
+						326
+					]
+				},
+				{
+					"word": "mankind",
+					"frequency": 2,
+					"positions": [
+						327,
+						860
+					]
+				},
+				{
+					"word": "intervening",
+					"frequency": 1,
+					"positions": [
+						329
+					]
+				},
+				{
+					"word": "natural",
+					"frequency": 1,
+					"positions": [
+						330
+					]
+				},
+				{
+					"word": "order",
+					"frequency": 2,
+					"positions": [
+						331,
+						810
+					]
+				},
+				{
+					"word": "thing",
+					"frequency": 2,
+					"positions": [
+						332,
+						541
+					]
+				},
+				{
+					"word": "corrupted",
+					"frequency": 1,
+					"positions": [
+						334
+					]
+				},
+				{
+					"word": "feel",
+					"frequency": 1,
+					"positions": [
+						335
+					]
+				},
+				{
+					"word": "wrath",
+					"frequency": 1,
+					"positions": [
+						336
+					]
+				},
+				{
+					"word": "equated",
+					"frequency": 1,
+					"positions": [
+						341
+					]
+				},
+				{
+					"word": "demon",
+					"frequency": 6,
+					"positions": [
+						342,
+						356,
+						362,
+						414,
+						1127,
+						1277
+					]
+				},
+				{
+					"word": "john",
+					"frequency": 3,
+					"positions": [
+						343,
+						431,
+						1129
+					]
+				},
+				{
+					"word": "milton",
+					"frequency": 3,
+					"positions": [
+						344,
+						432,
+						1130
+					]
+				},
+				{
+					"word": "depicted",
+					"frequency": 2,
+					"positions": [
+						349,
+						438
+					]
+				},
+				{
+					"word": "falling",
+					"frequency": 1,
+					"positions": [
+						350
+					]
+				},
+				{
+					"word": "hell",
+					"frequency": 5,
+					"positions": [
+						352,
+						428,
+						437,
+						450,
+						695
+					]
+				},
+				{
+					"word": "become",
+					"frequency": 3,
+					"positions": [
+						355,
+						559,
+						941
+					]
+				},
+				{
+					"word": "synoptic",
+					"frequency": 1,
+					"positions": [
+						357
+					]
+				},
+				{
+					"word": "gospel",
+					"frequency": 1,
+					"positions": [
+						358
+					]
+				},
+				{
+					"word": "identify",
+					"frequency": 2,
+					"positions": [
+						359,
+						1162
+					]
+				},
+				{
+					"word": "michael",
+					"frequency": 5,
+					"positions": [
+						363,
+						794,
+						825,
+						1042,
+						1061
+					]
+				},
+				{
+					"word": "uriel",
+					"frequency": 4,
+					"positions": [
+						364,
+						380,
+						796,
+						829
+					]
+				},
+				{
+					"word": "raphael",
+					"frequency": 3,
+					"positions": [
+						365,
+						795,
+						822
+					]
+				},
+				{
+					"word": "gabriel",
+					"frequency": 3,
+					"positions": [
+						366,
+						793,
+						824
+					]
+				},
+				{
+					"word": "archangel",
+					"frequency": 9,
+					"positions": [
+						367,
+						374,
+						749,
+						754,
+						758,
+						776,
+						782,
+						792,
+						1041
+					]
+				},
+				{
+					"word": "appeal",
+					"frequency": 1,
+					"positions": [
+						368
+					]
+				},
+				{
+					"word": "judgment",
+					"frequency": 1,
+					"positions": [
+						370
+					]
+				},
+				{
+					"word": "world",
+					"frequency": 9,
+					"positions": [
+						372,
+						403,
+						409,
+						854,
+						1292,
+						1301,
+						1356,
+						1369,
+						1378
+					]
+				},
+				{
+					"word": "sends",
+					"frequency": 2,
+					"positions": [
+						373,
+						405
+					]
+				},
+				{
+					"word": "deal",
+					"frequency": 1,
+					"positions": [
+						376
+					]
+				},
+				{
+					"word": "tell",
+					"frequency": 2,
+					"positions": [
+						382,
+						387
+					]
+				},
+				{
+					"word": "coming",
+					"frequency": 1,
+					"positions": [
+						384
+					]
+				},
+				{
+					"word": "cataclysm",
+					"frequency": 1,
+					"positions": [
+						385
+					]
+				},
+				{
+					"word": "need",
+					"frequency": 1,
+					"positions": [
+						386
+					]
+				},
+				{
+					"word": "whole",
+					"frequency": 2,
+					"positions": [
+						388,
+						394
+					]
+				},
+				{
+					"word": "destroyed",
+					"frequency": 2,
+					"positions": [
+						390,
+						412
+					]
+				},
+				{
+					"word": "deluge",
+					"frequency": 1,
+					"positions": [
+						391
+					]
+				},
+				{
+					"word": "come",
+					"frequency": 1,
+					"positions": [
+						392
+					]
+				},
+				{
+					"word": "instruct",
+					"frequency": 1,
+					"positions": [
+						396
+					]
+				},
+				{
+					"word": "may",
+					"frequency": 2,
+					"positions": [
+						397,
+						400
+					]
+				},
+				{
+					"word": "escape",
+					"frequency": 1,
+					"positions": [
+						398
+					]
+				},
+				{
+					"word": "seed",
+					"frequency": 1,
+					"positions": [
+						399
+					]
+				},
+				{
+					"word": "preserved",
+					"frequency": 1,
+					"positions": [
+						401
+					]
+				},
+				{
+					"word": "generation",
+					"frequency": 1,
+					"positions": [
+						402
+					]
+				},
+				{
+					"word": "flood",
+					"frequency": 3,
+					"positions": [
+						407,
+						424,
+						1279
+					]
+				},
+				{
+					"word": "purge",
+					"frequency": 1,
+					"positions": [
+						408
+					]
+				},
+				{
+					"word": "creature",
+					"frequency": 4,
+					"positions": [
+						410,
+						977,
+						992,
+						1343
+					]
+				},
+				{
+					"word": "body",
+					"frequency": 1,
+					"positions": [
+						411
+					]
+				},
+				{
+					"word": "needle",
+					"frequency": 1,
+					"positions": [
+						415
+					]
+				},
+				{
+					"word": "global",
+					"frequency": 2,
+					"positions": [
+						417,
+						1359
+					]
+				},
+				{
+					"word": "demise",
+					"frequency": 1,
+					"positions": [
+						418
+					]
+				},
+				{
+					"word": "form",
+					"frequency": 1,
+					"positions": [
+						422
+					]
+				},
+				{
+					"word": "pandemonium",
+					"frequency": 1,
+					"positions": [
+						425
+					]
+				},
+				{
+					"word": "capital",
+					"frequency": 1,
+					"positions": [
+						426
+					]
+				},
+				{
+					"word": "devil",
+					"frequency": 12,
+					"positions": [
+						429,
+						456,
+						500,
+						508,
+						587,
+						602,
+						608,
+						614,
+						645,
+						675,
+						1079,
+						1374
+					]
+				},
+				{
+					"word": "resides",
+					"frequency": 1,
+					"positions": [
+						430
+					]
+				},
+				{
+					"word": "dante",
+					"frequency": 1,
+					"positions": [
+						435
+					]
+				},
+				{
+					"word": "inferno",
+					"frequency": 1,
+					"positions": [
+						436
+					]
+				},
+				{
+					"word": "nine",
+					"frequency": 1,
+					"positions": [
+						439
+					]
+				},
+				{
+					"word": "concentric",
+					"frequency": 1,
+					"positions": [
+						440
+					]
+				},
+				{
+					"word": "circle",
+					"frequency": 1,
+					"positions": [
+						441
+					]
+				},
+				{
+					"word": "torment",
+					"frequency": 1,
+					"positions": [
+						442
+					]
+				},
+				{
+					"word": "located",
+					"frequency": 1,
+					"positions": [
+						443
+					]
+				},
+				{
+					"word": "within",
+					"frequency": 2,
+					"positions": [
+						444,
+						501
+					]
+				},
+				{
+					"word": "held",
+					"frequency": 1,
+					"positions": [
+						447
+					]
+				},
+				{
+					"word": "bondage",
+					"frequency": 1,
+					"positions": [
+						448
+					]
+				},
+				{
+					"word": "centre",
+					"frequency": 1,
+					"positions": [
+						449
+					]
+				},
+				{
+					"word": "condemned",
+					"frequency": 1,
+					"positions": [
+						451
+					]
+				},
+				{
+					"word": "committing",
+					"frequency": 1,
+					"positions": [
+						452
+					]
+				},
+				{
+					"word": "ultimate",
+					"frequency": 1,
+					"positions": [
+						453
+					]
+				},
+				{
+					"word": "sin",
+					"frequency": 1,
+					"positions": [
+						454
+					]
+				},
+				{
+					"word": "referred",
+					"frequency": 1,
+					"positions": [
+						457
+					]
+				},
+				{
+					"word": "dis",
+					"frequency": 1,
+					"positions": [
+						458
+					]
+				},
+				{
+					"word": "beast",
+					"frequency": 1,
+					"positions": [
+						461
+					]
+				},
+				{
+					"word": "trapped",
+					"frequency": 1,
+					"positions": [
+						462
+					]
+				},
+				{
+					"word": "ice",
+					"frequency": 1,
+					"positions": [
+						463
+					]
+				},
+				{
+					"word": "color",
+					"frequency": 2,
+					"positions": [
+						467,
+						803
+					]
+				},
+				{
+					"word": "red",
+					"frequency": 4,
+					"positions": [
+						469,
+						478,
+						1036,
+						1049
+					]
+				},
+				{
+					"word": "middle",
+					"frequency": 1,
+					"positions": [
+						470
+					]
+				},
+				{
+					"word": "pale",
+					"frequency": 1,
+					"positions": [
+						472
+					]
+				},
+				{
+					"word": "yellow",
+					"frequency": 2,
+					"positions": [
+						473,
+						481
+					]
+				},
+				{
+					"word": "right",
+					"frequency": 1,
+					"positions": [
+						474
+					]
+				},
+				{
+					"word": "black",
+					"frequency": 2,
+					"positions": [
+						476,
+						484
+					]
+				},
+				{
+					"word": "left",
+					"frequency": 2,
+					"positions": [
+						477,
+						826
+					]
+				},
+				{
+					"word": "european",
+					"frequency": 1,
+					"positions": [
+						479
+					]
+				},
+				{
+					"word": "japheth",
+					"frequency": 1,
+					"positions": [
+						480
+					]
+				},
+				{
+					"word": "asiatic",
+					"frequency": 1,
+					"positions": [
+						482
+					]
+				},
+				{
+					"word": "shem",
+					"frequency": 1,
+					"positions": [
+						483
+					]
+				},
+				{
+					"word": "african",
+					"frequency": 1,
+					"positions": [
+						485
+					]
+				},
+				{
+					"word": "race",
+					"frequency": 3,
+					"positions": [
+						486,
+						497,
+						1269
+					]
+				},
+				{
+					"word": "ham",
+					"frequency": 1,
+					"positions": [
+						487
+					]
+				},
+				{
+					"word": "thought",
+					"frequency": 1,
+					"positions": [
+						492
+					]
+				},
+				{
+					"word": "suggest",
+					"frequency": 1,
+					"positions": [
+						493
+					]
+				},
+				{
+					"word": "control",
+					"frequency": 1,
+					"positions": [
+						494
+					]
+				},
+				{
+					"word": "let",
+					"frequency": 1,
+					"positions": [
+						502
+					]
+				},
+				{
+					"word": "humoral",
+					"frequency": 1,
+					"positions": [
+						503
+					]
+				},
+				{
+					"word": "theory",
+					"frequency": 1,
+					"positions": [
+						504
+					]
+				},
+				{
+					"word": "humorism",
+					"frequency": 1,
+					"positions": [
+						505
+					]
+				},
+				{
+					"word": "correlated",
+					"frequency": 1,
+					"positions": [
+						507
+					]
+				},
+				{
+					"word": "brief",
+					"frequency": 1,
+					"positions": [
+						510
+					]
+				},
+				{
+					"word": "system",
+					"frequency": 2,
+					"positions": [
+						511,
+						787
+					]
+				},
+				{
+					"word": "health",
+					"frequency": 1,
+					"positions": [
+						512
+					]
+				},
+				{
+					"word": "medicine",
+					"frequency": 5,
+					"positions": [
+						513,
+						522,
+						908,
+						932,
+						944
+					]
+				},
+				{
+					"word": "used",
+					"frequency": 4,
+					"positions": [
+						514,
+						526,
+						816,
+						999
+					]
+				},
+				{
+					"word": "prevent",
+					"frequency": 1,
+					"positions": [
+						515
+					]
+				},
+				{
+					"word": "presented",
+					"frequency": 1,
+					"positions": [
+						516
+					]
+				},
+				{
+					"word": "video",
+					"frequency": 1,
+					"positions": [
+						518
+					]
+				},
+				{
+					"word": "hippocrates",
+					"frequency": 1,
+					"positions": [
+						520
+					]
+				},
+				{
+					"word": "term",
+					"frequency": 1,
+					"positions": [
+						523
+					]
+				},
+				{
+					"word": "often",
+					"frequency": 2,
+					"positions": [
+						525,
+						1254
+					]
+				},
+				{
+					"word": "christian",
+					"frequency": 4,
+					"positions": [
+						527,
+						580,
+						623,
+						750
+					]
+				},
+				{
+					"word": "refer",
+					"frequency": 1,
+					"positions": [
+						528
+					]
+				},
+				{
+					"word": "christ",
+					"frequency": 3,
+					"positions": [
+						529,
+						534,
+						618
+					]
+				},
+				{
+					"word": "example",
+					"frequency": 1,
+					"positions": [
+						530
+					]
+				},
+				{
+					"word": "revelation",
+					"frequency": 2,
+					"positions": [
+						531,
+						1031
+					]
+				},
+				{
+					"word": "resurrected",
+					"frequency": 1,
+					"positions": [
+						532
+					]
+				},
+				{
+					"word": "triumphant",
+					"frequency": 1,
+					"positions": [
+						533
+					]
+				},
+				{
+					"word": "refers",
+					"frequency": 1,
+					"positions": [
+						535
+					]
+				},
+				{
+					"word": "testify",
+					"frequency": 1,
+					"positions": [
+						539
+					]
+				},
+				{
+					"word": "church",
+					"frequency": 1,
+					"positions": [
+						542
+					]
+				},
+				{
+					"word": "root",
+					"frequency": 2,
+					"positions": [
+						543,
+						1004
+					]
+				},
+				{
+					"word": "offspring",
+					"frequency": 2,
+					"positions": [
+						544,
+						1207
+					]
+				},
+				{
+					"word": "david",
+					"frequency": 1,
+					"positions": [
+						545
+					]
+				},
+				{
+					"word": "bright",
+					"frequency": 1,
+					"positions": [
+						546
+					]
+				},
+				{
+					"word": "king",
+					"frequency": 5,
+					"positions": [
+						550,
+						651,
+						664,
+						895,
+						1168
+					]
+				},
+				{
+					"word": "james",
+					"frequency": 1,
+					"positions": [
+						551
+					]
+				},
+				{
+					"word": "kjv",
+					"frequency": 1,
+					"positions": [
+						553
+					]
+				},
+				{
+					"word": "bible",
+					"frequency": 2,
+					"positions": [
+						554,
+						689
+					]
+				},
+				{
+					"word": "published",
+					"frequency": 1,
+					"positions": [
+						555
+					]
+				},
+				{
+					"word": "word",
+					"frequency": 3,
+					"positions": [
+						556,
+						821,
+						1005
+					]
+				},
+				{
+					"word": "started",
+					"frequency": 1,
+					"positions": [
+						558
+					]
+				},
+				{
+					"word": "synonymous",
+					"frequency": 1,
+					"positions": [
+						560
+					]
+				},
+				{
+					"word": "early",
+					"frequency": 2,
+					"positions": [
+						562,
+						579
+					]
+				},
+				{
+					"word": "west",
+					"frequency": 1,
+					"positions": [
+						564
+					]
+				},
+				{
+					"word": "shaped",
+					"frequency": 1,
+					"positions": [
+						565
+					]
+				},
+				{
+					"word": "constantine",
+					"frequency": 1,
+					"positions": [
+						566
+					]
+				},
+				{
+					"word": "first",
+					"frequency": 1,
+					"positions": [
+						569
+					]
+				},
+				{
+					"word": "roman",
+					"frequency": 2,
+					"positions": [
+						570,
+						1187
+					]
+				},
+				{
+					"word": "emperor",
+					"frequency": 1,
+					"positions": [
+						571
+					]
+				},
+				{
+					"word": "adopt",
+					"frequency": 1,
+					"positions": [
+						572
+					]
+				},
+				{
+					"word": "image",
+					"frequency": 2,
+					"positions": [
+						574,
+						966
+					]
+				},
+				{
+					"word": "writer",
+					"frequency": 1,
+					"positions": [
+						581
+					]
+				},
+				{
+					"word": "helel",
+					"frequency": 2,
+					"positions": [
+						584,
+						642
+					]
+				},
+				{
+					"word": "template",
+					"frequency": 1,
+					"positions": [
+						586
+					]
+				},
+				{
+					"word": "jesus",
+					"frequency": 1,
+					"positions": [
+						590
+					]
+				},
+				{
+					"word": "watched",
+					"frequency": 1,
+					"positions": [
+						592
+					]
+				},
+				{
+					"word": "lightning",
+					"frequency": 1,
+					"positions": [
+						597
+					]
+				},
+				{
+					"word": "cursed",
+					"frequency": 1,
+					"positions": [
+						598
+					]
+				},
+				{
+					"word": "eternal",
+					"frequency": 1,
+					"positions": [
+						599
+					]
+				},
+				{
+					"word": "fire",
+					"frequency": 2,
+					"positions": [
+						600,
+						989
+					]
+				},
+				{
+					"word": "prepared",
+					"frequency": 1,
+					"positions": [
+						601
+					]
+				},
+				{
+					"word": "recognized",
+					"frequency": 1,
+					"positions": [
+						605
+					]
+				},
+				{
+					"word": "association",
+					"frequency": 1,
+					"positions": [
+						606
+					]
+				},
+				{
+					"word": "scholar",
+					"frequency": 1,
+					"positions": [
+						609
+					]
+				},
+				{
+					"word": "reject",
+					"frequency": 1,
+					"positions": [
+						610
+					]
+				},
+				{
+					"word": "identification",
+					"frequency": 1,
+					"positions": [
+						611
+					]
+				},
+				{
+					"word": "consider",
+					"frequency": 2,
+					"positions": [
+						615,
+						1327
+					]
+				},
+				{
+					"word": "spiritual",
+					"frequency": 1,
+					"positions": [
+						616
+					]
+				},
+				{
+					"word": "opposite",
+					"frequency": 2,
+					"positions": [
+						617,
+						951
+					]
+				},
+				{
+					"word": "giving",
+					"frequency": 1,
+					"positions": [
+						619
+					]
+				},
+				{
+					"word": "humanity",
+					"frequency": 2,
+					"positions": [
+						620,
+						1322
+					]
+				},
+				{
+					"word": "balanced",
+					"frequency": 1,
+					"positions": [
+						621
+					]
+				},
+				{
+					"word": "path",
+					"frequency": 1,
+					"positions": [
+						622
+					]
+				},
+				{
+					"word": "slightly",
+					"frequency": 1,
+					"positions": [
+						627
+					]
+				},
+				{
+					"word": "similar",
+					"frequency": 2,
+					"positions": [
+						628,
+						1001
+					]
+				},
+				{
+					"word": "present",
+					"frequency": 1,
+					"positions": [
+						631
+					]
+				},
+				{
+					"word": "differently",
+					"frequency": 1,
+					"positions": [
+						633
+					]
+				},
+				{
+					"word": "especially",
+					"frequency": 1,
+					"positions": [
+						634
+					]
+				},
+				{
+					"word": "regard",
+					"frequency": 1,
+					"positions": [
+						635
+					]
+				},
+				{
+					"word": "shemyaza",
+					"frequency": 1,
+					"positions": [
+						640
+					]
+				},
+				{
+					"word": "azazel",
+					"frequency": 1,
+					"positions": [
+						641
+					]
+				},
+				{
+					"word": "change",
+					"frequency": 2,
+					"positions": [
+						648,
+						1355
+					]
+				},
+				{
+					"word": "even",
+					"frequency": 2,
+					"positions": [
+						649,
+						681
+					]
+				},
+				{
+					"word": "babylonian",
+					"frequency": 3,
+					"positions": [
+						650,
+						1090,
+						1106
+					]
+				},
+				{
+					"word": "isaiah",
+					"frequency": 1,
+					"positions": [
+						656
+					]
+				},
+				{
+					"word": "origen",
+					"frequency": 1,
+					"positions": [
+						659
+					]
+				},
+				{
+					"word": "description",
+					"frequency": 1,
+					"positions": [
+						660
+					]
+				},
+				{
+					"word": "interpreted",
+					"frequency": 1,
+					"positions": [
+						661
+					]
+				},
+				{
+					"word": "luciferianism",
+					"frequency": 1,
+					"positions": [
+						665
+					]
+				},
+				{
+					"word": "belief",
+					"frequency": 1,
+					"positions": [
+						666
+					]
+				},
+				{
+					"word": "structure",
+					"frequency": 2,
+					"positions": [
+						667,
+						1361
+					]
+				},
+				{
+					"word": "attributed",
+					"frequency": 1,
+					"positions": [
+						668
+					]
+				},
+				{
+					"word": "inspired",
+					"frequency": 1,
+					"positions": [
+						670
+					]
+				},
+				{
+					"word": "teaching",
+					"frequency": 1,
+					"positions": [
+						671
+					]
+				},
+				{
+					"word": "gnosticism",
+					"frequency": 1,
+					"positions": [
+						672
+					]
+				},
+				{
+					"word": "associated",
+					"frequency": 8,
+					"positions": [
+						674,
+						709,
+						804,
+						856,
+						1092,
+						1110,
+						1147,
+						1179
+					]
+				},
+				{
+					"word": "savior",
+					"frequency": 1,
+					"positions": [
+						677
+					]
+				},
+				{
+					"word": "guardian",
+					"frequency": 3,
+					"positions": [
+						678,
+						888,
+						1013
+					]
+				},
+				{
+					"word": "instructing",
+					"frequency": 1,
+					"positions": [
+						679
+					]
+				},
+				{
+					"word": "spirit",
+					"frequency": 1,
+					"positions": [
+						680
+					]
+				},
+				{
+					"word": "opposed",
+					"frequency": 1,
+					"positions": [
+						684
+					]
+				},
+				{
+					"word": "jehovah",
+					"frequency": 1,
+					"positions": [
+						685
+					]
+				},
+				{
+					"word": "anton",
+					"frequency": 1,
+					"positions": [
+						686
+					]
+				},
+				{
+					"word": "lavey",
+					"frequency": 1,
+					"positions": [
+						687
+					]
+				},
+				{
+					"word": "satanic",
+					"frequency": 1,
+					"positions": [
+						688
+					]
+				},
+				{
+					"word": "four",
+					"frequency": 3,
+					"positions": [
+						692,
+						790,
+						799
+					]
+				},
+				{
+					"word": "crown",
+					"frequency": 2,
+					"positions": [
+						693,
+						1056
+					]
+				},
+				{
+					"word": "prince",
+					"frequency": 1,
+					"positions": [
+						694
+					]
+				},
+				{
+					"word": "particularly",
+					"frequency": 1,
+					"positions": [
+						696
+					]
+				},
+				{
+					"word": "east",
+					"frequency": 1,
+					"positions": [
+						697
+					]
+				},
+				{
+					"word": "bringer",
+					"frequency": 1,
+					"positions": [
+						699
+					]
+				},
+				{
+					"word": "intellectualism",
+					"frequency": 1,
+					"positions": [
+						703
+					]
+				},
+				{
+					"word": "enlightenment",
+					"frequency": 1,
+					"positions": [
+						704
+					]
+				},
+				{
+					"word": "people",
+					"frequency": 1,
+					"positions": [
+						706
+					]
+				},
+				{
+					"word": "claim",
+					"frequency": 1,
+					"positions": [
+						707
+					]
+				},
+				{
+					"word": "freemasonry",
+					"frequency": 1,
+					"positions": [
+						708
+					]
+				},
+				{
+					"word": "worshipping",
+					"frequency": 1,
+					"positions": [
+						710
+					]
+				},
+				{
+					"word": "allegedly",
+					"frequency": 1,
+					"positions": [
+						712
+					]
+				},
+				{
+					"word": "degree",
+					"frequency": 1,
+					"positions": [
+						713
+					]
+				},
+				{
+					"word": "grand",
+					"frequency": 1,
+					"positions": [
+						714
+					]
+				},
+				{
+					"word": "wizard",
+					"frequency": 1,
+					"positions": [
+						715
+					]
+				},
+				{
+					"word": "freemason",
+					"frequency": 2,
+					"positions": [
+						716,
+						725
+					]
+				},
+				{
+					"word": "albert",
+					"frequency": 2,
+					"positions": [
+						717,
+						727
+					]
+				},
+				{
+					"word": "pike",
+					"frequency": 3,
+					"positions": [
+						718,
+						728,
+						739
+					]
+				},
+				{
+					"word": "addressed",
+					"frequency": 1,
+					"positions": [
+						719
+					]
+				},
+				{
+					"word": "opposition",
+					"frequency": 1,
+					"positions": [
+						722
+					]
+				},
+				{
+					"word": "mason",
+					"frequency": 1,
+					"positions": [
+						729
+					]
+				},
+				{
+					"word": "spoke",
+					"frequency": 1,
+					"positions": [
+						730
+					]
+				},
+				{
+					"word": "referring",
+					"frequency": 1,
+					"positions": [
+						732
+					]
+				},
+				{
+					"word": "bearer",
+					"frequency": 1,
+					"positions": [
+						736
+					]
+				},
+				{
+					"word": "search",
+					"frequency": 1,
+					"positions": [
+						737
+					]
+				},
+				{
+					"word": "moral",
+					"frequency": 1,
+					"positions": [
+						741
+					]
+				},
+				{
+					"word": "dogma",
+					"frequency": 1,
+					"positions": [
+						742
+					]
+				},
+				{
+					"word": "bear",
+					"frequency": 1,
+					"positions": [
+						744
+					]
+				},
+				{
+					"word": "considered",
+					"frequency": 2,
+					"positions": [
+						748,
+						924
+					]
+				},
+				{
+					"word": "tradition",
+					"frequency": 2,
+					"positions": [
+						751,
+						1161
+					]
+				},
+				{
+					"word": "satanist",
+					"frequency": 1,
+					"positions": [
+						752
+					]
+				},
+				{
+					"word": "looking",
+					"frequency": 1,
+					"positions": [
+						753
+					]
+				},
+				{
+					"word": "find",
+					"frequency": 2,
+					"positions": [
+						755,
+						1324
+					]
+				},
+				{
+					"word": "interesting",
+					"frequency": 1,
+					"positions": [
+						756
+					]
+				},
+				{
+					"word": "information",
+					"frequency": 1,
+					"positions": [
+						757
+					]
+				},
+				{
+					"word": "literally",
+					"frequency": 1,
+					"positions": [
+						759
+					]
+				},
+				{
+					"word": "mean",
+					"frequency": 2,
+					"positions": [
+						760,
+						1007
+					]
+				},
+				{
+					"word": "chief",
+					"frequency": 1,
+					"positions": [
+						761
+					]
+				},
+				{
+					"word": "high",
+					"frequency": 1,
+					"positions": [
+						764
+					]
+				},
+				{
+					"word": "rank",
+					"frequency": 1,
+					"positions": [
+						765
+					]
+				},
+				{
+					"word": "found",
+					"frequency": 4,
+					"positions": [
+						766,
+						1071,
+						1298,
+						1302
+					]
+				},
+				{
+					"word": "mention",
+					"frequency": 1,
+					"positions": [
+						774
+					]
+				},
+				{
+					"word": "metatron",
+					"frequency": 1,
+					"positions": [
+						775
+					]
+				},
+				{
+					"word": "highest",
+					"frequency": 1,
+					"positions": [
+						778
+					]
+				},
+				{
+					"word": "occultist",
+					"frequency": 1,
+					"positions": [
+						780
+					]
+				},
+				{
+					"word": "associate",
+					"frequency": 1,
+					"positions": [
+						781
+					]
+				},
+				{
+					"word": "kabbalah",
+					"frequency": 1,
+					"positions": [
+						783
+					]
+				},
+				{
+					"word": "season",
+					"frequency": 1,
+					"positions": [
+						785
+					]
+				},
+				{
+					"word": "element",
+					"frequency": 1,
+					"positions": [
+						786
+					]
+				},
+				{
+					"word": "ceremonial",
+					"frequency": 2,
+					"positions": [
+						788,
+						817
+					]
+				},
+				{
+					"word": "magic",
+					"frequency": 2,
+					"positions": [
+						789,
+						818
+					]
+				},
+				{
+					"word": "main",
+					"frequency": 1,
+					"positions": [
+						791
+					]
+				},
+				{
+					"word": "invoked",
+					"frequency": 1,
+					"positions": [
+						797
+					]
+				},
+				{
+					"word": "guarding",
+					"frequency": 1,
+					"positions": [
+						798
+					]
+				},
+				{
+					"word": "quarter",
+					"frequency": 1,
+					"positions": [
+						800
+					]
+				},
+				{
+					"word": "direction",
+					"frequency": 1,
+					"positions": [
+						801
+					]
+				},
+				{
+					"word": "corresponding",
+					"frequency": 1,
+					"positions": [
+						802
+					]
+				},
+				{
+					"word": "property",
+					"frequency": 1,
+					"positions": [
+						806
+					]
+				},
+				{
+					"word": "original",
+					"frequency": 1,
+					"positions": [
+						807
+					]
+				},
+				{
+					"word": "esoteric",
+					"frequency": 1,
+					"positions": [
+						808
+					]
+				},
+				{
+					"word": "hermetic",
+					"frequency": 1,
+					"positions": [
+						809
+					]
+				},
+				{
+					"word": "golden",
+					"frequency": 2,
+					"positions": [
+						811,
+						1016
+					]
+				},
+				{
+					"word": "dawn",
+					"frequency": 1,
+					"positions": [
+						812
+					]
+				},
+				{
+					"word": "aleister",
+					"frequency": 1,
+					"positions": [
+						813
+					]
+				},
+				{
+					"word": "crowley",
+					"frequency": 1,
+					"positions": [
+						814
+					]
+				},
+				{
+					"word": "trained",
+					"frequency": 1,
+					"positions": [
+						815
+					]
+				},
+				{
+					"word": "ritual",
+					"frequency": 2,
+					"positions": [
+						819,
+						858
+					]
+				},
+				{
+					"word": "invocated",
+					"frequency": 1,
+					"positions": [
+						820
+					]
+				},
+				{
+					"word": "behind",
+					"frequency": 1,
+					"positions": [
+						823
+					]
+				},
+				{
+					"word": "hand",
+					"frequency": 2,
+					"positions": [
+						827,
+						1245
+					]
+				},
+				{
+					"word": "auriel",
+					"frequency": 1,
+					"positions": [
+						828
+					]
+				},
+				{
+					"word": "knowledge",
+					"frequency": 2,
+					"positions": [
+						830,
+						847
+					]
+				},
+				{
+					"word": "good",
+					"frequency": 4,
+					"positions": [
+						831,
+						864,
+						916,
+						1379
+					]
+				},
+				{
+					"word": "situated",
+					"frequency": 1,
+					"positions": [
+						833
+					]
+				},
+				{
+					"word": "garden",
+					"frequency": 1,
+					"positions": [
+						834
+					]
+				},
+				{
+					"word": "eden",
+					"frequency": 1,
+					"positions": [
+						835
+					]
+				},
+				{
+					"word": "tree",
+					"frequency": 3,
+					"positions": [
+						837,
+						846,
+						901
+					]
+				},
+				{
+					"word": "life",
+					"frequency": 3,
+					"positions": [
+						838,
+						872,
+						1020
+					]
+				},
+				{
+					"word": "disguised",
+					"frequency": 1,
+					"positions": [
+						840
+					]
+				},
+				{
+					"word": "serpent",
+					"frequency": 10,
+					"positions": [
+						841,
+						848,
+						867,
+						885,
+						894,
+						905,
+						938,
+						963,
+						998,
+						1077
+					]
+				},
+				{
+					"word": "temp",
+					"frequency": 1,
+					"positions": [
+						842
+					]
+				},
+				{
+					"word": "eve",
+					"frequency": 2,
+					"positions": [
+						843,
+						1319
+					]
+				},
+				{
+					"word": "eat",
+					"frequency": 1,
+					"positions": [
+						844
+					]
+				},
+				{
+					"word": "apple",
+					"frequency": 1,
+					"positions": [
+						845
+					]
+				},
+				{
+					"word": "snake",
+					"frequency": 8,
+					"positions": [
+						849,
+						855,
+						868,
+						874,
+						909,
+						921,
+						948,
+						968
+					]
+				},
+				{
+					"word": "oldest",
+					"frequency": 3,
+					"positions": [
+						851,
+						857,
+						964
+					]
+				},
+				{
+					"word": "mythological",
+					"frequency": 2,
+					"positions": [
+						852,
+						1342
+					]
+				},
+				{
+					"word": "symbol",
+					"frequency": 3,
+					"positions": [
+						853,
+						880,
+						942
+					]
+				},
+				{
+					"word": "represent",
+					"frequency": 2,
+					"positions": [
+						861,
+						869
+					]
+				},
+				{
+					"word": "dual",
+					"frequency": 1,
+					"positions": [
+						862
+					]
+				},
+				{
+					"word": "expression",
+					"frequency": 1,
+					"positions": [
+						863
+					]
+				},
+				{
+					"word": "historically",
+					"frequency": 1,
+					"positions": [
+						866
+					]
+				},
+				{
+					"word": "fertility",
+					"frequency": 2,
+					"positions": [
+						870,
+						1198
+					]
+				},
+				{
+					"word": "creative",
+					"frequency": 1,
+					"positions": [
+						871
+					]
+				},
+				{
+					"word": "force",
+					"frequency": 1,
+					"positions": [
+						873
+					]
+				},
+				{
+					"word": "rebirth",
+					"frequency": 1,
+					"positions": [
+						875
+					]
+				},
+				{
+					"word": "transformation",
+					"frequency": 1,
+					"positions": [
+						876
+					]
+				},
+				{
+					"word": "immortality",
+					"frequency": 2,
+					"positions": [
+						877,
+						1021
+					]
+				},
+				{
+					"word": "healing",
+					"frequency": 2,
+					"positions": [
+						878,
+						933
+					]
+				},
+				{
+					"word": "ouroboros",
+					"frequency": 1,
+					"positions": [
+						879
+					]
+				},
+				{
+					"word": "eternity",
+					"frequency": 1,
+					"positions": [
+						881
+					]
+				},
+				{
+					"word": "cyclic",
+					"frequency": 1,
+					"positions": [
+						882
+					]
+				},
+				{
+					"word": "nature",
+					"frequency": 1,
+					"positions": [
+						883
+					]
+				},
+				{
+					"word": "cosmos",
+					"frequency": 1,
+					"positions": [
+						884
+					]
+				},
+				{
+					"word": "represented",
+					"frequency": 2,
+					"positions": [
+						886,
+						1025
+					]
+				},
+				{
+					"word": "potent",
+					"frequency": 1,
+					"positions": [
+						887
+					]
+				},
+				{
+					"word": "temple",
+					"frequency": 2,
+					"positions": [
+						889,
+						1014
+					]
+				},
+				{
+					"word": "sacred",
+					"frequency": 1,
+					"positions": [
+						890
+					]
+				},
+				{
+					"word": "space",
+					"frequency": 1,
+					"positions": [
+						891
+					]
+				},
+				{
+					"word": "buddha",
+					"frequency": 2,
+					"positions": [
+						893,
+						898
+					]
+				},
+				{
+					"word": "mucalinda",
+					"frequency": 1,
+					"positions": [
+						896
+					]
+				},
+				{
+					"word": "shield",
+					"frequency": 1,
+					"positions": [
+						897
+					]
+				},
+				{
+					"word": "sat",
+					"frequency": 1,
+					"positions": [
+						899
+					]
+				},
+				{
+					"word": "beneath",
+					"frequency": 1,
+					"positions": [
+						900
+					]
+				},
+				{
+					"word": "meditation",
+					"frequency": 1,
+					"positions": [
+						902
+					]
+				},
+				{
+					"word": "storm",
+					"frequency": 1,
+					"positions": [
+						903
+					]
+				},
+				{
+					"word": "arises",
+					"frequency": 1,
+					"positions": [
+						904
+					]
+				},
+				{
+					"word": "connected",
+					"frequency": 1,
+					"positions": [
+						906
+					]
+				},
+				{
+					"word": "venom",
+					"frequency": 2,
+					"positions": [
+						907,
+						910
+					]
+				},
+				{
+					"word": "power",
+					"frequency": 3,
+					"positions": [
+						911,
+						1117,
+						1360
+					]
+				},
+				{
+					"word": "either",
+					"frequency": 3,
+					"positions": [
+						912,
+						918,
+						1350
+					]
+				},
+				{
+					"word": "heal",
+					"frequency": 1,
+					"positions": [
+						913
+					]
+				},
+				{
+					"word": "kill",
+					"frequency": 1,
+					"positions": [
+						914
+					]
+				},
+				{
+					"word": "clear",
+					"frequency": 1,
+					"positions": [
+						915
+					]
+				},
+				{
+					"word": "bad",
+					"frequency": 1,
+					"positions": [
+						917
+					]
+				},
+				{
+					"word": "destroy",
+					"frequency": 1,
+					"positions": [
+						919
+					]
+				},
+				{
+					"word": "protect",
+					"frequency": 1,
+					"positions": [
+						920
+					]
+				},
+				{
+					"word": "incredible",
+					"frequency": 1,
+					"positions": [
+						922
+					]
+				},
+				{
+					"word": "ability",
+					"frequency": 1,
+					"positions": [
+						923
+					]
+				},
+				{
+					"word": "wisest",
+					"frequency": 1,
+					"positions": [
+						926
+					]
+				},
+				{
+					"word": "animal",
+					"frequency": 2,
+					"positions": [
+						927,
+						994
+					]
+				},
+				{
+					"word": "close",
+					"frequency": 1,
+					"positions": [
+						928
+					]
+				},
+				{
+					"word": "divine",
+					"frequency": 1,
+					"positions": [
+						929
+					]
+				},
+				{
+					"word": "greek",
+					"frequency": 3,
+					"positions": [
+						930,
+						1174,
+						1204
+					]
+				},
+				{
+					"word": "asclepius",
+					"frequency": 1,
+					"positions": [
+						934
+					]
+				},
+				{
+					"word": "carried",
+					"frequency": 2,
+					"positions": [
+						935,
+						946
+					]
+				},
+				{
+					"word": "staff",
+					"frequency": 2,
+					"positions": [
+						936,
+						947
+					]
+				},
+				{
+					"word": "wrapped",
+					"frequency": 1,
+					"positions": [
+						939
+					]
+				},
+				{
+					"word": "around",
+					"frequency": 2,
+					"positions": [
+						940,
+						970
+					]
+				},
+				{
+					"word": "modern",
+					"frequency": 1,
+					"positions": [
+						943
+					]
+				},
+				{
+					"word": "hermes",
+					"frequency": 1,
+					"positions": [
+						945
+					]
+				},
+				{
+					"word": "entwined",
+					"frequency": 1,
+					"positions": [
+						949
+					]
+				},
+				{
+					"word": "paired",
+					"frequency": 1,
+					"positions": [
+						950
+					]
+				},
+				{
+					"word": "caduceus",
+					"frequency": 1,
+					"positions": [
+						953
+					]
+				},
+				{
+					"word": "representing",
+					"frequency": 1,
+					"positions": [
+						954
+					]
+				},
+				{
+					"word": "negative",
+					"frequency": 1,
+					"positions": [
+						955
+					]
+				},
+				{
+					"word": "positive",
+					"frequency": 1,
+					"positions": [
+						956
+					]
+				},
+				{
+					"word": "energy",
+					"frequency": 1,
+					"positions": [
+						957
+					]
+				},
+				{
+					"word": "sumerian",
+					"frequency": 4,
+					"positions": [
+						958,
+						1086,
+						1212,
+						1249
+					]
+				},
+				{
+					"word": "deity",
+					"frequency": 1,
+					"positions": [
+						959
+					]
+				},
+				{
+					"word": "ningizzida",
+					"frequency": 1,
+					"positions": [
+						960
+					]
+				},
+				{
+					"word": "accompanied",
+					"frequency": 1,
+					"positions": [
+						961
+					]
+				},
+				{
+					"word": "two",
+					"frequency": 2,
+					"positions": [
+						962,
+						967
+					]
+				},
+				{
+					"word": "coiling",
+					"frequency": 1,
+					"positions": [
+						969
+					]
+				},
+				{
+					"word": "axial",
+					"frequency": 1,
+					"positions": [
+						971
+					]
+				},
+				{
+					"word": "rod",
+					"frequency": 1,
+					"positions": [
+						972
+					]
+				},
+				{
+					"word": "dating",
+					"frequency": 1,
+					"positions": [
+						973
+					]
+				},
+				{
+					"word": "bce",
+					"frequency": 1,
+					"positions": [
+						974
+					]
+				},
+				{
+					"word": "dragon",
+					"frequency": 11,
+					"positions": [
+						975,
+						991,
+						997,
+						1012,
+						1022,
+						1037,
+						1050,
+						1064,
+						1065,
+						1074,
+						1278
+					]
+				},
+				{
+					"word": "legendary",
+					"frequency": 1,
+					"positions": [
+						976
+					]
+				},
+				{
+					"word": "appear",
+					"frequency": 1,
+					"positions": [
+						978
+					]
+				},
+				{
+					"word": "folklore",
+					"frequency": 1,
+					"positions": [
+						979
+					]
+				},
+				{
+					"word": "culture",
+					"frequency": 2,
+					"positions": [
+						981,
+						1290
+					]
+				},
+				{
+					"word": "worldwide",
+					"frequency": 1,
+					"positions": [
+						982
+					]
+				},
+				{
+					"word": "usually",
+					"frequency": 1,
+					"positions": [
+						983
+					]
+				},
+				{
+					"word": "wing",
+					"frequency": 3,
+					"positions": [
+						985,
+						1224,
+						1286
+					]
+				},
+				{
+					"word": "fly",
+					"frequency": 2,
+					"positions": [
+						986,
+						1287
+					]
+				},
+				{
+					"word": "capable",
+					"frequency": 1,
+					"positions": [
+						987
+					]
+				},
+				{
+					"word": "breathing",
+					"frequency": 1,
+					"positions": [
+						988
+					]
+				},
+				{
+					"word": "chinese",
+					"frequency": 2,
+					"positions": [
+						990,
+						993
+					]
+				},
+				{
+					"word": "hierarchy",
+					"frequency": 1,
+					"positions": [
+						995
+					]
+				},
+				{
+					"word": "occasionally",
+					"frequency": 1,
+					"positions": [
+						996
+					]
+				},
+				{
+					"word": "interchangeably",
+					"frequency": 1,
+					"positions": [
+						1000
+					]
+				},
+				{
+					"word": "symbolic",
+					"frequency": 1,
+					"positions": [
+						1002
+					]
+				},
+				{
+					"word": "function",
+					"frequency": 1,
+					"positions": [
+						1003
+					]
+				},
+				{
+					"word": "draco",
+					"frequency": 1,
+					"positions": [
+						1006
+					]
+				},
+				{
+					"word": "watch",
+					"frequency": 2,
+					"positions": [
+						1008,
+						1236
+					]
+				},
+				{
+					"word": "guard",
+					"frequency": 1,
+					"positions": [
+						1009
+					]
+				},
+				{
+					"word": "sharp",
+					"frequency": 1,
+					"positions": [
+						1010
+					]
+				},
+				{
+					"word": "eye",
+					"frequency": 1,
+					"positions": [
+						1011
+					]
+				},
+				{
+					"word": "treasure",
+					"frequency": 1,
+					"positions": [
+						1015
+					]
+				},
+				{
+					"word": "fleece",
+					"frequency": 1,
+					"positions": [
+						1017
+					]
+				},
+				{
+					"word": "well",
+					"frequency": 1,
+					"positions": [
+						1018
+					]
+				},
+				{
+					"word": "spring",
+					"frequency": 1,
+					"positions": [
+						1019
+					]
+				},
+				{
+					"word": "regarded",
+					"frequency": 1,
+					"positions": [
+						1023
+					]
+				},
+				{
+					"word": "hobbit",
+					"frequency": 1,
+					"positions": [
+						1027
+					]
+				},
+				{
+					"word": "lord",
+					"frequency": 1,
+					"positions": [
+						1028
+					]
+				},
+				{
+					"word": "ring",
+					"frequency": 1,
+					"positions": [
+						1029
+					]
+				},
+				{
+					"word": "chapter",
+					"frequency": 1,
+					"positions": [
+						1032
+					]
+				},
+				{
+					"word": "speaks",
+					"frequency": 1,
+					"positions": [
+						1033
+					]
+				},
+				{
+					"word": "appeared",
+					"frequency": 1,
+					"positions": [
+						1043
+					]
+				},
+				{
+					"word": "wonder",
+					"frequency": 1,
+					"positions": [
+						1045
+					]
+				},
+				{
+					"word": "behold",
+					"frequency": 1,
+					"positions": [
+						1047
+					]
+				},
+				{
+					"word": "seven",
+					"frequency": 2,
+					"positions": [
+						1051,
+						1055
+					]
+				},
+				{
+					"word": "head",
+					"frequency": 2,
+					"positions": [
+						1052,
+						1058
+					]
+				},
+				{
+					"word": "ten",
+					"frequency": 1,
+					"positions": [
+						1053
+					]
+				},
+				{
+					"word": "horn",
+					"frequency": 1,
+					"positions": [
+						1054
+					]
+				},
+				{
+					"word": "fought",
+					"frequency": 2,
+					"positions": [
+						1063,
+						1066
+					]
+				},
+				{
+					"word": "prevailed",
+					"frequency": 1,
+					"positions": [
+						1068
+					]
+				},
+				{
+					"word": "neither",
+					"frequency": 1,
+					"positions": [
+						1069
+					]
+				},
+				{
+					"word": "place",
+					"frequency": 1,
+					"positions": [
+						1070
+					]
+				},
+				{
+					"word": "cast",
+					"frequency": 2,
+					"positions": [
+						1075,
+						1084
+					]
+				},
+				{
+					"word": "old",
+					"frequency": 1,
+					"positions": [
+						1076
+					]
+				},
+				{
+					"word": "deceived",
+					"frequency": 1,
+					"positions": [
+						1081
+					]
+				},
+				{
+					"word": "mesopotamian",
+					"frequency": 2,
+					"positions": [
+						1087,
+						1213
+					]
+				},
+				{
+					"word": "goddess",
+					"frequency": 3,
+					"positions": [
+						1088,
+						1178,
+						1192
+					]
+				},
+				{
+					"word": "inanna",
+					"frequency": 5,
+					"positions": [
+						1089,
+						1102,
+						1118,
+						1176,
+						1189
+					]
+				},
+				{
+					"word": "ishtar",
+					"frequency": 4,
+					"positions": [
+						1091,
+						1109,
+						1177,
+						1190
+					]
+				},
+				{
+					"word": "planet",
+					"frequency": 1,
+					"positions": [
+						1093
+					]
+				},
+				{
+					"word": "venus",
+					"frequency": 2,
+					"positions": [
+						1094,
+						1186
+					]
+				},
+				{
+					"word": "originally",
+					"frequency": 1,
+					"positions": [
+						1097
+					]
+				},
+				{
+					"word": "worshiped",
+					"frequency": 1,
+					"positions": [
+						1098
+					]
+				},
+				{
+					"word": "sumer",
+					"frequency": 1,
+					"positions": [
+						1100
+					]
+				},
+				{
+					"word": "worshipped",
+					"frequency": 1,
+					"positions": [
+						1104
+					]
+				},
+				{
+					"word": "akkadian",
+					"frequency": 1,
+					"positions": [
+						1105
+					]
+				},
+				{
+					"word": "assyrian",
+					"frequency": 1,
+					"positions": [
+						1107
+					]
+				},
+				{
+					"word": "beauty",
+					"frequency": 3,
+					"positions": [
+						1112,
+						1182,
+						1195
+					]
+				},
+				{
+					"word": "sex",
+					"frequency": 2,
+					"positions": [
+						1113,
+						1197
+					]
+				},
+				{
+					"word": "justice",
+					"frequency": 1,
+					"positions": [
+						1115
+					]
+				},
+				{
+					"word": "political",
+					"frequency": 1,
+					"positions": [
+						1116
+					]
+				},
+				{
+					"word": "queen",
+					"frequency": 2,
+					"positions": [
+						1120,
+						1141
+					]
+				},
+				{
+					"word": "tammuz",
+					"frequency": 3,
+					"positions": [
+						1122,
+						1123,
+						1138
+					]
+				},
+				{
+					"word": "appears",
+					"frequency": 2,
+					"positions": [
+						1124,
+						1244
+					]
+				},
+				{
+					"word": "shown",
+					"frequency": 1,
+					"positions": [
+						1133
+					]
+				},
+				{
+					"word": "engraving",
+					"frequency": 1,
+					"positions": [
+						1134
+					]
+				},
+				{
+					"word": "gustave",
+					"frequency": 1,
+					"positions": [
+						1135
+					]
+				},
+				{
+					"word": "dor\u00e9",
+					"frequency": 1,
+					"positions": [
+						1136
+					]
+				},
+				{
+					"word": "apparently",
+					"frequency": 1,
+					"positions": [
+						1137
+					]
+				},
+				{
+					"word": "nimrod",
+					"frequency": 4,
+					"positions": [
+						1140,
+						1143,
+						1150,
+						1163
+					]
+				},
+				{
+					"word": "semiramis",
+					"frequency": 2,
+					"positions": [
+						1142,
+						1146
+					]
+				},
+				{
+					"word": "husband",
+					"frequency": 1,
+					"positions": [
+						1144
+					]
+				},
+				{
+					"word": "whore",
+					"frequency": 1,
+					"positions": [
+						1148
+					]
+				},
+				{
+					"word": "babylon",
+					"frequency": 1,
+					"positions": [
+						1149
+					]
+				},
+				{
+					"word": "chronicle",
+					"frequency": 1,
+					"positions": [
+						1155
+					]
+				},
+				{
+					"word": "cush",
+					"frequency": 1,
+					"positions": [
+						1157
+					]
+				},
+				{
+					"word": "therefore",
+					"frequency": 1,
+					"positions": [
+						1158
+					]
+				},
+				{
+					"word": "biblical",
+					"frequency": 1,
+					"positions": [
+						1160
+					]
+				},
+				{
+					"word": "ruler",
+					"frequency": 2,
+					"positions": [
+						1164,
+						1250
+					]
+				},
+				{
+					"word": "babel",
+					"frequency": 1,
+					"positions": [
+						1165
+					]
+				},
+				{
+					"word": "reputation",
+					"frequency": 1,
+					"positions": [
+						1167
+					]
+				},
+				{
+					"word": "rebellious",
+					"frequency": 1,
+					"positions": [
+						1169
+					]
+				},
+				{
+					"word": "aphrodite",
+					"frequency": 2,
+					"positions": [
+						1173,
+						1191
+					]
+				},
+				{
+					"word": "equivalent",
+					"frequency": 2,
+					"positions": [
+						1175,
+						1188
+					]
+				},
+				{
+					"word": "pleasure",
+					"frequency": 1,
+					"positions": [
+						1183
+					]
+				},
+				{
+					"word": "passion",
+					"frequency": 1,
+					"positions": [
+						1184
+					]
+				},
+				{
+					"word": "procreation",
+					"frequency": 1,
+					"positions": [
+						1185
+					]
+				},
+				{
+					"word": "encompassed",
+					"frequency": 1,
+					"positions": [
+						1193
+					]
+				},
+				{
+					"word": "desire",
+					"frequency": 1,
+					"positions": [
+						1196
+					]
+				},
+				{
+					"word": "prosperity",
+					"frequency": 1,
+					"positions": [
+						1199
+					]
+				},
+				{
+					"word": "victory",
+					"frequency": 1,
+					"positions": [
+						1200
+					]
+				},
+				{
+					"word": "atlas",
+					"frequency": 1,
+					"positions": [
+						1201
+					]
+				},
+				{
+					"word": "perseus",
+					"frequency": 1,
+					"positions": [
+						1202
+					]
+				},
+				{
+					"word": "hercules",
+					"frequency": 1,
+					"positions": [
+						1203
+					]
+				},
+				{
+					"word": "mythology",
+					"frequency": 1,
+					"positions": [
+						1205
+					]
+				},
+				{
+					"word": "earthly",
+					"frequency": 1,
+					"positions": [
+						1209
+					]
+				},
+				{
+					"word": "sculpture",
+					"frequency": 1,
+					"positions": [
+						1215
+					]
+				},
+				{
+					"word": "anunnaki",
+					"frequency": 2,
+					"positions": [
+						1217,
+						1256
+					]
+				},
+				{
+					"word": "civilisation",
+					"frequency": 1,
+					"positions": [
+						1219
+					]
+				},
+				{
+					"word": "being",
+					"frequency": 2,
+					"positions": [
+						1221,
+						1285
+					]
+				},
+				{
+					"word": "appearance",
+					"frequency": 1,
+					"positions": [
+						1227
+					]
+				},
+				{
+					"word": "bird",
+					"frequency": 1,
+					"positions": [
+						1229
+					]
+				},
+				{
+					"word": "seen",
+					"frequency": 2,
+					"positions": [
+						1231,
+						1242
+					]
+				},
+				{
+					"word": "wearing",
+					"frequency": 1,
+					"positions": [
+						1232
+					]
+				},
+				{
+					"word": "wristband",
+					"frequency": 1,
+					"positions": [
+						1233
+					]
+				},
+				{
+					"word": "resembles",
+					"frequency": 1,
+					"positions": [
+						1234
+					]
+				},
+				{
+					"word": "wrist",
+					"frequency": 1,
+					"positions": [
+						1235
+					]
+				},
+				{
+					"word": "kind",
+					"frequency": 1,
+					"positions": [
+						1238
+					]
+				},
+				{
+					"word": "portal",
+					"frequency": 1,
+					"positions": [
+						1239
+					]
+				},
+				{
+					"word": "device",
+					"frequency": 1,
+					"positions": [
+						1240
+					]
+				},
+				{
+					"word": "holding",
+					"frequency": 1,
+					"positions": [
+						1243
+					]
+				},
+				{
+					"word": "bag",
+					"frequency": 1,
+					"positions": [
+						1246
+					]
+				},
+				{
+					"word": "bucket",
+					"frequency": 1,
+					"positions": [
+						1247
+					]
+				},
+				{
+					"word": "gilgamesh",
+					"frequency": 1,
+					"positions": [
+						1251
+					]
+				},
+				{
+					"word": "much",
+					"frequency": 1,
+					"positions": [
+						1257
+					]
+				},
+				{
+					"word": "real",
+					"frequency": 2,
+					"positions": [
+						1262,
+						1296
+					]
+				},
+				{
+					"word": "truth",
+					"frequency": 1,
+					"positions": [
+						1275
+					]
+				},
+				{
+					"word": "deeply",
+					"frequency": 1,
+					"positions": [
+						1288
+					]
+				},
+				{
+					"word": "embedded",
+					"frequency": 1,
+					"positions": [
+						1289
+					]
+				},
+				{
+					"word": "religion",
+					"frequency": 2,
+					"positions": [
+						1291,
+						1304
+					]
+				},
+				{
+					"word": "perhaps",
+					"frequency": 2,
+					"positions": [
+						1293,
+						1312
+					]
+				},
+				{
+					"word": "clue",
+					"frequency": 1,
+					"positions": [
+						1295
+					]
+				},
+				{
+					"word": "scattered",
+					"frequency": 1,
+					"positions": [
+						1299
+					]
+				},
+				{
+					"word": "across",
+					"frequency": 1,
+					"positions": [
+						1300
+					]
+				},
+				{
+					"word": "jigsaw",
+					"frequency": 1,
+					"positions": [
+						1308
+					]
+				},
+				{
+					"word": "puzzle",
+					"frequency": 1,
+					"positions": [
+						1309
+					]
+				},
+				{
+					"word": "waiting",
+					"frequency": 1,
+					"positions": [
+						1310
+					]
+				},
+				{
+					"word": "solved",
+					"frequency": 1,
+					"positions": [
+						1311
+					]
+				},
+				{
+					"word": "whether",
+					"frequency": 1,
+					"positions": [
+						1316
+					]
+				},
+				{
+					"word": "adam",
+					"frequency": 1,
+					"positions": [
+						1318
+					]
+				},
+				{
+					"word": "symbolize",
+					"frequency": 1,
+					"positions": [
+						1320
+					]
+				},
+				{
+					"word": "quest",
+					"frequency": 1,
+					"positions": [
+						1323
+					]
+				},
+				{
+					"word": "historian",
+					"frequency": 1,
+					"positions": [
+						1325
+					]
+				},
+				{
+					"word": "still",
+					"frequency": 1,
+					"positions": [
+						1326
+					]
+				},
+				{
+					"word": "frame",
+					"frequency": 1,
+					"positions": [
+						1329
+					]
+				},
+				{
+					"word": "unproven",
+					"frequency": 1,
+					"positions": [
+						1332
+					]
+				},
+				{
+					"word": "fictional",
+					"frequency": 1,
+					"positions": [
+						1333
+					]
+				},
+				{
+					"word": "numerous",
+					"frequency": 1,
+					"positions": [
+						1334
+					]
+				},
+				{
+					"word": "walked",
+					"frequency": 1,
+					"positions": [
+						1339
+					]
+				},
+				{
+					"word": "figment",
+					"frequency": 1,
+					"positions": [
+						1344
+					]
+				},
+				{
+					"word": "today",
+					"frequency": 1,
+					"positions": [
+						1346
+					]
+				},
+				{
+					"word": "seems",
+					"frequency": 1,
+					"positions": [
+						1347
+					]
+				},
+				{
+					"word": "remote",
+					"frequency": 1,
+					"positions": [
+						1348
+					]
+				},
+				{
+					"word": "allowed",
+					"frequency": 1,
+					"positions": [
+						1351
+					]
+				},
+				{
+					"word": "surface",
+					"frequency": 1,
+					"positions": [
+						1352
+					]
+				},
+				{
+					"word": "ether",
+					"frequency": 1,
+					"positions": [
+						1353
+					]
+				},
+				{
+					"word": "know",
+					"frequency": 1,
+					"positions": [
+						1357
+					]
+				},
+				{
+					"word": "annihilate",
+					"frequency": 1,
+					"positions": [
+						1358
+					]
+				},
+				{
+					"word": "cycle",
+					"frequency": 1,
+					"positions": [
+						1362
+					]
+				},
+				{
+					"word": "never",
+					"frequency": 1,
+					"positions": [
+						1365
+					]
+				},
+				{
+					"word": "meant",
+					"frequency": 1,
+					"positions": [
+						1366
+					]
+				},
+				{
+					"word": "greatest",
+					"frequency": 2,
+					"positions": [
+						1368,
+						1372
+					]
+				},
+				{
+					"word": "exist",
+					"frequency": 1,
+					"positions": [
+						1370
+					]
+				},
+				{
+					"word": "second",
+					"frequency": 1,
+					"positions": [
+						1371
+					]
+				},
+				{
+					"word": "trick",
+					"frequency": 1,
+					"positions": [
+						1373
+					]
+				},
+				{
+					"word": "ever",
+					"frequency": 1,
+					"positions": [
+						1375
+					]
+				},
+				{
+					"word": "pulled",
+					"frequency": 1,
+					"positions": [
+						1376
+					]
+				},
+				{
+					"word": "convincing",
+					"frequency": 1,
+					"positions": [
+						1377
+					]
+				},
+				{
+					"word": "guy",
+					"frequency": 1,
+					"positions": [
+						1380
+					]
+				}
+			]
+		},
+		{
+			"doc_id": "369news--2022-08-30--Humanity\u2019s Transition through the Wheel of Time",
+			"url": "https://369news.net/2022/08/30/humanitys-transition-through-the-wheel-of-time/",
+			"date": "2022-08-30",
+			"words": [
+				{
+					"word": "humanity",
+					"frequency": 4,
+					"positions": [
+						0,
+						193,
+						1119,
+						1153
+					]
+				},
+				{
+					"word": "transition",
+					"frequency": 3,
+					"positions": [
+						1,
+						191,
+						1024
+					]
+				},
+				{
+					"word": "wheel",
+					"frequency": 1,
+					"positions": [
+						2
+					]
+				},
+				{
+					"word": "time",
+					"frequency": 12,
+					"positions": [
+						3,
+						47,
+						82,
+						123,
+						203,
+						308,
+						313,
+						350,
+						378,
+						405,
+						1127,
+						1138
+					]
+				},
+				{
+					"word": "astrology",
+					"frequency": 8,
+					"positions": [
+						4,
+						54,
+						58,
+						72,
+						104,
+						256,
+						963,
+						1115
+					]
+				},
+				{
+					"word": "astrological",
+					"frequency": 4,
+					"positions": [
+						5,
+						64,
+						91,
+						964
+					]
+				},
+				{
+					"word": "age",
+					"frequency": 31,
+					"positions": [
+						6,
+						52,
+						60,
+						62,
+						65,
+						79,
+						92,
+						97,
+						100,
+						112,
+						115,
+						276,
+						278,
+						282,
+						284,
+						286,
+						346,
+						361,
+						440,
+						442,
+						446,
+						462,
+						733,
+						740,
+						743,
+						965,
+						1025,
+						1118,
+						1124,
+						1156,
+						1160
+					]
+				},
+				{
+					"word": "ancient",
+					"frequency": 10,
+					"positions": [
+						7,
+						17,
+						40,
+						102,
+						261,
+						266,
+						663,
+						778,
+						780,
+						987
+					]
+				},
+				{
+					"word": "science",
+					"frequency": 6,
+					"positions": [
+						8,
+						134,
+						173,
+						940,
+						1112,
+						1133
+					]
+				},
+				{
+					"word": "dating",
+					"frequency": 1,
+					"positions": [
+						9
+					]
+				},
+				{
+					"word": "back",
+					"frequency": 3,
+					"positions": [
+						10,
+						613,
+						796
+					]
+				},
+				{
+					"word": "thousand",
+					"frequency": 1,
+					"positions": [
+						11
+					]
+				},
+				{
+					"word": "year",
+					"frequency": 19,
+					"positions": [
+						12,
+						68,
+						78,
+						143,
+						150,
+						165,
+						176,
+						201,
+						202,
+						219,
+						236,
+						238,
+						240,
+						564,
+						568,
+						655,
+						669,
+						680,
+						685
+					]
+				},
+				{
+					"word": "ago",
+					"frequency": 1,
+					"positions": [
+						13
+					]
+				},
+				{
+					"word": "appears",
+					"frequency": 1,
+					"positions": [
+						14
+					]
+				},
+				{
+					"word": "many",
+					"frequency": 5,
+					"positions": [
+						15,
+						48,
+						374,
+						849,
+						875
+					]
+				},
+				{
+					"word": "culture",
+					"frequency": 1,
+					"positions": [
+						16
+					]
+				},
+				{
+					"word": "wisdom",
+					"frequency": 2,
+					"positions": [
+						18,
+						264
+					]
+				},
+				{
+					"word": "much",
+					"frequency": 2,
+					"positions": [
+						19,
+						637
+					]
+				},
+				{
+					"word": "lost",
+					"frequency": 1,
+					"positions": [
+						20
+					]
+				},
+				{
+					"word": "concealed",
+					"frequency": 1,
+					"positions": [
+						21
+					]
+				},
+				{
+					"word": "public",
+					"frequency": 1,
+					"positions": [
+						22
+					]
+				},
+				{
+					"word": "true",
+					"frequency": 1,
+					"positions": [
+						23
+					]
+				},
+				{
+					"word": "nature",
+					"frequency": 3,
+					"positions": [
+						24,
+						1046,
+						1054
+					]
+				},
+				{
+					"word": "reality",
+					"frequency": 1,
+					"positions": [
+						25
+					]
+				},
+				{
+					"word": "one",
+					"frequency": 8,
+					"positions": [
+						26,
+						87,
+						420,
+						506,
+						946,
+						1061,
+						1163,
+						1180
+					]
+				},
+				{
+					"word": "guarded",
+					"frequency": 1,
+					"positions": [
+						27
+					]
+				},
+				{
+					"word": "secret",
+					"frequency": 4,
+					"positions": [
+						28,
+						33,
+						860,
+						880
+					]
+				},
+				{
+					"word": "ruling",
+					"frequency": 1,
+					"positions": [
+						29
+					]
+				},
+				{
+					"word": "elite",
+					"frequency": 1,
+					"positions": [
+						30
+					]
+				},
+				{
+					"word": "horded",
+					"frequency": 1,
+					"positions": [
+						31
+					]
+				},
+				{
+					"word": "knowledge",
+					"frequency": 6,
+					"positions": [
+						32,
+						41,
+						886,
+						1129,
+						1190,
+						1193
+					]
+				},
+				{
+					"word": "society",
+					"frequency": 4,
+					"positions": [
+						34,
+						340,
+						861,
+						881
+					]
+				},
+				{
+					"word": "driven",
+					"frequency": 1,
+					"positions": [
+						35
+					]
+				},
+				{
+					"word": "greed",
+					"frequency": 1,
+					"positions": [
+						36
+					]
+				},
+				{
+					"word": "power",
+					"frequency": 5,
+					"positions": [
+						37,
+						126,
+						430,
+						1145,
+						1191
+					]
+				},
+				{
+					"word": "used",
+					"frequency": 2,
+					"positions": [
+						38,
+						1006
+					]
+				},
+				{
+					"word": "form",
+					"frequency": 4,
+					"positions": [
+						39,
+						397,
+						817,
+						922
+					]
+				},
+				{
+					"word": "advantage",
+					"frequency": 2,
+					"positions": [
+						42,
+						887
+					]
+				},
+				{
+					"word": "war",
+					"frequency": 1,
+					"positions": [
+						43
+					]
+				},
+				{
+					"word": "global",
+					"frequency": 3,
+					"positions": [
+						44,
+						351,
+						1072
+					]
+				},
+				{
+					"word": "manipulation",
+					"frequency": 1,
+					"positions": [
+						45
+					]
+				},
+				{
+					"word": "long",
+					"frequency": 4,
+					"positions": [
+						46,
+						649,
+						782,
+						1010
+					]
+				},
+				{
+					"word": "great",
+					"frequency": 4,
+					"positions": [
+						49,
+						237,
+						1099,
+						1128
+					]
+				},
+				{
+					"word": "mind",
+					"frequency": 2,
+					"positions": [
+						50,
+						893
+					]
+				},
+				{
+					"word": "throughout",
+					"frequency": 1,
+					"positions": [
+						51
+					]
+				},
+				{
+					"word": "practiced",
+					"frequency": 1,
+					"positions": [
+						53
+					]
+				},
+				{
+					"word": "good",
+					"frequency": 1,
+					"positions": [
+						55
+					]
+				},
+				{
+					"word": "reason",
+					"frequency": 1,
+					"positions": [
+						56
+					]
+				},
+				{
+					"word": "western",
+					"frequency": 2,
+					"positions": [
+						57,
+						255
+					]
+				},
+				{
+					"word": "transitioning",
+					"frequency": 1,
+					"positions": [
+						59
+					]
+				},
+				{
+					"word": "pisces",
+					"frequency": 6,
+					"positions": [
+						61,
+						101,
+						624,
+						704,
+						744,
+						1029
+					]
+				},
+				{
+					"word": "aquarius",
+					"frequency": 8,
+					"positions": [
+						63,
+						98,
+						441,
+						463,
+						472,
+						499,
+						621,
+						1039
+					]
+				},
+				{
+					"word": "last",
+					"frequency": 8,
+					"positions": [
+						66,
+						466,
+						519,
+						527,
+						548,
+						614,
+						653,
+						799
+					]
+				},
+				{
+					"word": "around",
+					"frequency": 2,
+					"positions": [
+						67,
+						77
+					]
+				},
+				{
+					"word": "represented",
+					"frequency": 3,
+					"positions": [
+						69,
+						116,
+						705
+					]
+				},
+				{
+					"word": "zodiac",
+					"frequency": 7,
+					"positions": [
+						70,
+						89,
+						209,
+						532,
+						541,
+						557,
+						627
+					]
+				},
+				{
+					"word": "sign",
+					"frequency": 4,
+					"positions": [
+						71,
+						359,
+						366,
+						628
+					]
+				},
+				{
+					"word": "completion",
+					"frequency": 1,
+					"positions": [
+						73
+					]
+				},
+				{
+					"word": "celestial",
+					"frequency": 2,
+					"positions": [
+						74,
+						970
+					]
+				},
+				{
+					"word": "clock",
+					"frequency": 3,
+					"positions": [
+						75,
+						1055,
+						1057
+					]
+				},
+				{
+					"word": "said",
+					"frequency": 7,
+					"positions": [
+						76,
+						371,
+						392,
+						421,
+						475,
+						708,
+						731
+					]
+				},
+				{
+					"word": "corresponds",
+					"frequency": 1,
+					"positions": [
+						80
+					]
+				},
+				{
+					"word": "average",
+					"frequency": 1,
+					"positions": [
+						81
+					]
+				},
+				{
+					"word": "take",
+					"frequency": 8,
+					"positions": [
+						83,
+						288,
+						295,
+						356,
+						357,
+						368,
+						385,
+						393
+					]
+				},
+				{
+					"word": "vernal",
+					"frequency": 1,
+					"positions": [
+						84
+					]
+				},
+				{
+					"word": "equinox",
+					"frequency": 2,
+					"positions": [
+						85,
+						569
+					]
+				},
+				{
+					"word": "move",
+					"frequency": 2,
+					"positions": [
+						86,
+						207
+					]
+				},
+				{
+					"word": "constellation",
+					"frequency": 4,
+					"positions": [
+						88,
+						210,
+						562,
+						1001
+					]
+				},
+				{
+					"word": "next",
+					"frequency": 2,
+					"positions": [
+						90,
+						460
+					]
+				},
+				{
+					"word": "proceed",
+					"frequency": 1,
+					"positions": [
+						93
+					]
+				},
+				{
+					"word": "retrograde",
+					"frequency": 1,
+					"positions": [
+						94
+					]
+				},
+				{
+					"word": "astronomy",
+					"frequency": 2,
+					"positions": [
+						95,
+						230
+					]
+				},
+				{
+					"word": "therefore",
+					"frequency": 2,
+					"positions": [
+						96,
+						1043
+					]
+				},
+				{
+					"word": "follows",
+					"frequency": 1,
+					"positions": [
+						99
+					]
+				},
+				{
+					"word": "vedic",
+					"frequency": 4,
+					"positions": [
+						103,
+						251,
+						300,
+						400
+					]
+				},
+				{
+					"word": "called",
+					"frequency": 3,
+					"positions": [
+						105,
+						277,
+						1007
+					]
+				},
+				{
+					"word": "yuga",
+					"frequency": 10,
+					"positions": [
+						106,
+						111,
+						114,
+						138,
+						158,
+						160,
+						169,
+						171,
+						196,
+						306
+					]
+				},
+				{
+					"word": "cycle",
+					"frequency": 12,
+					"positions": [
+						107,
+						139,
+						142,
+						148,
+						156,
+						164,
+						197,
+						259,
+						307,
+						461,
+						698,
+						1096
+					]
+				},
+				{
+					"word": "nearing",
+					"frequency": 2,
+					"positions": [
+						108,
+						1035
+					]
+				},
+				{
+					"word": "end",
+					"frequency": 11,
+					"positions": [
+						109,
+						291,
+						304,
+						348,
+						360,
+						388,
+						437,
+						622,
+						996,
+						1148,
+						1187
+					]
+				},
+				{
+					"word": "kali",
+					"frequency": 6,
+					"positions": [
+						110,
+						113,
+						117,
+						159,
+						168,
+						305
+					]
+				},
+				{
+					"word": "hindu",
+					"frequency": 2,
+					"positions": [
+						118,
+						785
+					]
+				},
+				{
+					"word": "goddess",
+					"frequency": 3,
+					"positions": [
+						119,
+						121,
+						127
+					]
+				},
+				{
+					"word": "considered",
+					"frequency": 1,
+					"positions": [
+						120
+					]
+				},
+				{
+					"word": "death",
+					"frequency": 1,
+					"positions": [
+						122
+					]
+				},
+				{
+					"word": "change",
+					"frequency": 5,
+					"positions": [
+						124,
+						179,
+						993,
+						1000,
+						1044
+					]
+				},
+				{
+					"word": "supreme",
+					"frequency": 1,
+					"positions": [
+						125
+					]
+				},
+				{
+					"word": "destroys",
+					"frequency": 1,
+					"positions": [
+						128
+					]
+				},
+				{
+					"word": "evil",
+					"frequency": 2,
+					"positions": [
+						129,
+						434
+					]
+				},
+				{
+					"word": "order",
+					"frequency": 1,
+					"positions": [
+						130
+					]
+				},
+				{
+					"word": "protect",
+					"frequency": 1,
+					"positions": [
+						131
+					]
+				},
+				{
+					"word": "innocent",
+					"frequency": 1,
+					"positions": [
+						132
+					]
+				},
+				{
+					"word": "holy",
+					"frequency": 5,
+					"positions": [
+						133,
+						172,
+						822,
+						828,
+						839
+					]
+				},
+				{
+					"word": "book",
+					"frequency": 2,
+					"positions": [
+						135,
+						978
+					]
+				},
+				{
+					"word": "clarifies",
+					"frequency": 1,
+					"positions": [
+						136
+					]
+				},
+				{
+					"word": "complete",
+					"frequency": 4,
+					"positions": [
+						137,
+						154,
+						178,
+						195
+					]
+				},
+				{
+					"word": "comprised",
+					"frequency": 1,
+					"positions": [
+						140
+					]
+				},
+				{
+					"word": "descending",
+					"frequency": 2,
+					"positions": [
+						141,
+						155
+					]
+				},
+				{
+					"word": "virtue",
+					"frequency": 4,
+					"positions": [
+						144,
+						151,
+						315,
+						325
+					]
+				},
+				{
+					"word": "gradually",
+					"frequency": 2,
+					"positions": [
+						145,
+						152
+					]
+				},
+				{
+					"word": "decrease",
+					"frequency": 1,
+					"positions": [
+						146
+					]
+				},
+				{
+					"word": "ascending",
+					"frequency": 3,
+					"positions": [
+						147,
+						163,
+						271
+					]
+				},
+				{
+					"word": "another",
+					"frequency": 4,
+					"positions": [
+						149,
+						805,
+						998,
+						1064
+					]
+				},
+				{
+					"word": "increase",
+					"frequency": 1,
+					"positions": [
+						153
+					]
+				},
+				{
+					"word": "satya",
+					"frequency": 2,
+					"positions": [
+						157,
+						170
+					]
+				},
+				{
+					"word": "sequence",
+					"frequency": 1,
+					"positions": [
+						161
+					]
+				},
+				{
+					"word": "revers",
+					"frequency": 1,
+					"positions": [
+						162
+					]
+				},
+				{
+					"word": "begin",
+					"frequency": 3,
+					"positions": [
+						166,
+						299,
+						941
+					]
+				},
+				{
+					"word": "go",
+					"frequency": 2,
+					"positions": [
+						167,
+						478
+					]
+				},
+				{
+					"word": "state",
+					"frequency": 1,
+					"positions": [
+						174
+					]
+				},
+				{
+					"word": "period",
+					"frequency": 2,
+					"positions": [
+						175,
+						192
+					]
+				},
+				{
+					"word": "brings",
+					"frequency": 1,
+					"positions": [
+						177
+					]
+				},
+				{
+					"word": "externally",
+					"frequency": 1,
+					"positions": [
+						180
+					]
+				},
+				{
+					"word": "material",
+					"frequency": 3,
+					"positions": [
+						181,
+						896,
+						1111
+					]
+				},
+				{
+					"word": "world",
+					"frequency": 9,
+					"positions": [
+						182,
+						318,
+						584,
+						592,
+						850,
+						878,
+						897,
+						914,
+						1189
+					]
+				},
+				{
+					"word": "internally",
+					"frequency": 1,
+					"positions": [
+						183
+					]
+				},
+				{
+					"word": "discrepancy",
+					"frequency": 1,
+					"positions": [
+						184
+					]
+				},
+				{
+					"word": "among",
+					"frequency": 1,
+					"positions": [
+						185
+					]
+				},
+				{
+					"word": "expert",
+					"frequency": 1,
+					"positions": [
+						186
+					]
+				},
+				{
+					"word": "exactly",
+					"frequency": 2,
+					"positions": [
+						187,
+						239
+					]
+				},
+				{
+					"word": "seem",
+					"frequency": 1,
+					"positions": [
+						188
+					]
+				},
+				{
+					"word": "agree",
+					"frequency": 2,
+					"positions": [
+						189,
+						423
+					]
+				},
+				{
+					"word": "important",
+					"frequency": 3,
+					"positions": [
+						190,
+						297,
+						1083
+					]
+				},
+				{
+					"word": "duration",
+					"frequency": 1,
+					"positions": [
+						194
+					]
+				},
+				{
+					"word": "closely",
+					"frequency": 1,
+					"positions": [
+						198
+					]
+				},
+				{
+					"word": "approximates",
+					"frequency": 1,
+					"positions": [
+						199
+					]
+				},
+				{
+					"word": "precession",
+					"frequency": 4,
+					"positions": [
+						200,
+						220,
+						235,
+						245
+					]
+				},
+				{
+					"word": "taken",
+					"frequency": 1,
+					"positions": [
+						204
+					]
+				},
+				{
+					"word": "sun",
+					"frequency": 8,
+					"positions": [
+						205,
+						225,
+						554,
+						559,
+						577,
+						588,
+						608,
+						702
+					]
+				},
+				{
+					"word": "precess",
+					"frequency": 1,
+					"positions": [
+						206
+					]
+				},
+				{
+					"word": "backwards",
+					"frequency": 1,
+					"positions": [
+						208
+					]
+				},
+				{
+					"word": "interestingly",
+					"frequency": 1,
+					"positions": [
+						211
+					]
+				},
+				{
+					"word": "surya",
+					"frequency": 1,
+					"positions": [
+						212
+					]
+				},
+				{
+					"word": "siddhanta",
+					"frequency": 1,
+					"positions": [
+						213
+					]
+				},
+				{
+					"word": "specifies",
+					"frequency": 1,
+					"positions": [
+						214
+					]
+				},
+				{
+					"word": "value",
+					"frequency": 3,
+					"positions": [
+						215,
+						222,
+						244
+					]
+				},
+				{
+					"word": "arc",
+					"frequency": 2,
+					"positions": [
+						216,
+						223
+					]
+				},
+				{
+					"word": "second",
+					"frequency": 2,
+					"positions": [
+						217,
+						224
+					]
+				},
+				{
+					"word": "per",
+					"frequency": 1,
+					"positions": [
+						218
+					]
+				},
+				{
+					"word": "current",
+					"frequency": 2,
+					"positions": [
+						221,
+						242
+					]
+				},
+				{
+					"word": "treatise",
+					"frequency": 2,
+					"positions": [
+						226,
+						228
+					]
+				},
+				{
+					"word": "sanskrit",
+					"frequency": 2,
+					"positions": [
+						227,
+						664
+					]
+				},
+				{
+					"word": "indian",
+					"frequency": 1,
+					"positions": [
+						229
+					]
+				},
+				{
+					"word": "late",
+					"frequency": 1,
+					"positions": [
+						231
+					]
+				},
+				{
+					"word": "early",
+					"frequency": 2,
+					"positions": [
+						232,
+						750
+					]
+				},
+				{
+					"word": "ce",
+					"frequency": 1,
+					"positions": [
+						233
+					]
+				},
+				{
+					"word": "translates",
+					"frequency": 1,
+					"positions": [
+						234
+					]
+				},
+				{
+					"word": "mean",
+					"frequency": 4,
+					"positions": [
+						241,
+						250,
+						1053,
+						1182
+					]
+				},
+				{
+					"word": "observed",
+					"frequency": 1,
+					"positions": [
+						243
+					]
+				},
+				{
+					"word": "may",
+					"frequency": 1,
+					"positions": [
+						246
+					]
+				},
+				{
+					"word": "simply",
+					"frequency": 2,
+					"positions": [
+						247,
+						1181
+					]
+				},
+				{
+					"word": "temporary",
+					"frequency": 1,
+					"positions": [
+						248
+					]
+				},
+				{
+					"word": "deviation",
+					"frequency": 1,
+					"positions": [
+						249
+					]
+				},
+				{
+					"word": "doctrine",
+					"frequency": 4,
+					"positions": [
+						252,
+						301,
+						401,
+						402
+					]
+				},
+				{
+					"word": "tell",
+					"frequency": 2,
+					"positions": [
+						253,
+						302
+					]
+				},
+				{
+					"word": "u",
+					"frequency": 12,
+					"positions": [
+						254,
+						303,
+						416,
+						417,
+						481,
+						485,
+						694,
+						696,
+						1042,
+						1084,
+						1140,
+						1164
+					]
+				},
+				{
+					"word": "philosophy",
+					"frequency": 1,
+					"positions": [
+						257
+					]
+				},
+				{
+					"word": "correlate",
+					"frequency": 1,
+					"positions": [
+						258
+					]
+				},
+				{
+					"word": "described",
+					"frequency": 2,
+					"positions": [
+						260,
+						311
+					]
+				},
+				{
+					"word": "native",
+					"frequency": 1,
+					"positions": [
+						262
+					]
+				},
+				{
+					"word": "american",
+					"frequency": 1,
+					"positions": [
+						263
+					]
+				},
+				{
+					"word": "well",
+					"frequency": 3,
+					"positions": [
+						265,
+						457,
+						1097
+					]
+				},
+				{
+					"word": "greek",
+					"frequency": 1,
+					"positions": [
+						267
+					]
+				},
+				{
+					"word": "also",
+					"frequency": 6,
+					"positions": [
+						268,
+						310,
+						565,
+						762,
+						1079,
+						1098
+					]
+				},
+				{
+					"word": "appear",
+					"frequency": 2,
+					"positions": [
+						269,
+						995
+					]
+				},
+				{
+					"word": "believed",
+					"frequency": 1,
+					"positions": [
+						270
+					]
+				},
+				{
+					"word": "poet",
+					"frequency": 1,
+					"positions": [
+						272
+					]
+				},
+				{
+					"word": "hesiod",
+					"frequency": 1,
+					"positions": [
+						273
+					]
+				},
+				{
+					"word": "inserted",
+					"frequency": 1,
+					"positions": [
+						274
+					]
+				},
+				{
+					"word": "fifth",
+					"frequency": 1,
+					"positions": [
+						275
+					]
+				},
+				{
+					"word": "hero",
+					"frequency": 3,
+					"positions": [
+						279,
+						443,
+						1157
+					]
+				},
+				{
+					"word": "new",
+					"frequency": 11,
+					"positions": [
+						280,
+						292,
+						438,
+						444,
+						504,
+						668,
+						684,
+						739,
+						916,
+						1155,
+						1158
+					]
+				},
+				{
+					"word": "golden",
+					"frequency": 3,
+					"positions": [
+						281,
+						445,
+						1159
+					]
+				},
+				{
+					"word": "bronze",
+					"frequency": 1,
+					"positions": [
+						283
+					]
+				},
+				{
+					"word": "iron",
+					"frequency": 1,
+					"positions": [
+						285
+					]
+				},
+				{
+					"word": "going",
+					"frequency": 4,
+					"positions": [
+						287,
+						453,
+						612,
+						795
+					]
+				},
+				{
+					"word": "place",
+					"frequency": 5,
+					"positions": [
+						289,
+						358,
+						369,
+						386,
+						803
+					]
+				},
+				{
+					"word": "every",
+					"frequency": 4,
+					"positions": [
+						290,
+						599,
+						732,
+						1162
+					]
+				},
+				{
+					"word": "beginning",
+					"frequency": 5,
+					"positions": [
+						293,
+						683,
+						738,
+						997,
+						1031
+					]
+				},
+				{
+					"word": "let",
+					"frequency": 2,
+					"positions": [
+						294,
+						355
+					]
+				},
+				{
+					"word": "look",
+					"frequency": 3,
+					"positions": [
+						296,
+						408,
+						523
+					]
+				},
+				{
+					"word": "clue",
+					"frequency": 3,
+					"positions": [
+						298,
+						672,
+						807
+					]
+				},
+				{
+					"word": "darkness",
+					"frequency": 2,
+					"positions": [
+						309,
+						1122
+					]
+				},
+				{
+					"word": "mahabharata",
+					"frequency": 1,
+					"positions": [
+						312
+					]
+				},
+				{
+					"word": "moral",
+					"frequency": 1,
+					"positions": [
+						314
+					]
+				},
+				{
+					"word": "stripped",
+					"frequency": 1,
+					"positions": [
+						316
+					]
+				},
+				{
+					"word": "earth",
+					"frequency": 4,
+					"positions": [
+						317,
+						587,
+						974,
+						1090
+					]
+				},
+				{
+					"word": "soul",
+					"frequency": 1,
+					"positions": [
+						319
+					]
+				},
+				{
+					"word": "full",
+					"frequency": 1,
+					"positions": [
+						320
+					]
+				},
+				{
+					"word": "blackness",
+					"frequency": 1,
+					"positions": [
+						321
+					]
+				},
+				{
+					"word": "corruption",
+					"frequency": 2,
+					"positions": [
+						322,
+						433
+					]
+				},
+				{
+					"word": "small",
+					"frequency": 1,
+					"positions": [
+						323
+					]
+				},
+				{
+					"word": "fraction",
+					"frequency": 1,
+					"positions": [
+						324
+					]
+				},
+				{
+					"word": "remains",
+					"frequency": 2,
+					"positions": [
+						326,
+						673
+					]
+				},
+				{
+					"word": "men",
+					"frequency": 3,
+					"positions": [
+						327,
+						710,
+						726
+					]
+				},
+				{
+					"word": "turn",
+					"frequency": 1,
+					"positions": [
+						328
+					]
+				},
+				{
+					"word": "wickedness",
+					"frequency": 1,
+					"positions": [
+						329
+					]
+				},
+				{
+					"word": "disease",
+					"frequency": 1,
+					"positions": [
+						330
+					]
+				},
+				{
+					"word": "anger",
+					"frequency": 1,
+					"positions": [
+						331
+					]
+				},
+				{
+					"word": "anguish",
+					"frequency": 1,
+					"positions": [
+						332
+					]
+				},
+				{
+					"word": "fear",
+					"frequency": 1,
+					"positions": [
+						333
+					]
+				},
+				{
+					"word": "scarcity",
+					"frequency": 1,
+					"positions": [
+						334
+					]
+				},
+				{
+					"word": "dominate",
+					"frequency": 1,
+					"positions": [
+						335
+					]
+				},
+				{
+					"word": "description",
+					"frequency": 1,
+					"positions": [
+						336
+					]
+				},
+				{
+					"word": "accurately",
+					"frequency": 1,
+					"positions": [
+						337
+					]
+				},
+				{
+					"word": "reflect",
+					"frequency": 1,
+					"positions": [
+						338
+					]
+				},
+				{
+					"word": "modern",
+					"frequency": 3,
+					"positions": [
+						339,
+						343,
+						981
+					]
+				},
+				{
+					"word": "progression",
+					"frequency": 1,
+					"positions": [
+						341
+					]
+				},
+				{
+					"word": "moved",
+					"frequency": 1,
+					"positions": [
+						342
+					]
+				},
+				{
+					"word": "history",
+					"frequency": 2,
+					"positions": [
+						344,
+						989
+					]
+				},
+				{
+					"word": "past",
+					"frequency": 1,
+					"positions": [
+						345
+					]
+				},
+				{
+					"word": "coming",
+					"frequency": 2,
+					"positions": [
+						347,
+						1147
+					]
+				},
+				{
+					"word": "marked",
+					"frequency": 1,
+					"positions": [
+						349
+					]
+				},
+				{
+					"word": "tension",
+					"frequency": 1,
+					"positions": [
+						352
+					]
+				},
+				{
+					"word": "never",
+					"frequency": 1,
+					"positions": [
+						353
+					]
+				},
+				{
+					"word": "high",
+					"frequency": 1,
+					"positions": [
+						354
+					]
+				},
+				{
+					"word": "teacher",
+					"frequency": 1,
+					"positions": [
+						362
+					]
+				},
+				{
+					"word": "asked",
+					"frequency": 2,
+					"positions": [
+						363,
+						487
+					]
+				},
+				{
+					"word": "thing",
+					"frequency": 5,
+					"positions": [
+						364,
+						367,
+						384,
+						428,
+						983
+					]
+				},
+				{
+					"word": "happen",
+					"frequency": 2,
+					"positions": [
+						365,
+						830
+					]
+				},
+				{
+					"word": "jesus",
+					"frequency": 12,
+					"positions": [
+						370,
+						468,
+						474,
+						552,
+						570,
+						631,
+						707,
+						714,
+						741,
+						749,
+						810,
+						1173
+					]
+				},
+				{
+					"word": "watch",
+					"frequency": 1,
+					"positions": [
+						372
+					]
+				},
+				{
+					"word": "deceived",
+					"frequency": 1,
+					"positions": [
+						373
+					]
+				},
+				{
+					"word": "come",
+					"frequency": 5,
+					"positions": [
+						375,
+						389,
+						436,
+						793,
+						911
+					]
+				},
+				{
+					"word": "name",
+					"frequency": 2,
+					"positions": [
+						376,
+						674
+					]
+				},
+				{
+					"word": "saying",
+					"frequency": 1,
+					"positions": [
+						377
+					]
+				},
+				{
+					"word": "near",
+					"frequency": 1,
+					"positions": [
+						379
+					]
+				},
+				{
+					"word": "follow",
+					"frequency": 3,
+					"positions": [
+						380,
+						491,
+						713
+					]
+				},
+				{
+					"word": "alarmed",
+					"frequency": 1,
+					"positions": [
+						381
+					]
+				},
+				{
+					"word": "indeed",
+					"frequency": 3,
+					"positions": [
+						382,
+						894,
+						1120
+					]
+				},
+				{
+					"word": "necessary",
+					"frequency": 1,
+					"positions": [
+						383
+					]
+				},
+				{
+					"word": "first",
+					"frequency": 2,
+					"positions": [
+						387,
+						1023
+					]
+				},
+				{
+					"word": "right",
+					"frequency": 2,
+					"positions": [
+						390,
+						1177
+					]
+				},
+				{
+					"word": "away",
+					"frequency": 1,
+					"positions": [
+						391
+					]
+				},
+				{
+					"word": "bible",
+					"frequency": 2,
+					"positions": [
+						394,
+						422
+					]
+				},
+				{
+					"word": "literally",
+					"frequency": 1,
+					"positions": [
+						395
+					]
+				},
+				{
+					"word": "physical",
+					"frequency": 1,
+					"positions": [
+						396
+					]
+				},
+				{
+					"word": "rule",
+					"frequency": 1,
+					"positions": [
+						398
+					]
+				},
+				{
+					"word": "apply",
+					"frequency": 1,
+					"positions": [
+						399
+					]
+				},
+				{
+					"word": "worry",
+					"frequency": 1,
+					"positions": [
+						403
+					]
+				},
+				{
+					"word": "chaos",
+					"frequency": 2,
+					"positions": [
+						404,
+						407
+					]
+				},
+				{
+					"word": "get",
+					"frequency": 1,
+					"positions": [
+						406
+					]
+				},
+				{
+					"word": "information",
+					"frequency": 1,
+					"positions": [
+						409
+					]
+				},
+				{
+					"word": "like",
+					"frequency": 1,
+					"positions": [
+						410
+					]
+				},
+				{
+					"word": "neo",
+					"frequency": 1,
+					"positions": [
+						411
+					]
+				},
+				{
+					"word": "oracle",
+					"frequency": 1,
+					"positions": [
+						412
+					]
+				},
+				{
+					"word": "movie",
+					"frequency": 1,
+					"positions": [
+						413
+					]
+				},
+				{
+					"word": "matrix",
+					"frequency": 1,
+					"positions": [
+						414
+					]
+				},
+				{
+					"word": "telling",
+					"frequency": 2,
+					"positions": [
+						415,
+						1041
+					]
+				},
+				{
+					"word": "realize",
+					"frequency": 1,
+					"positions": [
+						418
+					]
+				},
+				{
+					"word": "chosen",
+					"frequency": 1,
+					"positions": [
+						419
+					]
+				},
+				{
+					"word": "revealed",
+					"frequency": 2,
+					"positions": [
+						424,
+						1186
+					]
+				},
+				{
+					"word": "implies",
+					"frequency": 1,
+					"positions": [
+						425
+					]
+				},
+				{
+					"word": "old",
+					"frequency": 4,
+					"positions": [
+						426,
+						429,
+						1142,
+						1144
+					]
+				},
+				{
+					"word": "way",
+					"frequency": 4,
+					"positions": [
+						427,
+						917,
+						1092,
+						1117
+					]
+				},
+				{
+					"word": "structure",
+					"frequency": 2,
+					"positions": [
+						431,
+						1146
+					]
+				},
+				{
+					"word": "lie",
+					"frequency": 1,
+					"positions": [
+						432
+					]
+				},
+				{
+					"word": "finally",
+					"frequency": 2,
+					"positions": [
+						435,
+						1151
+					]
+				},
+				{
+					"word": "direction",
+					"frequency": 1,
+					"positions": [
+						439
+					]
+				},
+				{
+					"word": "seems",
+					"frequency": 2,
+					"positions": [
+						447,
+						999
+					]
+				},
+				{
+					"word": "part",
+					"frequency": 1,
+					"positions": [
+						448
+					]
+				},
+				{
+					"word": "massive",
+					"frequency": 1,
+					"positions": [
+						449
+					]
+				},
+				{
+					"word": "shift",
+					"frequency": 1,
+					"positions": [
+						450
+					]
+				},
+				{
+					"word": "collective",
+					"frequency": 3,
+					"positions": [
+						451,
+						1013,
+						1073
+					]
+				},
+				{
+					"word": "consciousness",
+					"frequency": 3,
+					"positions": [
+						452,
+						1103,
+						1136
+					]
+				},
+				{
+					"word": "passover",
+					"frequency": 4,
+					"positions": [
+						454,
+						465,
+						483,
+						500
+					]
+				},
+				{
+					"word": "meal",
+					"frequency": 1,
+					"positions": [
+						455
+					]
+				},
+				{
+					"word": "could",
+					"frequency": 2,
+					"positions": [
+						456,
+						501
+					]
+				},
+				{
+					"word": "indicate",
+					"frequency": 2,
+					"positions": [
+						458,
+						502
+					]
+				},
+				{
+					"word": "passing",
+					"frequency": 3,
+					"positions": [
+						459,
+						503,
+						1060
+					]
+				},
+				{
+					"word": "preparation",
+					"frequency": 2,
+					"positions": [
+						464,
+						480
+					]
+				},
+				{
+					"word": "supper",
+					"frequency": 6,
+					"positions": [
+						467,
+						520,
+						528,
+						549,
+						615,
+						800
+					]
+				},
+				{
+					"word": "guide",
+					"frequency": 1,
+					"positions": [
+						469
+					]
+				},
+				{
+					"word": "disciple",
+					"frequency": 3,
+					"positions": [
+						470,
+						529,
+						625
+					]
+				},
+				{
+					"word": "house",
+					"frequency": 4,
+					"positions": [
+						471,
+						492,
+						498,
+						561
+					]
+				},
+				{
+					"word": "luke",
+					"frequency": 1,
+					"positions": [
+						473
+					]
+				},
+				{
+					"word": "peter",
+					"frequency": 1,
+					"positions": [
+						476
+					]
+				},
+				{
+					"word": "john",
+					"frequency": 2,
+					"positions": [
+						477,
+						869
+					]
+				},
+				{
+					"word": "make",
+					"frequency": 6,
+					"positions": [
+						479,
+						632,
+						678,
+						682,
+						716,
+						944
+					]
+				},
+				{
+					"word": "eat",
+					"frequency": 1,
+					"positions": [
+						482
+					]
+				},
+				{
+					"word": "want",
+					"frequency": 2,
+					"positions": [
+						484,
+						951
+					]
+				},
+				{
+					"word": "prepare",
+					"frequency": 1,
+					"positions": [
+						486
+					]
+				},
+				{
+					"word": "entered",
+					"frequency": 1,
+					"positions": [
+						488
+					]
+				},
+				{
+					"word": "jug",
+					"frequency": 2,
+					"positions": [
+						489,
+						496
+					]
+				},
+				{
+					"word": "meet",
+					"frequency": 1,
+					"positions": [
+						490
+					]
+				},
+				{
+					"word": "enters",
+					"frequency": 2,
+					"positions": [
+						493,
+						1038
+					]
+				},
+				{
+					"word": "man",
+					"frequency": 4,
+					"positions": [
+						494,
+						746,
+						834,
+						837
+					]
+				},
+				{
+					"word": "water",
+					"frequency": 1,
+					"positions": [
+						495
+					]
+				},
+				{
+					"word": "represents",
+					"frequency": 6,
+					"positions": [
+						497,
+						553,
+						737,
+						742,
+						813,
+						1174
+					]
+				},
+				{
+					"word": "era",
+					"frequency": 1,
+					"positions": [
+						505
+					]
+				},
+				{
+					"word": "greatest",
+					"frequency": 1,
+					"positions": [
+						507
+					]
+				},
+				{
+					"word": "artist",
+					"frequency": 1,
+					"positions": [
+						508
+					]
+				},
+				{
+					"word": "ever",
+					"frequency": 1,
+					"positions": [
+						509
+					]
+				},
+				{
+					"word": "lived",
+					"frequency": 1,
+					"positions": [
+						510
+					]
+				},
+				{
+					"word": "leonardo",
+					"frequency": 2,
+					"positions": [
+						511,
+						862
+					]
+				},
+				{
+					"word": "da",
+					"frequency": 5,
+					"positions": [
+						512,
+						524,
+						797,
+						801,
+						863
+					]
+				},
+				{
+					"word": "vinci",
+					"frequency": 5,
+					"positions": [
+						513,
+						525,
+						798,
+						802,
+						864
+					]
+				},
+				{
+					"word": "unveiled",
+					"frequency": 1,
+					"positions": [
+						514
+					]
+				},
+				{
+					"word": "masterpiece",
+					"frequency": 1,
+					"positions": [
+						515
+					]
+				},
+				{
+					"word": "hidden",
+					"frequency": 2,
+					"positions": [
+						516,
+						885
+					]
+				},
+				{
+					"word": "message",
+					"frequency": 1,
+					"positions": [
+						517
+					]
+				},
+				{
+					"word": "painting",
+					"frequency": 3,
+					"positions": [
+						518,
+						526,
+						616
+					]
+				},
+				{
+					"word": "taking",
+					"frequency": 1,
+					"positions": [
+						521
+					]
+				},
+				{
+					"word": "closer",
+					"frequency": 1,
+					"positions": [
+						522
+					]
+				},
+				{
+					"word": "table",
+					"frequency": 3,
+					"positions": [
+						530,
+						534,
+						623
+					]
+				},
+				{
+					"word": "represent",
+					"frequency": 1,
+					"positions": [
+						531
+					]
+				},
+				{
+					"word": "head",
+					"frequency": 4,
+					"positions": [
+						533,
+						576,
+						768,
+						794
+					]
+				},
+				{
+					"word": "followed",
+					"frequency": 1,
+					"positions": [
+						535
+					]
+				},
+				{
+					"word": "taurus",
+					"frequency": 1,
+					"positions": [
+						536
+					]
+				},
+				{
+					"word": "gemini",
+					"frequency": 1,
+					"positions": [
+						537
+					]
+				},
+				{
+					"word": "cancer",
+					"frequency": 1,
+					"positions": [
+						538
+					]
+				},
+				{
+					"word": "leo",
+					"frequency": 1,
+					"positions": [
+						539
+					]
+				},
+				{
+					"word": "female",
+					"frequency": 3,
+					"positions": [
+						540,
+						547,
+						848
+					]
+				},
+				{
+					"word": "virgo",
+					"frequency": 2,
+					"positions": [
+						542,
+						814
+					]
+				},
+				{
+					"word": "virgin",
+					"frequency": 1,
+					"positions": [
+						543
+					]
+				},
+				{
+					"word": "portrayed",
+					"frequency": 2,
+					"positions": [
+						544,
+						1172
+					]
+				},
+				{
+					"word": "mary",
+					"frequency": 2,
+					"positions": [
+						545,
+						808
+					]
+				},
+				{
+					"word": "magdalene",
+					"frequency": 2,
+					"positions": [
+						546,
+						809
+					]
+				},
+				{
+					"word": "son",
+					"frequency": 4,
+					"positions": [
+						550,
+						582,
+						630,
+						827
+					]
+				},
+				{
+					"word": "god",
+					"frequency": 11,
+					"positions": [
+						551,
+						581,
+						776,
+						781,
+						786,
+						790,
+						821,
+						841,
+						1005,
+						1175,
+						1185
+					]
+				},
+				{
+					"word": "sol",
+					"frequency": 2,
+					"positions": [
+						555,
+						703
+					]
+				},
+				{
+					"word": "cross",
+					"frequency": 2,
+					"positions": [
+						556,
+						573
+					]
+				},
+				{
+					"word": "reflects",
+					"frequency": 2,
+					"positions": [
+						558,
+						566
+					]
+				},
+				{
+					"word": "pass",
+					"frequency": 1,
+					"positions": [
+						560
+					]
+				},
+				{
+					"word": "course",
+					"frequency": 2,
+					"positions": [
+						563,
+						641
+					]
+				},
+				{
+					"word": "month",
+					"frequency": 6,
+					"positions": [
+						567,
+						646,
+						647,
+						676,
+						679,
+						700
+					]
+				},
+				{
+					"word": "usually",
+					"frequency": 1,
+					"positions": [
+						571
+					]
+				},
+				{
+					"word": "depicted",
+					"frequency": 1,
+					"positions": [
+						572
+					]
+				},
+				{
+					"word": "circle",
+					"frequency": 1,
+					"positions": [
+						574
+					]
+				},
+				{
+					"word": "behind",
+					"frequency": 2,
+					"positions": [
+						575,
+						1022
+					]
+				},
+				{
+					"word": "middle",
+					"frequency": 1,
+					"positions": [
+						578
+					]
+				},
+				{
+					"word": "quality",
+					"frequency": 1,
+					"positions": [
+						579
+					]
+				},
+				{
+					"word": "representing",
+					"frequency": 2,
+					"positions": [
+						580,
+						626
+					]
+				},
+				{
+					"word": "light",
+					"frequency": 4,
+					"positions": [
+						583,
+						610,
+						923,
+						931
+					]
+				},
+				{
+					"word": "savior",
+					"frequency": 2,
+					"positions": [
+						585,
+						1161
+					]
+				},
+				{
+					"word": "life",
+					"frequency": 3,
+					"positions": [
+						586,
+						607,
+						1089
+					]
+				},
+				{
+					"word": "visible",
+					"frequency": 1,
+					"positions": [
+						589
+					]
+				},
+				{
+					"word": "manifestation",
+					"frequency": 1,
+					"positions": [
+						590
+					]
+				},
+				{
+					"word": "illumination",
+					"frequency": 1,
+					"positions": [
+						591
+					]
+				},
+				{
+					"word": "became",
+					"frequency": 1,
+					"positions": [
+						593
+					]
+				},
+				{
+					"word": "symbol",
+					"frequency": 2,
+					"positions": [
+						594,
+						748
+					]
+				},
+				{
+					"word": "creator",
+					"frequency": 1,
+					"positions": [
+						595
+					]
+				},
+				{
+					"word": "christ",
+					"frequency": 2,
+					"positions": [
+						596,
+						1178
+					]
+				},
+				{
+					"word": "spirit",
+					"frequency": 4,
+					"positions": [
+						597,
+						823,
+						829,
+						840
+					]
+				},
+				{
+					"word": "within",
+					"frequency": 5,
+					"positions": [
+						598,
+						605,
+						611,
+						1017,
+						1167
+					]
+				},
+				{
+					"word": "human",
+					"frequency": 5,
+					"positions": [
+						600,
+						757,
+						819,
+						925,
+						1102
+					]
+				},
+				{
+					"word": "heart",
+					"frequency": 2,
+					"positions": [
+						601,
+						1169
+					]
+				},
+				{
+					"word": "fact",
+					"frequency": 2,
+					"positions": [
+						602,
+						1068
+					]
+				},
+				{
+					"word": "living",
+					"frequency": 1,
+					"positions": [
+						603
+					]
+				},
+				{
+					"word": "contains",
+					"frequency": 1,
+					"positions": [
+						604
+					]
+				},
+				{
+					"word": "center",
+					"frequency": 1,
+					"positions": [
+						606
+					]
+				},
+				{
+					"word": "metaphor",
+					"frequency": 1,
+					"positions": [
+						609
+					]
+				},
+				{
+					"word": "libra",
+					"frequency": 1,
+					"positions": [
+						617
+					]
+				},
+				{
+					"word": "scorpio",
+					"frequency": 1,
+					"positions": [
+						618
+					]
+				},
+				{
+					"word": "sagittarius",
+					"frequency": 1,
+					"positions": [
+						619
+					]
+				},
+				{
+					"word": "capricorn",
+					"frequency": 1,
+					"positions": [
+						620
+					]
+				},
+				{
+					"word": "including",
+					"frequency": 1,
+					"positions": [
+						629
+					]
+				},
+				{
+					"word": "number",
+					"frequency": 1,
+					"positions": [
+						633
+					]
+				},
+				{
+					"word": "demonized",
+					"frequency": 1,
+					"positions": [
+						634
+					]
+				},
+				{
+					"word": "unlucky",
+					"frequency": 1,
+					"positions": [
+						635
+					]
+				},
+				{
+					"word": "bad",
+					"frequency": 1,
+					"positions": [
+						636
+					]
+				},
+				{
+					"word": "removed",
+					"frequency": 1,
+					"positions": [
+						638
+					]
+				},
+				{
+					"word": "elevator",
+					"frequency": 1,
+					"positions": [
+						639
+					]
+				},
+				{
+					"word": "floor",
+					"frequency": 1,
+					"positions": [
+						640
+					]
+				},
+				{
+					"word": "infamous",
+					"frequency": 1,
+					"positions": [
+						642
+					]
+				},
+				{
+					"word": "original",
+					"frequency": 3,
+					"positions": [
+						643,
+						667,
+						699
+					]
+				},
+				{
+					"word": "yearly",
+					"frequency": 1,
+					"positions": [
+						644
+					]
+				},
+				{
+					"word": "calendar",
+					"frequency": 5,
+					"positions": [
+						645,
+						658,
+						661,
+						665,
+						691
+					]
+				},
+				{
+					"word": "day",
+					"frequency": 7,
+					"positions": [
+						648,
+						651,
+						654,
+						657,
+						670,
+						688,
+						939
+					]
+				},
+				{
+					"word": "easter",
+					"frequency": 1,
+					"positions": [
+						650
+					]
+				},
+				{
+					"word": "resurrection",
+					"frequency": 1,
+					"positions": [
+						652
+					]
+				},
+				{
+					"word": "making",
+					"frequency": 1,
+					"positions": [
+						656
+					]
+				},
+				{
+					"word": "similar",
+					"frequency": 2,
+					"positions": [
+						659,
+						759
+					]
+				},
+				{
+					"word": "mayan",
+					"frequency": 1,
+					"positions": [
+						660
+					]
+				},
+				{
+					"word": "several",
+					"frequency": 2,
+					"positions": [
+						662,
+						1069
+					]
+				},
+				{
+					"word": "april",
+					"frequency": 2,
+					"positions": [
+						666,
+						686
+					]
+				},
+				{
+					"word": "big",
+					"frequency": 2,
+					"positions": [
+						671,
+						1105
+					]
+				},
+				{
+					"word": "following",
+					"frequency": 1,
+					"positions": [
+						675
+					]
+				},
+				{
+					"word": "january",
+					"frequency": 1,
+					"positions": [
+						677
+					]
+				},
+				{
+					"word": "february",
+					"frequency": 1,
+					"positions": [
+						681
+					]
+				},
+				{
+					"word": "fool",
+					"frequency": 1,
+					"positions": [
+						687
+					]
+				},
+				{
+					"word": "originates",
+					"frequency": 1,
+					"positions": [
+						689
+					]
+				},
+				{
+					"word": "gregorian",
+					"frequency": 1,
+					"positions": [
+						690
+					]
+				},
+				{
+					"word": "made",
+					"frequency": 1,
+					"positions": [
+						692
+					]
+				},
+				{
+					"word": "confuse",
+					"frequency": 1,
+					"positions": [
+						693
+					]
+				},
+				{
+					"word": "keep",
+					"frequency": 1,
+					"positions": [
+						695
+					]
+				},
+				{
+					"word": "natural",
+					"frequency": 1,
+					"positions": [
+						697
+					]
+				},
+				{
+					"word": "named",
+					"frequency": 1,
+					"positions": [
+						701
+					]
+				},
+				{
+					"word": "fish",
+					"frequency": 8,
+					"positions": [
+						706,
+						717,
+						721,
+						730,
+						770,
+						775,
+						784,
+						788
+					]
+				},
+				{
+					"word": "fisher",
+					"frequency": 3,
+					"positions": [
+						709,
+						725,
+						745
+					]
+				},
+				{
+					"word": "referenced",
+					"frequency": 1,
+					"positions": [
+						711
+					]
+				},
+				{
+					"word": "matthew",
+					"frequency": 1,
+					"positions": [
+						712
+					]
+				},
+				{
+					"word": "told",
+					"frequency": 1,
+					"positions": [
+						715
+					]
+				},
+				{
+					"word": "people",
+					"frequency": 3,
+					"positions": [
+						718,
+						722,
+						724
+					]
+				},
+				{
+					"word": "simon",
+					"frequency": 1,
+					"positions": [
+						719
+					]
+				},
+				{
+					"word": "afraid",
+					"frequency": 1,
+					"positions": [
+						720
+					]
+				},
+				{
+					"word": "catch",
+					"frequency": 1,
+					"positions": [
+						723
+					]
+				},
+				{
+					"word": "five",
+					"frequency": 1,
+					"positions": [
+						727
+					]
+				},
+				{
+					"word": "loaf",
+					"frequency": 1,
+					"positions": [
+						728
+					]
+				},
+				{
+					"word": "two",
+					"frequency": 1,
+					"positions": [
+						729
+					]
+				},
+				{
+					"word": "spiritual",
+					"frequency": 2,
+					"positions": [
+						734,
+						1132
+					]
+				},
+				{
+					"word": "icon",
+					"frequency": 1,
+					"positions": [
+						735
+					]
+				},
+				{
+					"word": "deity",
+					"frequency": 1,
+					"positions": [
+						736
+					]
+				},
+				{
+					"word": "ichthus",
+					"frequency": 1,
+					"positions": [
+						747
+					]
+				},
+				{
+					"word": "christianity",
+					"frequency": 2,
+					"positions": [
+						751,
+						1034
+					]
+				},
+				{
+					"word": "better",
+					"frequency": 1,
+					"positions": [
+						752
+					]
+				},
+				{
+					"word": "known",
+					"frequency": 1,
+					"positions": [
+						753
+					]
+				},
+				{
+					"word": "today",
+					"frequency": 1,
+					"positions": [
+						754
+					]
+				},
+				{
+					"word": "exact",
+					"frequency": 1,
+					"positions": [
+						755
+					]
+				},
+				{
+					"word": "shape",
+					"frequency": 2,
+					"positions": [
+						756,
+						769
+					]
+				},
+				{
+					"word": "eye",
+					"frequency": 3,
+					"positions": [
+						758,
+						760,
+						907
+					]
+				},
+				{
+					"word": "horus",
+					"frequency": 1,
+					"positions": [
+						761
+					]
+				},
+				{
+					"word": "see",
+					"frequency": 6,
+					"positions": [
+						763,
+						811,
+						891,
+						908,
+						928,
+						961
+					]
+				},
+				{
+					"word": "traditionally",
+					"frequency": 2,
+					"positions": [
+						764,
+						824
+					]
+				},
+				{
+					"word": "pope",
+					"frequency": 1,
+					"positions": [
+						765
+					]
+				},
+				{
+					"word": "wear",
+					"frequency": 1,
+					"positions": [
+						766
+					]
+				},
+				{
+					"word": "mitre",
+					"frequency": 1,
+					"positions": [
+						767
+					]
+				},
+				{
+					"word": "perhaps",
+					"frequency": 1,
+					"positions": [
+						771
+					]
+				},
+				{
+					"word": "tradition",
+					"frequency": 3,
+					"positions": [
+						772,
+						792,
+						1019
+					]
+				},
+				{
+					"word": "passed",
+					"frequency": 1,
+					"positions": [
+						773
+					]
+				},
+				{
+					"word": "fertility",
+					"frequency": 1,
+					"positions": [
+						774
+					]
+				},
+				{
+					"word": "dagon",
+					"frequency": 1,
+					"positions": [
+						777
+					]
+				},
+				{
+					"word": "mesopotamia",
+					"frequency": 1,
+					"positions": [
+						779
+					]
+				},
+				{
+					"word": "symbolized",
+					"frequency": 1,
+					"positions": [
+						783
+					]
+				},
+				{
+					"word": "matsya",
+					"frequency": 1,
+					"positions": [
+						787
+					]
+				},
+				{
+					"word": "avatar",
+					"frequency": 1,
+					"positions": [
+						789
+					]
+				},
+				{
+					"word": "vishnu",
+					"frequency": 1,
+					"positions": [
+						791
+					]
+				},
+				{
+					"word": "yet",
+					"frequency": 1,
+					"positions": [
+						804
+					]
+				},
+				{
+					"word": "interesting",
+					"frequency": 1,
+					"positions": [
+						806
+					]
+				},
+				{
+					"word": "v",
+					"frequency": 1,
+					"positions": [
+						812
+					]
+				},
+				{
+					"word": "chalice",
+					"frequency": 1,
+					"positions": [
+						815
+					]
+				},
+				{
+					"word": "together",
+					"frequency": 1,
+					"positions": [
+						816
+					]
+				},
+				{
+					"word": "trinity",
+					"frequency": 2,
+					"positions": [
+						818,
+						825
+					]
+				},
+				{
+					"word": "connection",
+					"frequency": 1,
+					"positions": [
+						820
+					]
+				},
+				{
+					"word": "father",
+					"frequency": 1,
+					"positions": [
+						826
+					]
+				},
+				{
+					"word": "woman",
+					"frequency": 3,
+					"positions": [
+						831,
+						833,
+						838
+					]
+				},
+				{
+					"word": "exist",
+					"frequency": 1,
+					"positions": [
+						832
+					]
+				},
+				{
+					"word": "create",
+					"frequency": 2,
+					"positions": [
+						835,
+						1082
+					]
+				},
+				{
+					"word": "child",
+					"frequency": 1,
+					"positions": [
+						836
+					]
+				},
+				{
+					"word": "clearly",
+					"frequency": 2,
+					"positions": [
+						842,
+						960
+					]
+				},
+				{
+					"word": "evident",
+					"frequency": 1,
+					"positions": [
+						843
+					]
+				},
+				{
+					"word": "alchemical",
+					"frequency": 1,
+					"positions": [
+						844
+					]
+				},
+				{
+					"word": "depiction",
+					"frequency": 1,
+					"positions": [
+						845
+					]
+				},
+				{
+					"word": "balance",
+					"frequency": 1,
+					"positions": [
+						846
+					]
+				},
+				{
+					"word": "male",
+					"frequency": 1,
+					"positions": [
+						847
+					]
+				},
+				{
+					"word": "famous",
+					"frequency": 1,
+					"positions": [
+						851
+					]
+				},
+				{
+					"word": "celebrity",
+					"frequency": 1,
+					"positions": [
+						852
+					]
+				},
+				{
+					"word": "legendary",
+					"frequency": 1,
+					"positions": [
+						853
+					]
+				},
+				{
+					"word": "renowned",
+					"frequency": 1,
+					"positions": [
+						854
+					]
+				},
+				{
+					"word": "figure",
+					"frequency": 1,
+					"positions": [
+						855
+					]
+				},
+				{
+					"word": "attended",
+					"frequency": 1,
+					"positions": [
+						856
+					]
+				},
+				{
+					"word": "occult",
+					"frequency": 1,
+					"positions": [
+						857
+					]
+				},
+				{
+					"word": "mystery",
+					"frequency": 1,
+					"positions": [
+						858
+					]
+				},
+				{
+					"word": "school",
+					"frequency": 1,
+					"positions": [
+						859
+					]
+				},
+				{
+					"word": "michelangelo",
+					"frequency": 1,
+					"positions": [
+						865
+					]
+				},
+				{
+					"word": "mozart",
+					"frequency": 1,
+					"positions": [
+						866
+					]
+				},
+				{
+					"word": "bach",
+					"frequency": 1,
+					"positions": [
+						867
+					]
+				},
+				{
+					"word": "beethoven",
+					"frequency": 1,
+					"positions": [
+						868
+					]
+				},
+				{
+					"word": "dee",
+					"frequency": 1,
+					"positions": [
+						870
+					]
+				},
+				{
+					"word": "isaac",
+					"frequency": 1,
+					"positions": [
+						871
+					]
+				},
+				{
+					"word": "newton",
+					"frequency": 1,
+					"positions": [
+						872
+					]
+				},
+				{
+					"word": "george",
+					"frequency": 1,
+					"positions": [
+						873
+					]
+				},
+				{
+					"word": "washington",
+					"frequency": 1,
+					"positions": [
+						874
+					]
+				},
+				{
+					"word": "president",
+					"frequency": 1,
+					"positions": [
+						876
+					]
+				},
+				{
+					"word": "america",
+					"frequency": 1,
+					"positions": [
+						877
+					]
+				},
+				{
+					"word": "knew",
+					"frequency": 1,
+					"positions": [
+						879
+					]
+				},
+				{
+					"word": "teaching",
+					"frequency": 2,
+					"positions": [
+						882,
+						903
+					]
+				},
+				{
+					"word": "initiate",
+					"frequency": 2,
+					"positions": [
+						883,
+						899
+					]
+				},
+				{
+					"word": "use",
+					"frequency": 1,
+					"positions": [
+						884
+					]
+				},
+				{
+					"word": "astral",
+					"frequency": 1,
+					"positions": [
+						888
+					]
+				},
+				{
+					"word": "body",
+					"frequency": 2,
+					"positions": [
+						889,
+						971
+					]
+				},
+				{
+					"word": "travel",
+					"frequency": 1,
+					"positions": [
+						890
+					]
+				},
+				{
+					"word": "proof",
+					"frequency": 1,
+					"positions": [
+						892
+					]
+				},
+				{
+					"word": "effect",
+					"frequency": 1,
+					"positions": [
+						895
+					]
+				},
+				{
+					"word": "esoteric",
+					"frequency": 2,
+					"positions": [
+						898,
+						958
+					]
+				},
+				{
+					"word": "writing",
+					"frequency": 1,
+					"positions": [
+						900
+					]
+				},
+				{
+					"word": "century",
+					"frequency": 2,
+					"positions": [
+						901,
+						949
+					]
+				},
+				{
+					"word": "kind",
+					"frequency": 1,
+					"positions": [
+						902
+					]
+				},
+				{
+					"word": "search",
+					"frequency": 1,
+					"positions": [
+						904
+					]
+				},
+				{
+					"word": "google",
+					"frequency": 1,
+					"positions": [
+						905
+					]
+				},
+				{
+					"word": "something",
+					"frequency": 1,
+					"positions": [
+						906
+					]
+				},
+				{
+					"word": "ear",
+					"frequency": 1,
+					"positions": [
+						909
+					]
+				},
+				{
+					"word": "hear",
+					"frequency": 1,
+					"positions": [
+						910
+					]
+				},
+				{
+					"word": "understanding",
+					"frequency": 2,
+					"positions": [
+						912,
+						1130
+					]
+				},
+				{
+					"word": "perceive",
+					"frequency": 1,
+					"positions": [
+						913
+					]
+				},
+				{
+					"word": "whole",
+					"frequency": 1,
+					"positions": [
+						915
+					]
+				},
+				{
+					"word": "example",
+					"frequency": 1,
+					"positions": [
+						918
+					]
+				},
+				{
+					"word": "electromagnetic",
+					"frequency": 1,
+					"positions": [
+						919
+					]
+				},
+				{
+					"word": "spectrum",
+					"frequency": 2,
+					"positions": [
+						920,
+						930
+					]
+				},
+				{
+					"word": "includes",
+					"frequency": 1,
+					"positions": [
+						921
+					]
+				},
+				{
+					"word": "energy",
+					"frequency": 2,
+					"positions": [
+						924,
+						954
+					]
+				},
+				{
+					"word": "visual",
+					"frequency": 1,
+					"positions": [
+						926
+					]
+				},
+				{
+					"word": "perception",
+					"frequency": 1,
+					"positions": [
+						927
+					]
+				},
+				{
+					"word": "certain",
+					"frequency": 2,
+					"positions": [
+						929,
+						1048
+					]
+				},
+				{
+					"word": "gamma",
+					"frequency": 1,
+					"positions": [
+						932
+					]
+				},
+				{
+					"word": "ray",
+					"frequency": 1,
+					"positions": [
+						933
+					]
+				},
+				{
+					"word": "ultraviolet",
+					"frequency": 1,
+					"positions": [
+						934
+					]
+				},
+				{
+					"word": "infrared",
+					"frequency": 1,
+					"positions": [
+						935
+					]
+				},
+				{
+					"word": "radar",
+					"frequency": 1,
+					"positions": [
+						936
+					]
+				},
+				{
+					"word": "radio",
+					"frequency": 1,
+					"positions": [
+						937
+					]
+				},
+				{
+					"word": "wave",
+					"frequency": 1,
+					"positions": [
+						938
+					]
+				},
+				{
+					"word": "study",
+					"frequency": 1,
+					"positions": [
+						942
+					]
+				},
+				{
+					"word": "phenomenon",
+					"frequency": 1,
+					"positions": [
+						943
+					]
+				},
+				{
+					"word": "progress",
+					"frequency": 1,
+					"positions": [
+						945
+					]
+				},
+				{
+					"word": "decade",
+					"frequency": 1,
+					"positions": [
+						947
+					]
+				},
+				{
+					"word": "previous",
+					"frequency": 1,
+					"positions": [
+						948
+					]
+				},
+				{
+					"word": "existence",
+					"frequency": 1,
+					"positions": [
+						950
+					]
+				},
+				{
+					"word": "find",
+					"frequency": 1,
+					"positions": [
+						952
+					]
+				},
+				{
+					"word": "term",
+					"frequency": 1,
+					"positions": [
+						953
+					]
+				},
+				{
+					"word": "frequency",
+					"frequency": 1,
+					"positions": [
+						955
+					]
+				},
+				{
+					"word": "vibration",
+					"frequency": 1,
+					"positions": [
+						956
+					]
+				},
+				{
+					"word": "looking",
+					"frequency": 1,
+					"positions": [
+						957
+					]
+				},
+				{
+					"word": "art",
+					"frequency": 1,
+					"positions": [
+						959
+					]
+				},
+				{
+					"word": "evidence",
+					"frequency": 2,
+					"positions": [
+						962,
+						1101
+					]
+				},
+				{
+					"word": "encoded",
+					"frequency": 1,
+					"positions": [
+						966
+					]
+				},
+				{
+					"word": "phrase",
+					"frequency": 1,
+					"positions": [
+						967
+					]
+				},
+				{
+					"word": "indicates",
+					"frequency": 1,
+					"positions": [
+						968
+					]
+				},
+				{
+					"word": "movement",
+					"frequency": 1,
+					"positions": [
+						969
+					]
+				},
+				{
+					"word": "mirror",
+					"frequency": 1,
+					"positions": [
+						972
+					]
+				},
+				{
+					"word": "happens",
+					"frequency": 1,
+					"positions": [
+						973
+					]
+				},
+				{
+					"word": "carl",
+					"frequency": 1,
+					"positions": [
+						975
+					]
+				},
+				{
+					"word": "jung",
+					"frequency": 2,
+					"positions": [
+						976,
+						1040
+					]
+				},
+				{
+					"word": "explains",
+					"frequency": 1,
+					"positions": [
+						977
+					]
+				},
+				{
+					"word": "flying",
+					"frequency": 1,
+					"positions": [
+						979
+					]
+				},
+				{
+					"word": "saucer",
+					"frequency": 1,
+					"positions": [
+						980
+					]
+				},
+				{
+					"word": "myth",
+					"frequency": 1,
+					"positions": [
+						982
+					]
+				},
+				{
+					"word": "seen",
+					"frequency": 2,
+					"positions": [
+						984,
+						1125
+					]
+				},
+				{
+					"word": "sky",
+					"frequency": 1,
+					"positions": [
+						985
+					]
+				},
+				{
+					"word": "know",
+					"frequency": 2,
+					"positions": [
+						986,
+						1088
+					]
+				},
+				{
+					"word": "egyptian",
+					"frequency": 1,
+					"positions": [
+						988
+					]
+				},
+				{
+					"word": "event",
+					"frequency": 1,
+					"positions": [
+						990
+					]
+				},
+				{
+					"word": "symptom",
+					"frequency": 1,
+					"positions": [
+						991
+					]
+				},
+				{
+					"word": "psychic",
+					"frequency": 2,
+					"positions": [
+						992,
+						1002
+					]
+				},
+				{
+					"word": "always",
+					"frequency": 1,
+					"positions": [
+						994
+					]
+				},
+				{
+					"word": "dominance",
+					"frequency": 1,
+					"positions": [
+						1003
+					]
+				},
+				{
+					"word": "archetype",
+					"frequency": 3,
+					"positions": [
+						1004,
+						1051,
+						1052
+					]
+				},
+				{
+					"word": "bring",
+					"frequency": 1,
+					"positions": [
+						1008
+					]
+				},
+				{
+					"word": "accompany",
+					"frequency": 1,
+					"positions": [
+						1009
+					]
+				},
+				{
+					"word": "lasting",
+					"frequency": 1,
+					"positions": [
+						1011
+					]
+				},
+				{
+					"word": "transformation",
+					"frequency": 3,
+					"positions": [
+						1012,
+						1015,
+						1050
+					]
+				},
+				{
+					"word": "psyche",
+					"frequency": 1,
+					"positions": [
+						1014
+					]
+				},
+				{
+					"word": "started",
+					"frequency": 1,
+					"positions": [
+						1016
+					]
+				},
+				{
+					"word": "historical",
+					"frequency": 1,
+					"positions": [
+						1018
+					]
+				},
+				{
+					"word": "left",
+					"frequency": 1,
+					"positions": [
+						1020
+					]
+				},
+				{
+					"word": "trace",
+					"frequency": 1,
+					"positions": [
+						1021
+					]
+				},
+				{
+					"word": "torus",
+					"frequency": 1,
+					"positions": [
+						1026
+					]
+				},
+				{
+					"word": "aries",
+					"frequency": 2,
+					"positions": [
+						1027,
+						1028
+					]
+				},
+				{
+					"word": "whose",
+					"frequency": 1,
+					"positions": [
+						1030
+					]
+				},
+				{
+					"word": "coincides",
+					"frequency": 1,
+					"positions": [
+						1032
+					]
+				},
+				{
+					"word": "rise",
+					"frequency": 1,
+					"positions": [
+						1033
+					]
+				},
+				{
+					"word": "spring",
+					"frequency": 1,
+					"positions": [
+						1036
+					]
+				},
+				{
+					"word": "point",
+					"frequency": 2,
+					"positions": [
+						1037,
+						1085
+					]
+				},
+				{
+					"word": "arising",
+					"frequency": 1,
+					"positions": [
+						1045
+					]
+				},
+				{
+					"word": "due",
+					"frequency": 1,
+					"positions": [
+						1047
+					]
+				},
+				{
+					"word": "gradual",
+					"frequency": 1,
+					"positions": [
+						1049
+					]
+				},
+				{
+					"word": "active",
+					"frequency": 1,
+					"positions": [
+						1056
+					]
+				},
+				{
+					"word": "continuously",
+					"frequency": 1,
+					"positions": [
+						1058
+					]
+				},
+				{
+					"word": "moving",
+					"frequency": 1,
+					"positions": [
+						1059
+					]
+				},
+				{
+					"word": "cyclic",
+					"frequency": 1,
+					"positions": [
+						1062
+					]
+				},
+				{
+					"word": "division",
+					"frequency": 1,
+					"positions": [
+						1063
+					]
+				},
+				{
+					"word": "scientific",
+					"frequency": 1,
+					"positions": [
+						1065
+					]
+				},
+				{
+					"word": "literature",
+					"frequency": 1,
+					"positions": [
+						1066
+					]
+				},
+				{
+					"word": "clear",
+					"frequency": 1,
+					"positions": [
+						1067
+					]
+				},
+				{
+					"word": "physiological",
+					"frequency": 1,
+					"positions": [
+						1070
+					]
+				},
+				{
+					"word": "rhythm",
+					"frequency": 1,
+					"positions": [
+						1071
+					]
+				},
+				{
+					"word": "behavior",
+					"frequency": 1,
+					"positions": [
+						1074
+					]
+				},
+				{
+					"word": "synchronized",
+					"frequency": 1,
+					"positions": [
+						1075
+					]
+				},
+				{
+					"word": "solar",
+					"frequency": 2,
+					"positions": [
+						1076,
+						1093
+					]
+				},
+				{
+					"word": "geomagnetic",
+					"frequency": 1,
+					"positions": [
+						1077
+					]
+				},
+				{
+					"word": "activity",
+					"frequency": 1,
+					"positions": [
+						1078
+					]
+				},
+				{
+					"word": "disruption",
+					"frequency": 1,
+					"positions": [
+						1080
+					]
+				},
+				{
+					"word": "field",
+					"frequency": 1,
+					"positions": [
+						1081
+					]
+				},
+				{
+					"word": "biological",
+					"frequency": 1,
+					"positions": [
+						1086
+					]
+				},
+				{
+					"word": "level",
+					"frequency": 1,
+					"positions": [
+						1087
+					]
+				},
+				{
+					"word": "linked",
+					"frequency": 1,
+					"positions": [
+						1091
+					]
+				},
+				{
+					"word": "lunar",
+					"frequency": 1,
+					"positions": [
+						1094
+					]
+				},
+				{
+					"word": "possibly",
+					"frequency": 1,
+					"positions": [
+						1095
+					]
+				},
+				{
+					"word": "deal",
+					"frequency": 1,
+					"positions": [
+						1100
+					]
+				},
+				{
+					"word": "play",
+					"frequency": 1,
+					"positions": [
+						1104
+					]
+				},
+				{
+					"word": "role",
+					"frequency": 1,
+					"positions": [
+						1106
+					]
+				},
+				{
+					"word": "quantum",
+					"frequency": 1,
+					"positions": [
+						1107
+					]
+				},
+				{
+					"word": "physic",
+					"frequency": 1,
+					"positions": [
+						1108
+					]
+				},
+				{
+					"word": "area",
+					"frequency": 1,
+					"positions": [
+						1109
+					]
+				},
+				{
+					"word": "non",
+					"frequency": 1,
+					"positions": [
+						1110
+					]
+				},
+				{
+					"word": "directly",
+					"frequency": 1,
+					"positions": [
+						1113
+					]
+				},
+				{
+					"word": "connected",
+					"frequency": 1,
+					"positions": [
+						1114
+					]
+				},
+				{
+					"word": "peculiar",
+					"frequency": 1,
+					"positions": [
+						1116
+					]
+				},
+				{
+					"word": "experienced",
+					"frequency": 1,
+					"positions": [
+						1121
+					]
+				},
+				{
+					"word": "cycling",
+					"frequency": 1,
+					"positions": [
+						1123
+					]
+				},
+				{
+					"word": "since",
+					"frequency": 1,
+					"positions": [
+						1126
+					]
+				},
+				{
+					"word": "truth",
+					"frequency": 2,
+					"positions": [
+						1131,
+						1149
+					]
+				},
+				{
+					"word": "mysticism",
+					"frequency": 1,
+					"positions": [
+						1134
+					]
+				},
+				{
+					"word": "alchemy",
+					"frequency": 1,
+					"positions": [
+						1135
+					]
+				},
+				{
+					"word": "difficult",
+					"frequency": 1,
+					"positions": [
+						1137
+					]
+				},
+				{
+					"word": "ahead",
+					"frequency": 1,
+					"positions": [
+						1139
+					]
+				},
+				{
+					"word": "still",
+					"frequency": 1,
+					"positions": [
+						1141
+					]
+				},
+				{
+					"word": "paradigm",
+					"frequency": 1,
+					"positions": [
+						1143
+					]
+				},
+				{
+					"word": "justice",
+					"frequency": 1,
+					"positions": [
+						1150
+					]
+				},
+				{
+					"word": "restored",
+					"frequency": 1,
+					"positions": [
+						1152
+					]
+				},
+				{
+					"word": "enter",
+					"frequency": 1,
+					"positions": [
+						1154
+					]
+				},
+				{
+					"word": "must",
+					"frequency": 1,
+					"positions": [
+						1165
+					]
+				},
+				{
+					"word": "work",
+					"frequency": 1,
+					"positions": [
+						1166
+					]
+				},
+				{
+					"word": "start",
+					"frequency": 1,
+					"positions": [
+						1168
+					]
+				},
+				{
+					"word": "electrical",
+					"frequency": 1,
+					"positions": [
+						1170
+					]
+				},
+				{
+					"word": "battery",
+					"frequency": 1,
+					"positions": [
+						1171
+					]
+				},
+				{
+					"word": "given",
+					"frequency": 1,
+					"positions": [
+						1176
+					]
+				},
+				{
+					"word": "anointed",
+					"frequency": 1,
+					"positions": [
+						1179
+					]
+				},
+				{
+					"word": "individual",
+					"frequency": 1,
+					"positions": [
+						1183
+					]
+				},
+				{
+					"word": "favor",
+					"frequency": 1,
+					"positions": [
+						1184
+					]
+				},
+				{
+					"word": "present",
+					"frequency": 1,
+					"positions": [
+						1188
+					]
+				},
+				{
+					"word": "applied",
+					"frequency": 1,
+					"positions": [
+						1192
+					]
+				},
+				{
+					"word": "freedom",
+					"frequency": 1,
+					"positions": [
+						1194
+					]
+				}
+			]
+		},
+		{
+			"doc_id": "369news--2022-10-20--Resonance Frequency Cancer Therapy Machine by Dr. Royal Raymond Rife",
+			"url": "https://369news.net/2022/10/20/resonance-frequency-cancer-therapy-machine-by-dr-royal-raymond-rife/",
+			"date": "2022-10-20",
+			"words": [
+				{
+					"word": "resonance",
+					"frequency": 4,
+					"positions": [
+						0,
+						41,
+						78,
+						106
+					]
+				},
+				{
+					"word": "frequency",
+					"frequency": 16,
+					"positions": [
+						1,
+						40,
+						56,
+						66,
+						70,
+						73,
+						81,
+						86,
+						100,
+						130,
+						136,
+						242,
+						291,
+						338,
+						342,
+						348
+					]
+				},
+				{
+					"word": "cancer",
+					"frequency": 9,
+					"positions": [
+						2,
+						9,
+						23,
+						27,
+						36,
+						58,
+						126,
+						144,
+						161
+					]
+				},
+				{
+					"word": "therapy",
+					"frequency": 4,
+					"positions": [
+						3,
+						42,
+						209,
+						259
+					]
+				},
+				{
+					"word": "machine",
+					"frequency": 2,
+					"positions": [
+						4,
+						141
+					]
+				},
+				{
+					"word": "royal",
+					"frequency": 4,
+					"positions": [
+						5,
+						31,
+						121,
+						467
+					]
+				},
+				{
+					"word": "raymond",
+					"frequency": 3,
+					"positions": [
+						6,
+						32,
+						468
+					]
+				},
+				{
+					"word": "rife",
+					"frequency": 15,
+					"positions": [
+						7,
+						33,
+						44,
+						122,
+						140,
+						167,
+						191,
+						219,
+						232,
+						262,
+						404,
+						420,
+						437,
+						452,
+						469
+					]
+				},
+				{
+					"word": "know",
+					"frequency": 1,
+					"positions": [
+						8
+					]
+				},
+				{
+					"word": "leading",
+					"frequency": 1,
+					"positions": [
+						10
+					]
+				},
+				{
+					"word": "cause",
+					"frequency": 1,
+					"positions": [
+						11
+					]
+				},
+				{
+					"word": "death",
+					"frequency": 2,
+					"positions": [
+						12,
+						15
+					]
+				},
+				{
+					"word": "nearly",
+					"frequency": 1,
+					"positions": [
+						13
+					]
+				},
+				{
+					"word": "million",
+					"frequency": 2,
+					"positions": [
+						14,
+						175
+					]
+				},
+				{
+					"word": "year",
+					"frequency": 1,
+					"positions": [
+						16
+					]
+				},
+				{
+					"word": "worldwide",
+					"frequency": 1,
+					"positions": [
+						17
+					]
+				},
+				{
+					"word": "general",
+					"frequency": 1,
+					"positions": [
+						18
+					]
+				},
+				{
+					"word": "public",
+					"frequency": 1,
+					"positions": [
+						19
+					]
+				},
+				{
+					"word": "unaware",
+					"frequency": 1,
+					"positions": [
+						20
+					]
+				},
+				{
+					"word": "cure",
+					"frequency": 2,
+					"positions": [
+						21,
+						26
+					]
+				},
+				{
+					"word": "type",
+					"frequency": 1,
+					"positions": [
+						22
+					]
+				},
+				{
+					"word": "told",
+					"frequency": 1,
+					"positions": [
+						24
+					]
+				},
+				{
+					"word": "way",
+					"frequency": 3,
+					"positions": [
+						25,
+						120,
+						206
+					]
+				},
+				{
+					"word": "discovered",
+					"frequency": 2,
+					"positions": [
+						28,
+						60
+					]
+				},
+				{
+					"word": "doctor",
+					"frequency": 2,
+					"positions": [
+						29,
+						186
+					]
+				},
+				{
+					"word": "scientist",
+					"frequency": 1,
+					"positions": [
+						30
+					]
+				},
+				{
+					"word": "reported",
+					"frequency": 1,
+					"positions": [
+						34
+					]
+				},
+				{
+					"word": "cured",
+					"frequency": 2,
+					"positions": [
+						35,
+						174
+					]
+				},
+				{
+					"word": "patient",
+					"frequency": 2,
+					"positions": [
+						37,
+						146
+					]
+				},
+				{
+					"word": "using",
+					"frequency": 1,
+					"positions": [
+						38
+					]
+				},
+				{
+					"word": "power",
+					"frequency": 1,
+					"positions": [
+						39
+					]
+				},
+				{
+					"word": "dr",
+					"frequency": 4,
+					"positions": [
+						43,
+						166,
+						190,
+						218
+					]
+				},
+				{
+					"word": "started",
+					"frequency": 1,
+					"positions": [
+						45
+					]
+				},
+				{
+					"word": "creating",
+					"frequency": 1,
+					"positions": [
+						46
+					]
+				},
+				{
+					"word": "world",
+					"frequency": 4,
+					"positions": [
+						47,
+						163,
+						215,
+						240
+					]
+				},
+				{
+					"word": "powerful",
+					"frequency": 3,
+					"positions": [
+						48,
+						266,
+						328
+					]
+				},
+				{
+					"word": "microscope",
+					"frequency": 1,
+					"positions": [
+						49
+					]
+				},
+				{
+					"word": "bacteria",
+					"frequency": 2,
+					"positions": [
+						50,
+						296
+					]
+				},
+				{
+					"word": "efficiently",
+					"frequency": 1,
+					"positions": [
+						51
+					]
+				},
+				{
+					"word": "realized",
+					"frequency": 1,
+					"positions": [
+						52
+					]
+				},
+				{
+					"word": "could",
+					"frequency": 2,
+					"positions": [
+						53,
+						173
+					]
+				},
+				{
+					"word": "use",
+					"frequency": 4,
+					"positions": [
+						54,
+						221,
+						224,
+						389
+					]
+				},
+				{
+					"word": "electromagnetic",
+					"frequency": 1,
+					"positions": [
+						55
+					]
+				},
+				{
+					"word": "destroy",
+					"frequency": 4,
+					"positions": [
+						57,
+						74,
+						111,
+						165
+					]
+				},
+				{
+					"word": "cell",
+					"frequency": 6,
+					"positions": [
+						59,
+						62,
+						71,
+						127,
+						137,
+						145
+					]
+				},
+				{
+					"word": "every",
+					"frequency": 1,
+					"positions": [
+						61
+					]
+				},
+				{
+					"word": "molecule",
+					"frequency": 1,
+					"positions": [
+						63
+					]
+				},
+				{
+					"word": "vibrates",
+					"frequency": 1,
+					"positions": [
+						64
+					]
+				},
+				{
+					"word": "distinct",
+					"frequency": 1,
+					"positions": [
+						65
+					]
+				},
+				{
+					"word": "beaming",
+					"frequency": 1,
+					"positions": [
+						67
+					]
+				},
+				{
+					"word": "plasma",
+					"frequency": 1,
+					"positions": [
+						68
+					]
+				},
+				{
+					"word": "ray",
+					"frequency": 1,
+					"positions": [
+						69
+					]
+				},
+				{
+					"word": "amplify",
+					"frequency": 4,
+					"positions": [
+						72,
+						84,
+						108,
+						139
+					]
+				},
+				{
+					"word": "happens",
+					"frequency": 1,
+					"positions": [
+						75
+					]
+				},
+				{
+					"word": "something",
+					"frequency": 3,
+					"positions": [
+						76,
+						112,
+						116
+					]
+				},
+				{
+					"word": "known",
+					"frequency": 1,
+					"positions": [
+						77
+					]
+				},
+				{
+					"word": "two",
+					"frequency": 2,
+					"positions": [
+						79,
+						285
+					]
+				},
+				{
+					"word": "thing",
+					"frequency": 2,
+					"positions": [
+						80,
+						254
+					]
+				},
+				{
+					"word": "come",
+					"frequency": 2,
+					"positions": [
+						82,
+						303
+					]
+				},
+				{
+					"word": "together",
+					"frequency": 1,
+					"positions": [
+						83
+					]
+				},
+				{
+					"word": "others",
+					"frequency": 1,
+					"positions": [
+						85
+					]
+				},
+				{
+					"word": "wine",
+					"frequency": 2,
+					"positions": [
+						87,
+						114
+					]
+				},
+				{
+					"word": "glass",
+					"frequency": 4,
+					"positions": [
+						88,
+						95,
+						97,
+						115
+					]
+				},
+				{
+					"word": "destroyed",
+					"frequency": 2,
+					"positions": [
+						89,
+						143
+					]
+				},
+				{
+					"word": "human",
+					"frequency": 2,
+					"positions": [
+						90,
+						462
+					]
+				},
+				{
+					"word": "vocal",
+					"frequency": 1,
+					"positions": [
+						91
+					]
+				},
+				{
+					"word": "like",
+					"frequency": 2,
+					"positions": [
+						92,
+						320
+					]
+				},
+				{
+					"word": "opera",
+					"frequency": 1,
+					"positions": [
+						93
+					]
+				},
+				{
+					"word": "singer",
+					"frequency": 1,
+					"positions": [
+						94
+					]
+				},
+				{
+					"word": "make",
+					"frequency": 1,
+					"positions": [
+						96
+					]
+				},
+				{
+					"word": "vibrate",
+					"frequency": 2,
+					"positions": [
+						98,
+						102
+					]
+				},
+				{
+					"word": "higher",
+					"frequency": 1,
+					"positions": [
+						99
+					]
+				},
+				{
+					"word": "making",
+					"frequency": 2,
+					"positions": [
+						101,
+						157
+					]
+				},
+				{
+					"word": "intensely",
+					"frequency": 1,
+					"positions": [
+						103
+					]
+				},
+				{
+					"word": "causing",
+					"frequency": 1,
+					"positions": [
+						104
+					]
+				},
+				{
+					"word": "shatter",
+					"frequency": 2,
+					"positions": [
+						105,
+						125
+					]
+				},
+				{
+					"word": "basically",
+					"frequency": 2,
+					"positions": [
+						107,
+						138
+					]
+				},
+				{
+					"word": "vibration",
+					"frequency": 1,
+					"positions": [
+						109
+					]
+				},
+				{
+					"word": "anything",
+					"frequency": 1,
+					"positions": [
+						110
+					]
+				},
+				{
+					"word": "small",
+					"frequency": 1,
+					"positions": [
+						113
+					]
+				},
+				{
+					"word": "massive",
+					"frequency": 1,
+					"positions": [
+						117
+					]
+				},
+				{
+					"word": "bridge",
+					"frequency": 1,
+					"positions": [
+						118
+					]
+				},
+				{
+					"word": "much",
+					"frequency": 1,
+					"positions": [
+						119
+					]
+				},
+				{
+					"word": "created",
+					"frequency": 1,
+					"positions": [
+						123
+					]
+				},
+				{
+					"word": "device",
+					"frequency": 1,
+					"positions": [
+						124
+					]
+				},
+				{
+					"word": "matching",
+					"frequency": 1,
+					"positions": [
+						128
+					]
+				},
+				{
+					"word": "resonant",
+					"frequency": 1,
+					"positions": [
+						129
+					]
+				},
+				{
+					"word": "sending",
+					"frequency": 1,
+					"positions": [
+						131
+					]
+				},
+				{
+					"word": "impulse",
+					"frequency": 1,
+					"positions": [
+						132
+					]
+				},
+				{
+					"word": "electro",
+					"frequency": 1,
+					"positions": [
+						133
+					]
+				},
+				{
+					"word": "magnetic",
+					"frequency": 1,
+					"positions": [
+						134
+					]
+				},
+				{
+					"word": "wave",
+					"frequency": 1,
+					"positions": [
+						135
+					]
+				},
+				{
+					"word": "invention",
+					"frequency": 2,
+					"positions": [
+						142,
+						172
+					]
+				},
+				{
+					"word": "sadly",
+					"frequency": 1,
+					"positions": [
+						147
+					]
+				},
+				{
+					"word": "greedy",
+					"frequency": 1,
+					"positions": [
+						148
+					]
+				},
+				{
+					"word": "people",
+					"frequency": 5,
+					"positions": [
+						149,
+						176,
+						214,
+						318,
+						483
+					]
+				},
+				{
+					"word": "thought",
+					"frequency": 1,
+					"positions": [
+						150
+					]
+				},
+				{
+					"word": "bad",
+					"frequency": 1,
+					"positions": [
+						151
+					]
+				},
+				{
+					"word": "medical",
+					"frequency": 3,
+					"positions": [
+						152,
+						187,
+						476
+					]
+				},
+				{
+					"word": "business",
+					"frequency": 1,
+					"positions": [
+						153
+					]
+				},
+				{
+					"word": "technology",
+					"frequency": 3,
+					"positions": [
+						154,
+						422,
+						480
+					]
+				},
+				{
+					"word": "would",
+					"frequency": 2,
+					"positions": [
+						155,
+						319
+					]
+				},
+				{
+					"word": "prevent",
+					"frequency": 1,
+					"positions": [
+						156
+					]
+				},
+				{
+					"word": "great",
+					"frequency": 2,
+					"positions": [
+						158,
+						380
+					]
+				},
+				{
+					"word": "deal",
+					"frequency": 1,
+					"positions": [
+						159
+					]
+				},
+				{
+					"word": "money",
+					"frequency": 1,
+					"positions": [
+						160
+					]
+				},
+				{
+					"word": "patience",
+					"frequency": 1,
+					"positions": [
+						162
+					]
+				},
+				{
+					"word": "decided",
+					"frequency": 1,
+					"positions": [
+						164
+					]
+				},
+				{
+					"word": "career",
+					"frequency": 1,
+					"positions": [
+						168
+					]
+				},
+				{
+					"word": "put",
+					"frequency": 1,
+					"positions": [
+						169
+					]
+				},
+				{
+					"word": "stop",
+					"frequency": 1,
+					"positions": [
+						170
+					]
+				},
+				{
+					"word": "breakthrough",
+					"frequency": 1,
+					"positions": [
+						171
+					]
+				},
+				{
+					"word": "may",
+					"frequency": 3,
+					"positions": [
+						177,
+						454,
+						470
+					]
+				},
+				{
+					"word": "regard",
+					"frequency": 1,
+					"positions": [
+						178
+					]
+				},
+				{
+					"word": "amusing",
+					"frequency": 1,
+					"positions": [
+						179
+					]
+				},
+				{
+					"word": "piece",
+					"frequency": 1,
+					"positions": [
+						180
+					]
+				},
+				{
+					"word": "fiction",
+					"frequency": 1,
+					"positions": [
+						181
+					]
+				},
+				{
+					"word": "willing",
+					"frequency": 1,
+					"positions": [
+						182
+					]
+				},
+				{
+					"word": "investigating",
+					"frequency": 1,
+					"positions": [
+						183
+					]
+				},
+				{
+					"word": "see",
+					"frequency": 1,
+					"positions": [
+						184
+					]
+				},
+				{
+					"word": "several",
+					"frequency": 1,
+					"positions": [
+						185
+					]
+				},
+				{
+					"word": "authority",
+					"frequency": 1,
+					"positions": [
+						188
+					]
+				},
+				{
+					"word": "worked",
+					"frequency": 1,
+					"positions": [
+						189
+					]
+				},
+				{
+					"word": "witnessed",
+					"frequency": 1,
+					"positions": [
+						192
+					]
+				},
+				{
+					"word": "corroborated",
+					"frequency": 1,
+					"positions": [
+						193
+					]
+				},
+				{
+					"word": "confirmed",
+					"frequency": 1,
+					"positions": [
+						194
+					]
+				},
+				{
+					"word": "incredible",
+					"frequency": 1,
+					"positions": [
+						195
+					]
+				},
+				{
+					"word": "finding",
+					"frequency": 1,
+					"positions": [
+						196
+					]
+				},
+				{
+					"word": "well",
+					"frequency": 3,
+					"positions": [
+						197,
+						442,
+						455
+					]
+				},
+				{
+					"word": "remarkable",
+					"frequency": 1,
+					"positions": [
+						198
+					]
+				},
+				{
+					"word": "technical",
+					"frequency": 1,
+					"positions": [
+						199
+					]
+				},
+				{
+					"word": "aspect",
+					"frequency": 1,
+					"positions": [
+						200
+					]
+				},
+				{
+					"word": "creation",
+					"frequency": 1,
+					"positions": [
+						201
+					]
+				},
+				{
+					"word": "however",
+					"frequency": 1,
+					"positions": [
+						202
+					]
+				},
+				{
+					"word": "final",
+					"frequency": 1,
+					"positions": [
+						203
+					]
+				},
+				{
+					"word": "analysis",
+					"frequency": 1,
+					"positions": [
+						204
+					]
+				},
+				{
+					"word": "real",
+					"frequency": 1,
+					"positions": [
+						205
+					]
+				},
+				{
+					"word": "determine",
+					"frequency": 1,
+					"positions": [
+						207
+					]
+				},
+				{
+					"word": "revolutionary",
+					"frequency": 1,
+					"positions": [
+						208
+					]
+				},
+				{
+					"word": "exists",
+					"frequency": 1,
+					"positions": [
+						210
+					]
+				},
+				{
+					"word": "experience",
+					"frequency": 1,
+					"positions": [
+						211
+					]
+				},
+				{
+					"word": "thankfully",
+					"frequency": 1,
+					"positions": [
+						212
+					]
+				},
+				{
+					"word": "good",
+					"frequency": 1,
+					"positions": [
+						213
+					]
+				},
+				{
+					"word": "still",
+					"frequency": 3,
+					"positions": [
+						216,
+						265,
+						423
+					]
+				},
+				{
+					"word": "practise",
+					"frequency": 1,
+					"positions": [
+						217
+					]
+				},
+				{
+					"word": "work",
+					"frequency": 1,
+					"positions": [
+						220
+					]
+				},
+				{
+					"word": "product",
+					"frequency": 2,
+					"positions": [
+						222,
+						245
+					]
+				},
+				{
+					"word": "actually",
+					"frequency": 1,
+					"positions": [
+						223
+					]
+				},
+				{
+					"word": "home",
+					"frequency": 1,
+					"positions": [
+						225
+					]
+				},
+				{
+					"word": "referring",
+					"frequency": 1,
+					"positions": [
+						226
+					]
+				},
+				{
+					"word": "engineer",
+					"frequency": 1,
+					"positions": [
+						227
+					]
+				},
+				{
+					"word": "spooky",
+					"frequency": 1,
+					"positions": [
+						228
+					]
+				},
+				{
+					"word": "family",
+					"frequency": 1,
+					"positions": [
+						229
+					]
+				},
+				{
+					"word": "effective",
+					"frequency": 1,
+					"positions": [
+						230
+					]
+				},
+				{
+					"word": "affordable",
+					"frequency": 1,
+					"positions": [
+						231
+					]
+				},
+				{
+					"word": "system",
+					"frequency": 4,
+					"positions": [
+						233,
+						272,
+						308,
+						405
+					]
+				},
+				{
+					"word": "available",
+					"frequency": 2,
+					"positions": [
+						234,
+						482
+					]
+				},
+				{
+					"word": "today",
+					"frequency": 2,
+					"positions": [
+						235,
+						426
+					]
+				},
+				{
+					"word": "offer",
+					"frequency": 1,
+					"positions": [
+						236
+					]
+				},
+				{
+					"word": "free",
+					"frequency": 1,
+					"positions": [
+						237
+					]
+				},
+				{
+					"word": "software",
+					"frequency": 1,
+					"positions": [
+						238
+					]
+				},
+				{
+					"word": "update",
+					"frequency": 1,
+					"positions": [
+						239
+					]
+				},
+				{
+					"word": "largest",
+					"frequency": 1,
+					"positions": [
+						241
+					]
+				},
+				{
+					"word": "database",
+					"frequency": 1,
+					"positions": [
+						243
+					]
+				},
+				{
+					"word": "ensure",
+					"frequency": 1,
+					"positions": [
+						244
+					]
+				},
+				{
+					"word": "always",
+					"frequency": 1,
+					"positions": [
+						246
+					]
+				},
+				{
+					"word": "superior",
+					"frequency": 1,
+					"positions": [
+						247
+					]
+				},
+				{
+					"word": "beginner",
+					"frequency": 1,
+					"positions": [
+						248
+					]
+				},
+				{
+					"word": "start",
+					"frequency": 2,
+					"positions": [
+						249,
+						256
+					]
+				},
+				{
+					"word": "portable",
+					"frequency": 4,
+					"positions": [
+						250,
+						267,
+						329,
+						407
+					]
+				},
+				{
+					"word": "starter",
+					"frequency": 3,
+					"positions": [
+						251,
+						263,
+						268
+					]
+				},
+				{
+					"word": "kit",
+					"frequency": 5,
+					"positions": [
+						252,
+						264,
+						269,
+						334,
+						411
+					]
+				},
+				{
+					"word": "includes",
+					"frequency": 1,
+					"positions": [
+						253
+					]
+				},
+				{
+					"word": "need",
+					"frequency": 1,
+					"positions": [
+						255
+					]
+				},
+				{
+					"word": "first",
+					"frequency": 1,
+					"positions": [
+						257
+					]
+				},
+				{
+					"word": "rifing",
+					"frequency": 1,
+					"positions": [
+						258
+					]
+				},
+				{
+					"word": "even",
+					"frequency": 1,
+					"positions": [
+						260
+					]
+				},
+				{
+					"word": "though",
+					"frequency": 1,
+					"positions": [
+						261
+					]
+				},
+				{
+					"word": "ideal",
+					"frequency": 1,
+					"positions": [
+						270
+					]
+				},
+				{
+					"word": "body",
+					"frequency": 5,
+					"positions": [
+						271,
+						300,
+						350,
+						387,
+						396
+					]
+				},
+				{
+					"word": "detox",
+					"frequency": 1,
+					"positions": [
+						273
+					]
+				},
+				{
+					"word": "boosting",
+					"frequency": 1,
+					"positions": [
+						274
+					]
+				},
+				{
+					"word": "energy",
+					"frequency": 1,
+					"positions": [
+						275
+					]
+				},
+				{
+					"word": "killing",
+					"frequency": 2,
+					"positions": [
+						276,
+						383
+					]
+				},
+				{
+					"word": "mould",
+					"frequency": 1,
+					"positions": [
+						277
+					]
+				},
+				{
+					"word": "insect",
+					"frequency": 1,
+					"positions": [
+						278
+					]
+				},
+				{
+					"word": "normally",
+					"frequency": 1,
+					"positions": [
+						279
+					]
+				},
+				{
+					"word": "recommend",
+					"frequency": 2,
+					"positions": [
+						280,
+						326
+					]
+				},
+				{
+					"word": "user",
+					"frequency": 1,
+					"positions": [
+						281
+					]
+				},
+				{
+					"word": "get",
+					"frequency": 2,
+					"positions": [
+						282,
+						414
+					]
+				},
+				{
+					"word": "set",
+					"frequency": 2,
+					"positions": [
+						283,
+						401
+					]
+				},
+				{
+					"word": "least",
+					"frequency": 1,
+					"positions": [
+						284
+					]
+				},
+				{
+					"word": "generator",
+					"frequency": 7,
+					"positions": [
+						286,
+						288,
+						302,
+						330,
+						335,
+						339,
+						351
+					]
+				},
+				{
+					"word": "one",
+					"frequency": 3,
+					"positions": [
+						287,
+						457,
+						464
+					]
+				},
+				{
+					"word": "running",
+					"frequency": 1,
+					"positions": [
+						289
+					]
+				},
+				{
+					"word": "program",
+					"frequency": 3,
+					"positions": [
+						290,
+						305,
+						358
+					]
+				},
+				{
+					"word": "attack",
+					"frequency": 1,
+					"positions": [
+						292
+					]
+				},
+				{
+					"word": "harmful",
+					"frequency": 2,
+					"positions": [
+						293,
+						349
+					]
+				},
+				{
+					"word": "microbe",
+					"frequency": 1,
+					"positions": [
+						294
+					]
+				},
+				{
+					"word": "pathogen",
+					"frequency": 1,
+					"positions": [
+						295
+					]
+				},
+				{
+					"word": "virus",
+					"frequency": 2,
+					"positions": [
+						297,
+						382
+					]
+				},
+				{
+					"word": "toxic",
+					"frequency": 2,
+					"positions": [
+						298,
+						316
+					]
+				},
+				{
+					"word": "debris",
+					"frequency": 2,
+					"positions": [
+						299,
+						317
+					]
+				},
+				{
+					"word": "second",
+					"frequency": 1,
+					"positions": [
+						301
+					]
+				},
+				{
+					"word": "handy",
+					"frequency": 1,
+					"positions": [
+						304
+					]
+				},
+				{
+					"word": "detoxify",
+					"frequency": 1,
+					"positions": [
+						306
+					]
+				},
+				{
+					"word": "lymph",
+					"frequency": 1,
+					"positions": [
+						307
+					]
+				},
+				{
+					"word": "liver",
+					"frequency": 1,
+					"positions": [
+						309
+					]
+				},
+				{
+					"word": "kidney",
+					"frequency": 1,
+					"positions": [
+						310
+					]
+				},
+				{
+					"word": "address",
+					"frequency": 1,
+					"positions": [
+						311
+					]
+				},
+				{
+					"word": "potential",
+					"frequency": 1,
+					"positions": [
+						312
+					]
+				},
+				{
+					"word": "detoxification",
+					"frequency": 1,
+					"positions": [
+						313
+					]
+				},
+				{
+					"word": "issue",
+					"frequency": 1,
+					"positions": [
+						314
+					]
+				},
+				{
+					"word": "clear",
+					"frequency": 2,
+					"positions": [
+						315,
+						386
+					]
+				},
+				{
+					"word": "run",
+					"frequency": 3,
+					"positions": [
+						321,
+						359,
+						368
+					]
+				},
+				{
+					"word": "incredibly",
+					"frequency": 1,
+					"positions": [
+						322
+					]
+				},
+				{
+					"word": "fast",
+					"frequency": 1,
+					"positions": [
+						323
+					]
+				},
+				{
+					"word": "biofeedback",
+					"frequency": 3,
+					"positions": [
+						324,
+						345,
+						365
+					]
+				},
+				{
+					"word": "scan",
+					"frequency": 2,
+					"positions": [
+						325,
+						366
+					]
+				},
+				{
+					"word": "getting",
+					"frequency": 1,
+					"positions": [
+						327
+					]
+				},
+				{
+					"word": "x",
+					"frequency": 3,
+					"positions": [
+						331,
+						336,
+						352
+					]
+				},
+				{
+					"word": "pro",
+					"frequency": 4,
+					"positions": [
+						332,
+						337,
+						353,
+						409
+					]
+				},
+				{
+					"word": "essential",
+					"frequency": 2,
+					"positions": [
+						333,
+						410
+					]
+				},
+				{
+					"word": "give",
+					"frequency": 1,
+					"positions": [
+						340
+					]
+				},
+				{
+					"word": "list",
+					"frequency": 1,
+					"positions": [
+						341
+					]
+				},
+				{
+					"word": "hit",
+					"frequency": 1,
+					"positions": [
+						343
+					]
+				},
+				{
+					"word": "according",
+					"frequency": 1,
+					"positions": [
+						344
+					]
+				},
+				{
+					"word": "minute",
+					"frequency": 1,
+					"positions": [
+						346
+					]
+				},
+				{
+					"word": "detects",
+					"frequency": 1,
+					"positions": [
+						347
+					]
+				},
+				{
+					"word": "contains",
+					"frequency": 1,
+					"positions": [
+						354
+					]
+				},
+				{
+					"word": "waveform",
+					"frequency": 1,
+					"positions": [
+						355
+					]
+				},
+				{
+					"word": "also",
+					"frequency": 2,
+					"positions": [
+						356,
+						367
+					]
+				},
+				{
+					"word": "load",
+					"frequency": 1,
+					"positions": [
+						357
+					]
+				},
+				{
+					"word": "standalone",
+					"frequency": 1,
+					"positions": [
+						360
+					]
+				},
+				{
+					"word": "without",
+					"frequency": 1,
+					"positions": [
+						361
+					]
+				},
+				{
+					"word": "computer",
+					"frequency": 1,
+					"positions": [
+						362
+					]
+				},
+				{
+					"word": "apart",
+					"frequency": 1,
+					"positions": [
+						363
+					]
+				},
+				{
+					"word": "performing",
+					"frequency": 1,
+					"positions": [
+						364
+					]
+				},
+				{
+					"word": "pemf",
+					"frequency": 1,
+					"positions": [
+						369
+					]
+				},
+				{
+					"word": "remote",
+					"frequency": 2,
+					"positions": [
+						370,
+						384
+					]
+				},
+				{
+					"word": "cold",
+					"frequency": 2,
+					"positions": [
+						371,
+						390
+					]
+				},
+				{
+					"word": "laser",
+					"frequency": 2,
+					"positions": [
+						372,
+						391
+					]
+				},
+				{
+					"word": "contact",
+					"frequency": 1,
+					"positions": [
+						373
+					]
+				},
+				{
+					"word": "mode",
+					"frequency": 1,
+					"positions": [
+						374
+					]
+				},
+				{
+					"word": "help",
+					"frequency": 2,
+					"positions": [
+						375,
+						394
+					]
+				},
+				{
+					"word": "ten",
+					"frequency": 1,
+					"positions": [
+						376
+					]
+				},
+				{
+					"word": "pad",
+					"frequency": 1,
+					"positions": [
+						377
+					]
+				},
+				{
+					"word": "hand",
+					"frequency": 1,
+					"positions": [
+						378
+					]
+				},
+				{
+					"word": "cylinder",
+					"frequency": 1,
+					"positions": [
+						379
+					]
+				},
+				{
+					"word": "quick",
+					"frequency": 1,
+					"positions": [
+						381
+					]
+				},
+				{
+					"word": "quietly",
+					"frequency": 1,
+					"positions": [
+						385
+					]
+				},
+				{
+					"word": "waste",
+					"frequency": 1,
+					"positions": [
+						388
+					]
+				},
+				{
+					"word": "twin",
+					"frequency": 1,
+					"positions": [
+						392
+					]
+				},
+				{
+					"word": "wrist",
+					"frequency": 1,
+					"positions": [
+						393
+					]
+				},
+				{
+					"word": "accelerate",
+					"frequency": 1,
+					"positions": [
+						395
+					]
+				},
+				{
+					"word": "natural",
+					"frequency": 1,
+					"positions": [
+						397
+					]
+				},
+				{
+					"word": "healing",
+					"frequency": 1,
+					"positions": [
+						398
+					]
+				},
+				{
+					"word": "process",
+					"frequency": 1,
+					"positions": [
+						399
+					]
+				},
+				{
+					"word": "prepared",
+					"frequency": 1,
+					"positions": [
+						400
+					]
+				},
+				{
+					"word": "versatile",
+					"frequency": 2,
+					"positions": [
+						402,
+						459
+					]
+				},
+				{
+					"word": "impressive",
+					"frequency": 1,
+					"positions": [
+						403
+					]
+				},
+				{
+					"word": "information",
+					"frequency": 1,
+					"positions": [
+						406
+					]
+				},
+				{
+					"word": "generatorx",
+					"frequency": 1,
+					"positions": [
+						408
+					]
+				},
+				{
+					"word": "found",
+					"frequency": 1,
+					"positions": [
+						412
+					]
+				},
+				{
+					"word": "http",
+					"frequency": 1,
+					"positions": [
+						413
+					]
+				},
+				{
+					"word": "order",
+					"frequency": 1,
+					"positions": [
+						415
+					]
+				},
+				{
+					"word": "entering",
+					"frequency": 1,
+					"positions": [
+						416
+					]
+				},
+				{
+					"word": "coupon",
+					"frequency": 1,
+					"positions": [
+						417
+					]
+				},
+				{
+					"word": "code",
+					"frequency": 1,
+					"positions": [
+						418
+					]
+				},
+				{
+					"word": "garylite",
+					"frequency": 1,
+					"positions": [
+						419
+					]
+				},
+				{
+					"word": "developed",
+					"frequency": 2,
+					"positions": [
+						421,
+						439
+					]
+				},
+				{
+					"word": "commonly",
+					"frequency": 1,
+					"positions": [
+						424
+					]
+				},
+				{
+					"word": "used",
+					"frequency": 1,
+					"positions": [
+						425
+					]
+				},
+				{
+					"word": "field",
+					"frequency": 1,
+					"positions": [
+						427
+					]
+				},
+				{
+					"word": "optic",
+					"frequency": 1,
+					"positions": [
+						428
+					]
+				},
+				{
+					"word": "microscopy",
+					"frequency": 1,
+					"positions": [
+						429
+					]
+				},
+				{
+					"word": "electronics",
+					"frequency": 1,
+					"positions": [
+						430
+					]
+				},
+				{
+					"word": "radiochemistry",
+					"frequency": 1,
+					"positions": [
+						431
+					]
+				},
+				{
+					"word": "biochemistry",
+					"frequency": 1,
+					"positions": [
+						432
+					]
+				},
+				{
+					"word": "ballistics",
+					"frequency": 1,
+					"positions": [
+						433
+					]
+				},
+				{
+					"word": "aviation",
+					"frequency": 1,
+					"positions": [
+						434
+					]
+				},
+				{
+					"word": "fair",
+					"frequency": 1,
+					"positions": [
+						435
+					]
+				},
+				{
+					"word": "statement",
+					"frequency": 1,
+					"positions": [
+						436
+					]
+				},
+				{
+					"word": "practically",
+					"frequency": 1,
+					"positions": [
+						438
+					]
+				},
+				{
+					"word": "bioelectric",
+					"frequency": 1,
+					"positions": [
+						440
+					]
+				},
+				{
+					"word": "medicine",
+					"frequency": 1,
+					"positions": [
+						441
+					]
+				},
+				{
+					"word": "documented",
+					"frequency": 1,
+					"positions": [
+						443
+					]
+				},
+				{
+					"word": "time",
+					"frequency": 2,
+					"positions": [
+						444,
+						478
+					]
+				},
+				{
+					"word": "various",
+					"frequency": 1,
+					"positions": [
+						445
+					]
+				},
+				{
+					"word": "newspaper",
+					"frequency": 1,
+					"positions": [
+						446
+					]
+				},
+				{
+					"word": "including",
+					"frequency": 1,
+					"positions": [
+						447
+					]
+				},
+				{
+					"word": "smithsonian",
+					"frequency": 1,
+					"positions": [
+						448
+					]
+				},
+				{
+					"word": "institute",
+					"frequency": 1,
+					"positions": [
+						449
+					]
+				},
+				{
+					"word": "thoroughly",
+					"frequency": 1,
+					"positions": [
+						450
+					]
+				},
+				{
+					"word": "understand",
+					"frequency": 1,
+					"positions": [
+						451
+					]
+				},
+				{
+					"word": "achievement",
+					"frequency": 1,
+					"positions": [
+						453
+					]
+				},
+				{
+					"word": "decide",
+					"frequency": 1,
+					"positions": [
+						456
+					]
+				},
+				{
+					"word": "gifted",
+					"frequency": 1,
+					"positions": [
+						458
+					]
+				},
+				{
+					"word": "scientific",
+					"frequency": 1,
+					"positions": [
+						460
+					]
+				},
+				{
+					"word": "mind",
+					"frequency": 1,
+					"positions": [
+						461
+					]
+				},
+				{
+					"word": "history",
+					"frequency": 1,
+					"positions": [
+						463
+					]
+				},
+				{
+					"word": "day",
+					"frequency": 1,
+					"positions": [
+						465
+					]
+				},
+				{
+					"word": "name",
+					"frequency": 1,
+					"positions": [
+						466
+					]
+				},
+				{
+					"word": "ascend",
+					"frequency": 1,
+					"positions": [
+						471
+					]
+				},
+				{
+					"word": "rightful",
+					"frequency": 1,
+					"positions": [
+						472
+					]
+				},
+				{
+					"word": "place",
+					"frequency": 1,
+					"positions": [
+						473
+					]
+				},
+				{
+					"word": "giant",
+					"frequency": 1,
+					"positions": [
+						474
+					]
+				},
+				{
+					"word": "modern",
+					"frequency": 1,
+					"positions": [
+						475
+					]
+				},
+				{
+					"word": "science",
+					"frequency": 1,
+					"positions": [
+						477
+					]
+				},
+				{
+					"word": "fabulous",
+					"frequency": 1,
+					"positions": [
+						479
+					]
+				},
+				{
+					"word": "remains",
+					"frequency": 1,
+					"positions": [
+						481
+					]
+				},
+				{
+					"word": "interest",
+					"frequency": 1,
+					"positions": [
+						484
+					]
+				},
+				{
+					"word": "seek",
+					"frequency": 1,
+					"positions": [
+						485
+					]
+				}
+			]
+		}
+	]
+}

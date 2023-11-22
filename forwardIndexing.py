@@ -40,7 +40,7 @@ for article in data:
 
     #remove special characters, dots etc
     words_tokenized = [word for word in words_tokenized if word.isalpha()]
-    
+
     #convert to lower case
     words_tokenized = [word.lower() for word in words_tokenized]
 
