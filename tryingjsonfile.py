@@ -6,6 +6,29 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk.probability import FreqDist
 
+class Lexicon:
+    def __init__(self):
+        self.word_to_id = {}
+        self.current_id = 1
+
+        # Load existing data from Lexicon.json (if exists)
+        try:
+            with open('Lexicon.json', 'r') as file:
+                existing_data = json.load(file)
+                if existing_data:
+                    self.word_to_id = existing_data  # Load existing data
+                    self.current_id = max(existing_data.values()) + 1  # Update current ID
+        except FileNotFoundError:
+            pass
+
+    def get_word_id(self, word):
+        if word in self.word_to_id:
+            return self.word_to_id[word]
+        else:
+            self.word_to_id[word] = self.current_id
+            self.current_id += 1
+            return self.word_to_id[word]
+
 # Set up NLTK
 stop_words = set(stopwords.words('english'))
 lemmatizer = WordNetLemmatizer()
@@ -14,9 +37,12 @@ lemmatizer = WordNetLemmatizer()
 forward_index = {"forward_index": []}
 
 # Directory containing JSON files
-json_dir = "./nela-gt-2022/newsdata/369news.json"  # Replace with your actual path
+json_dir = "./nela-gt-2022/newsdata/21stcenturywire.json" 
 
 article_id = 0
+
+#initializing the constructor for the Lexicon class
+lex = Lexicon()
 
 with open(json_dir, "r") as f:
     data = json.load(f)
@@ -58,7 +84,7 @@ with open(json_dir, "r") as f:
 
         # Building the JSON object structure for every article
         article_entry = {
-            "doc_id": article_id,
+            "doc_id": doc_id,
             "url": url,
             "date": date,
             "words": []
@@ -66,8 +92,9 @@ with open(json_dir, "r") as f:
         # json object within a json object(inside list)
         # a json object for each word, its details, these will be stored in the list of words in main json object
         for word in frequency_distribution.keys():
+            word_id = lex.get_word_id(word)
             each_word_detail_in_an_article = {
-                "word":word,
+                "word": word_id,
                 "frequency": frequency_distribution[word],
                 "positions": positions[word]
             }
@@ -78,7 +105,11 @@ with open(json_dir, "r") as f:
         article_id += 1
 
 # Write the JSON structure to a file
-json_file_path = 'forward_indexing.json'
+json_file_path = 'forward_indexing2.json'
 with open(json_file_path, 'w', encoding='utf-8') as json_file:
-    json.dump(forward_index, json_file, indent='\t')
-print(len(json_file_path))
+    json.dump(forward_index, json_file, indent = 2)
+# print(len(json_file_path))
+
+# Write the updated word-to-ID mappings to new.json
+with open('Lexicon.json', 'w') as file:
+    json.dump(lex.word_to_id, file, indent = 2)
