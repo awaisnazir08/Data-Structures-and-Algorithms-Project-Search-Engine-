@@ -156,7 +156,7 @@ url_resolver.save_checksums_to_file('checksums.json')
 url_resolver.sort_file_with_respect_to_checksums('checksums.json')
 
 # Write the JSON structure to a file
-json_file_path = 'forward_indexing3.json'
+json_file_path = 'forward_indexing.json'
 with open(json_file_path, 'w', encoding='utf-8') as json_file:
     json.dump(forward_index, json_file, indent=2)
 
