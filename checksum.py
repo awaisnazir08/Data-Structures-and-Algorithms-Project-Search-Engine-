@@ -25,3 +25,15 @@ while left <= right:
         right = mid - 1
 else:
     print("URL checksum not found in the file")
+
+import hashlib
+import sys
+url = "https://21stcenturywire.com/2022/01/01/the-best-babylon-bee-sketches-of-2021/"
+
+def generate_document_id(url):
+    sha256_hash = hashlib.blake2s(url.encode()).hexdigest()
+    return sha256_hash
+a = 3
+document_id = generate_document_id(url)
+print(sys.getsizeof(url))
+print(document_id)

@@ -55,6 +55,13 @@ class URLResolver:
         with open(file_path, 'w') as file:
             json.dump(self.url_checksums, file)
 
+    def sort_file_with_respect_to_checksums(self, file_path):
+        with open(file_path, 'r') as file:
+            data = json.load(file)
+        sorted_data = sorted(data.items(), key=lambda x: x[0])
+        with open(file_path, 'w') as file:
+            json.dump(dict(sorted_data), file)
+
 # Set up NLTK
 stop_words = set(stopwords.words('english'))
 lemmatizer = WordNetLemmatizer()
@@ -77,7 +84,10 @@ with open(json_dir, "r") as f:
     data = json.load(f)
     for article in data:
         url = article.get('url')
-        url_checksum = hashlib.sha256(url.encode()).hexdigest()
+        if url.endswith('/'):
+        # If yes, remove the trailing '/'
+            url = url.rstrip('/')
+        url_checksum = hashlib.blake2s(url.encode()).hexdigest()
         doc_id = url_resolver.resolve_doc_id(url_checksum)
 
         if doc_id is not None:
@@ -143,6 +153,7 @@ with open(json_dir, "r") as f:
 
 # Save the updated URL checksums file
 url_resolver.save_checksums_to_file('checksums.json')
+url_resolver.sort_file_with_respect_to_checksums('checksums.json')
 
 # Write the JSON structure to a file
 json_file_path = 'forward_indexing3.json'
@@ -152,3 +163,4 @@ with open(json_file_path, 'w', encoding='utf-8') as json_file:
 # Write the updated word-to-ID mappings to new.json
 with open('Lexicon.json', 'w') as file:
     json.dump(lex.word_to_id, file, indent=2)
+
