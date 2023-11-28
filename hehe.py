@@ -34,7 +34,7 @@ class Lexicon:
 
 # Read data from the JSON file
 # (Assuming '21stcenturywire.json' contains your input data)
-with open('nela-gt-2022/newsdata/21stcenturywire.json', 'r') as file:
+with open('nela-gt-2022/newsdata/airwars.json', 'r') as file:
     data = json.load(file)
 
 lex = Lexicon()
