@@ -3,6 +3,9 @@ import json
 # Directory containing JSON files
 json_dir = "./nela-gt-2022/newsdata"  # Replace with your actual path
 
+# with open(json_dir, 'r') as f:
+#     data = json.load(f)
+#     print(len(data))
 count = 0
 # Get all JSON files in the directory
 json_files = [file for file in os.listdir(json_dir) if file.endswith(".json")]
@@ -13,5 +16,6 @@ for json_file in json_files:
     with open(os.path.join(json_dir, json_file), "r") as f:
         data = json.load(f)
         count+=len(data)
+        print(len(data))
 
 print(count)
