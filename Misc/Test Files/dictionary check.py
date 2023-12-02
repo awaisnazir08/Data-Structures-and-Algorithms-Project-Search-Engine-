@@ -5,9 +5,11 @@ inverted_index = "Inverted_Index/inverted_index.json"
 with open (inverted_index, 'r') as file:
     data = json.load(file)
 
-    for word_id in data["word_ID"]:
-        print(word_id)
-    # i = 1
+    if "10172" in data["word_ID"]:
+        print("yes")
+    # for word_id in data["word_ID"]:
+    #     print(word_id)
+    # # i = 1
     # for dat in data:
     #     print(dat)
     #     # if i==1:
