@@ -51,3 +51,6 @@ def create_inverted_index(forward_index):
 
 forward_index = load_forward_index()
 
+    # Remove duplicate word IDs
+    # inverted_index = {k: v for k, v in inverted_index.items() if len(v) == len(set(v))}
+

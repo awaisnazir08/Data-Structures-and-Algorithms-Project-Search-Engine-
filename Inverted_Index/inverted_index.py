@@ -60,8 +60,6 @@ def create_inverted_index(forward_index):
                     #add the details of the word for that document in the inverted index of the word
                     inverted_index["word_ID"][word_id][doc_id] = word_info
 
-    # Remove duplicate word IDs
-    # inverted_index = {k: v for k, v in inverted_index.items() if len(v) == len(set(v))}
 
     #save the updated inverted index dictionary in a json file
     save_inverted_index_file(inverted_index)
