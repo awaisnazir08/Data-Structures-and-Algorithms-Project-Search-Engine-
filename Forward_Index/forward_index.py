@@ -192,9 +192,8 @@ json_dir = "./nela-gt-2022/newsdata"
 #getiing all JSON files in the directory using the os module
 json_files = [file for file in os.listdir(json_dir) if file.endswith(".json")]
 
-
+# Load data from each JSON file one by one
 for json_file in json_files:
-    # Load data from each JSON file one by one
     with open(os.path.join(json_dir, json_file), "r") as f:
         data = json.load(f)
         for article in data:
@@ -288,9 +287,12 @@ url_resolver.sort_file_with_respect_to_checksums_and_save()
 # Write the JSON structure to a file
 forwardIndex.save_forward_index_file()
 
+#saving the lexicon dictionary
 lex.save_lexicon_file()
 
+#saving the document index file
 docid_url_mapping.save_document_index()
 
+#save the docId and date mapping file
 docid_date_mapping.save_docId_date_file()
 
