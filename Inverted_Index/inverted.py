@@ -1,6 +1,7 @@
 import json
 from collections import defaultdict
 
+
 def generate_inverted_index(forward_index_path):
     # Read forward index data from the specified file path
     with open(forward_index_path, 'r') as f:
@@ -32,6 +33,7 @@ def generate_inverted_index(forward_index_path):
         json.dump({"word_ID": inverted_index}, json_file, indent=4)
 
     print("Inverted index generated and saved as 'inverted_index.json'")
+
 
 # Specify the path to the forward index file
 forward_index_file_path = './Forward_Index/forward_indexing.json'
