@@ -18,4 +18,4 @@ for json_file in json_files:
         count+=len(data)
         # print(len(data))
 
-print(count)
+print(count)    

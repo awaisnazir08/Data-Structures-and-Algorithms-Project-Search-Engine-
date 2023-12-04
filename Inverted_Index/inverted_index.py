@@ -32,16 +32,16 @@ def create_inverted_index(forward_index):
     #iterating through each document in the forward index
     for doc in forward_index:
         #getting the document id and words associated with each document
-        doc_id = doc["doc_id"]
+        doc_id = doc["d_id"]
         words = doc.get("words", [])
         doc_id = str(doc_id)
 
         #getting the information for each word present in a particular document
         for word in words:
-            word_id = word.get("word")
+            word_id = word.get("w_id")
             word_id = str(word_id)
-            frequency = word.get("frequency")
-            positions = word.get("positions")
+            frequency = word.get("fr")
+            positions = word.get("ps")
             
             if word_id is not None:
                 #if the inverted index file is empty, initialize it with a key named word_ID
@@ -53,8 +53,8 @@ def create_inverted_index(forward_index):
                 #if a document id for a given word is already present, don't duplicate. else add the details for word in a document in a dictionary
                 if doc_id not in inverted_index["word_ID"][word_id]:
                     word_info = {
-                        "frequency": frequency,
-                        "positions": positions
+                        "fr": frequency,
+                        "ps": positions
                     }
 
                     #add the details of the word for that document in the inverted index of the word

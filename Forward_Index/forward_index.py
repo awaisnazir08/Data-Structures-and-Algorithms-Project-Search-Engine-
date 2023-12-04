@@ -1,5 +1,4 @@
 import json
-import re
 import os
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
@@ -255,7 +254,7 @@ for json_file in json_files:
 
                 # Building the JSON object structure for every article
                 article_entry = {
-                    "doc_id": doc_id,
+                    "d_id": doc_id,
                     "words": []
                 }
 
@@ -273,9 +272,9 @@ for json_file in json_files:
                     else:
                         word_frequency = frequency_distribution[word]
                     each_word_detail_in_an_article = {
-                        "word": word_id,
-                        "frequency": word_frequency,
-                        "positions": positions[word]
+                        "w_id": word_id,
+                        "fr": word_frequency,
+                        "ps": positions[word]
                     }
                     article_entry["words"].append(each_word_detail_in_an_article)
                 forwardIndex.add_to_forward_index(article_entry)
