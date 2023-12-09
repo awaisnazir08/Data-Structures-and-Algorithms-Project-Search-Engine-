@@ -98,16 +98,36 @@ for word in clean_query:
         loaded_inverted_indices[barrel_id] = word_data_in_barrel
 
     documents = get_document_ids(word_id, word_data_in_barrel)
-    sorted_documents_based_on_frequency = dict(sorted(documents.items(), key=lambda item: item[1]["fr"], reverse=True)[:30])
 
-    for document_id in sorted_documents_based_on_frequency.keys():
+
+    # Calculate scores based on frequencies and positions
+    scores = {}
+    for document_id, data in documents.items():
+        frequency = data.get("fr", 0)
+        positions = data.get("ps", [])
+
+        # Avoid division by zero error
+        position_score = sum(1 / pos for pos in positions if pos != 0) if positions else 0
+
+        scores[document_id] = frequency * position_score
+
+    # Sort documents by score in descending order
+    sorted_documents = dict(sorted(scores.items(), key=lambda item: item[1], reverse=True)[:30])
+
+    for document_id in sorted_documents.keys():
         document_url = document_urls[document_id]
-        # print(document_url)
+        print(document_id, " ", sorted_documents[document_id], " ", document_url)
 
-        # print(document_id)
-        print(document_id," ", sorted_documents_based_on_frequency[document_id], " ", document_url)
 
-    # print(documents.keys())
-    # for document in documents:
-    #     document_id = documents[document.key]
-    #     print(document_id)
+
+
+
+    # sorted_documents_based_on_frequency = dict(sorted(documents.items(), key=lambda item: item[1]["fr"], reverse=True)[:30])
+
+    # for document_id in sorted_documents_based_on_frequency.keys():
+    #     document_url = document_urls[document_id]
+    #     # print(document_url)
+
+    #     # print(document_id)
+    #     print(document_id," ", sorted_documents_based_on_frequency[document_id], " ", document_url)
+
