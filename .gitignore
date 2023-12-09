@@ -24,3 +24,5 @@ docId_date_mapping.json
 document_index.json
 checksums.json
 forward_indexing.json
+import json.py
+page rank.py
