@@ -36,7 +36,6 @@ def load_inverted_index_barrel(path):
         return None
 
 def get_document_ids(word_id, word_data_in_barrel):
-    documents = {}
     if str(word_id) in word_data_in_barrel["word_ID"]:
         word_data = word_data_in_barrel["word_ID"][str(word_id)]
         # document_ids = list(word_data.keys())
@@ -66,7 +65,7 @@ lexicon_dictionary = load_Lexicon()
 document_urls = load_documentIndex()
 
 
-
+loaded_inverted_indices = {}
 query = input("Enter the query to search: ")
 
 #tokenizing the combined words
@@ -89,11 +88,25 @@ for word in clean_query:
     print(word_id)
     barrel_id = word_id % 100
     print(barrel_id + 1)
-    word_data_in_barrel = load_inverted_index_barrel(f'Inverted_Index/Inverted_index_files/inverted_index_barrel_{barrel_id + 1}.json')
+
+    # Check if the inverted index for this barrel is already loaded
+    if barrel_id in loaded_inverted_indices:
+        word_data_in_barrel = loaded_inverted_indices[barrel_id]
+    else:
+        # Load the inverted index for this barrel
+        word_data_in_barrel = load_inverted_index_barrel(f'Inverted_Index/Inverted_index_files/inverted_index_barrel_{barrel_id + 1}.json')
+        loaded_inverted_indices[barrel_id] = word_data_in_barrel
+
     documents = get_document_ids(word_id, word_data_in_barrel)
-    for document_id in documents.keys():
+    sorted_documents_based_on_frequency = dict(sorted(documents.items(), key=lambda item: item[1]["fr"], reverse=True)[:30])
+
+    for document_id in sorted_documents_based_on_frequency.keys():
         document_url = document_urls[document_id]
-        print(document_url)
+        # print(document_url)
+
+        # print(document_id)
+        print(document_id," ", sorted_documents_based_on_frequency[document_id], " ", document_url)
+
     # print(documents.keys())
     # for document in documents:
     #     document_id = documents[document.key]
