@@ -1,4 +1,10 @@
 nela-gt-2022/newsdata
+Forward_Index/checksums.json
+Forward_Index/docId_date_mapping.json
+Forward_Index/document_index.json
+Forward_Index/forward_indexing.json
+Forward_Index/Lexicon.json
+Inverted_Index/inverted_index.json
 using pandas.py
 forward_indexing_sample_file.csv
 word_frequency_and_positions.csv
@@ -10,3 +16,12 @@ word_frequency_and_positions.csv
 json.json
 word_frequency_and_positions.csv
 forwardIndexing.py
+tempCodeRunnerFile.python
+Misc/sizecheck.py
+Misc/Test Files/using os.py
+Test Files/dictionary check.py
+Project First Submission.rar
+Project First Submission.rar
+Project First Submission.rar
+/Forward_Index/*.json
+inverted_index.json
