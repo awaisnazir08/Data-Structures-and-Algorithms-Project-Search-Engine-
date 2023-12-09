@@ -1,7 +1,7 @@
 import os
 import json
 # Directory containing JSON files
-json_dir = "./nela-gt-2022/newsdata"  # Replace with your actual path
+json_dir = "./nela-gt-2022/newsdata" 
 
 # with open(json_dir, 'r') as f:
 #     data = json.load(f)

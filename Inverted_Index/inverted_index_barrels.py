@@ -1,7 +1,5 @@
 import json
 import os
-from collections import defaultdict
-
 
 #function to load the forward index file
 def load_forward_index(file_path):
