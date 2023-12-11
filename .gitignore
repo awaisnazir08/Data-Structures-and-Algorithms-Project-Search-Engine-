@@ -11,6 +11,7 @@ word_frequency_and_positions.csv
 forward_indexing.csv
 word_frequency_and_positions.csv
 nltk1.py
+nela-gt-2022/
 word_frequency_and_positions.csv
 word_frequency_and_positions.csv
 json.json
@@ -23,3 +24,15 @@ Test Files/dictionary check.py
 Project First Submission.rar
 Project First Submission.rar
 Project First Submission.rar
+<<<<<<< HEAD
+=======
+Forward_index_files
+Inverted_index_files
+Lexicon.json
+docId_date_mapping.json
+document_index.json
+checksums.json
+forward_indexing.json
+import json.py
+page rank.py
+>>>>>>> f37341d5256ccae3fca3d6a28c5f823b05f0eb1c

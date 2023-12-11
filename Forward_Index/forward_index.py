@@ -1,4 +1,5 @@
 import json
+import re
 import os
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
@@ -227,7 +228,7 @@ for json_file in json_files:
                 words_tokenized = word_tokenize(title_and_content_merged)
 
                 # Remove special characters, dots, etc.
-                words_tokenized = [word for word in words_tokenized if word.isalpha()]
+                words_tokenized = [word for word in words_tokenized if re.match("^[a-zA-Z0-9_]*$", word)]
 
                 # Convert to lowercase
                 words_tokenized = [word.lower() for word in words_tokenized]
