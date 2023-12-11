@@ -35,4 +35,7 @@ checksums.json
 forward_indexing.json
 import json.py
 page rank.py
+<<<<<<< HEAD
+>>>>>>> f37341d5256ccae3fca3d6a28c5f823b05f0eb1c
+=======
 >>>>>>> f37341d5256ccae3fca3d6a28c5f823b05f0eb1c

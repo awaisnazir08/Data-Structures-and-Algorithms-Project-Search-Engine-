@@ -4,7 +4,10 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 import re
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> f37341d5256ccae3fca3d6a28c5f823b05f0eb1c
 def load_Lexicon():
     file_path = "Forward_Index/Lexicon.json"
     try:
@@ -132,4 +135,7 @@ for word in clean_query:
     #     # print(document_id)
     #     print(document_id," ", sorted_documents_based_on_frequency[document_id], " ", document_url)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> f37341d5256ccae3fca3d6a28c5f823b05f0eb1c
