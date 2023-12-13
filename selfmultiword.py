@@ -2,8 +2,9 @@ import json
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
+from queue import PriorityQueue
 import re
-import time
+
 def load_Lexicon():
     file_path = "Forward_Index/Lexicon.json"
     try:
@@ -82,11 +83,12 @@ clean_query = [word for word in query_tokenized if word not in stop_words]
 
 # Lemmatization
 clean_query = [lemmatizer.lemmatize(word) for word in clean_query]
-
+all_documents = {}
+document_score = {}
 for word in clean_query:
     word_id = lexicon_dictionary[word]
     print(word_id)
-    barrel_id = word_id % 2000
+    barrel_id = word_id % 100
     print(barrel_id + 1)
 
     # Check if the inverted index for this barrel is already loaded
@@ -98,18 +100,50 @@ for word in clean_query:
         loaded_inverted_indices[barrel_id] = word_data_in_barrel
 
     documents = get_document_ids(word_id, word_data_in_barrel)
-    for document in documents:
-        print(documents[document])
+    all_documents.update(documents)
     # sorted_documents_based_on_frequency = dict(sorted(documents.items(), key=lambda item: item[1]["fr"], reverse=True)[:30])
 
-    # for document_id in sorted_documents_based_on_frequency.keys():
-    #     document_url = document_urls[document_id]
-    #     # print(document_url)
-        
-    #     # print(document_id)
-    #     print(document_id," ", sorted_documents_based_on_frequency[document_id], " ", document_url)
+    for document in documents.keys():
+        # print((document))
+        if document not in document_score:
+            document_score[document] = 1
+        else:
+            document_score[document] += 1
+
+common_documents = {doc_id: score for doc_id, score in document_score.items() if score > 1}
+document_score = dict(sorted(common_documents.items(), key=lambda item: item[1], reverse=True))
+
+retreiving_common_doc_data_from_all_docs = {}
+for item in common_documents.keys():
+    retreiving_common_doc_data_from_all_docs[item] = all_documents[item]
+
+for item in common_documents.keys():
+    del all_documents[item]
+
+
+
+sorted_documents_based_on_frequency = dict(sorted(retreiving_common_doc_data_from_all_docs.items(), key=lambda item: item[1]["fr"], reverse=True)[:30])
+
+print("Number of documents: ", len(sorted_documents_based_on_frequency))
+    # print(item)
+
+for document_id in sorted_documents_based_on_frequency.keys():
+    document_url = document_urls[document_id]
+    # print(document_url)
+
+    # print(document_id)
+    print(document_id," ", sorted_documents_based_on_frequency[document_id], " ", document_url)
+
+if len(sorted_documents_based_on_frequency) < 30:
+    sorted_documents_based_on_frequency = dict(sorted(all_documents.items(), key=lambda item: item[1]["fr"], reverse=True)[:30- len(sorted_documents_based_on_frequency)])
+    for document_id in sorted_documents_based_on_frequency.keys():
+        document_url = document_urls[document_id]
+        # print(document_url)
+
+        # print(document_id)
+        print(document_id," ", sorted_documents_based_on_frequency[document_id], " ", document_url)
 
     # print(documents.keys())
-    # for document in documents:
-    #     document_id = documents[document.key]
-    #     print(document_id)
+    # for document in documents.values():
+    #     print(document)
+

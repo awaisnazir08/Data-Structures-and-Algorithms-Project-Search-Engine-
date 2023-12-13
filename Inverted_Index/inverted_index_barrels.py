@@ -14,7 +14,7 @@ def load_forward_index(file_path):
 class InvertedIndex:
     #constructor
     def __init__(self):
-        self.number_of_inverted_index_barrels = 100
+        self.number_of_inverted_index_barrels = 2000
         self.inverted_index_file_paths = []
         self.inverted_indices = []
         for i in range(1, self.number_of_inverted_index_barrels + 1):

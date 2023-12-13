@@ -140,7 +140,7 @@ class URLResolver:
 class Forward_Index:
     #constructor
     def __init__(self):
-        self.forward_index_path = 'Forward_Index/forward_indexing.json'
+        self.forward_index_path = 'Forward_Index/Forward_index_files2/forward_index.json'
         self.forward_index = self.load_forward_index()
 
     #if the forward index already exists, then loads it, else creates a dictionary for a new file

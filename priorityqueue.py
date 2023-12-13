@@ -3,14 +3,15 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 import re
-import time
+import heapq  # Import heapq module for priority queue
+
 def load_Lexicon():
     file_path = "Forward_Index/Lexicon.json"
     try:
         with open(file_path, "r") as file:
             return json.load(file)
     except (FileExistsError, FileNotFoundError):
-        return None
+        return None  
 
 def load_documentIndex():
     file_path = "Forward_Index/document_index.json"
@@ -71,45 +72,76 @@ query = input("Enter the query to search: ")
 #tokenizing the combined words
 query_tokenized = word_tokenize(query)
 
-# Remove special characters, dots, etc.
+#remove special characters, dots, etc.
 query_tokenized = [word for word in query_tokenized if re.match("^[a-zA-Z0-9_]*$", word)]
 
-# Convert to lowercase
+#convert to lowercase
 query_tokenized = [word.lower() for word in query_tokenized]
 
-# Remove stop words
+#remove stop words
 clean_query = [word for word in query_tokenized if word not in stop_words]
 
-# Lemmatization
+#lemmatization
 clean_query = [lemmatizer.lemmatize(word) for word in clean_query]
 
+priority_queue = []
+all_documents = {}
+document_score = {}
 for word in clean_query:
     word_id = lexicon_dictionary[word]
     print(word_id)
     barrel_id = word_id % 2000
     print(barrel_id + 1)
 
-    # Check if the inverted index for this barrel is already loaded
+    #check if the inverted index for this barrel is already loaded
     if barrel_id in loaded_inverted_indices:
         word_data_in_barrel = loaded_inverted_indices[barrel_id]
     else:
-        # Load the inverted index for this barrel
+        #load the inverted index for this barrel
         word_data_in_barrel = load_inverted_index_barrel(f'Inverted_Index/Inverted_index_files/inverted_index_barrel_{barrel_id + 1}.json')
         loaded_inverted_indices[barrel_id] = word_data_in_barrel
 
     documents = get_document_ids(word_id, word_data_in_barrel)
-    for document in documents:
-        print(documents[document])
-    # sorted_documents_based_on_frequency = dict(sorted(documents.items(), key=lambda item: item[1]["fr"], reverse=True)[:30])
+    all_documents.update(documents)
 
-    # for document_id in sorted_documents_based_on_frequency.keys():
-    #     document_url = document_urls[document_id]
-    #     # print(document_url)
-        
-    #     # print(document_id)
-    #     print(document_id," ", sorted_documents_based_on_frequency[document_id], " ", document_url)
 
-    # print(documents.keys())
-    # for document in documents:
-    #     document_id = documents[document.key]
-    #     print(document_id)
+
+
+    for document in documents.keys():
+        if document not in document_score:
+            document_score[document] = {"count": 1, "values": [documents[document]]}
+        else:
+            document_score[document]["count"] += 1
+            document_score[document]["values"].append(documents[document])
+
+sorted_items = sorted(document_score.items(), key=lambda x: x[1]['count'], reverse=False)
+
+for element in sorted_items:
+    print(element)
+# #use a priority queue to maintain the top documents based on frequency
+# for document_id, data in documents.items():
+#     frequency = data["fr"]
+#     heapq.heappush(priority_queue, (-frequency, document_id))  # Use -fr for max heap
+
+# #extract and print the top documents from the priority queue
+# for _ in range(30):
+#     if priority_queue:
+#         frequency, document_id = heapq.heappop(priority_queue)
+#         document_url = document_urls[document_id]
+#         print(document_id, " ", -frequency, " ", document_url)
+
+
+def score(frequency, sd):
+    # Calculate frequency
+
+
+    # Combine frequency and standard deviation into a score
+    score = frequency / (1 + sd)
+
+    return score
+
+# s = score(7, 5)
+print(score(7, 15))
+print(score(10, 2))
+print(score(6, 0.2))
+print(score(20, 20))
