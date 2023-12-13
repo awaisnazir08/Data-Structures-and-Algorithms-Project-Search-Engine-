@@ -48,6 +48,7 @@
         font-size: 16px;
         width: 100%;
         transition: background-color 0.3s ease;
+        margin-top: 1dvb;
       }
 
       button:hover {
@@ -96,10 +97,12 @@
       <input type="text" id="searchQuery" placeholder="Search the web" />
       <button onclick="search()">Search</button>
       <p id="apiCalled">API was called</p>
-
+      <div id="time_taken"></div>
       <div id="results" style="display: none">
         <ul id="resultsList"></ul>
       </div>
+      <a href="add.html">
+        <button>Add New Document</button>
     </div>
     <script>
       async function search() {
@@ -107,6 +110,7 @@
         const data = { query: query };
 
         try {
+          const startTime = performance.now(); // Record start time
           const response = await fetch("http://127.0.0.1:5000/search", {
             method: "POST",
             headers: {
@@ -115,13 +119,20 @@
             body: JSON.stringify(data),
           });
 
-          const responseData = await response.json();
-          displayResults(responseData);
           if (response.ok) {
+            const responseData = await response.json();
+            displayResults(responseData);
             const resultsDiv = document.getElementById("results");
             resultsDiv.style.display = "block";
             const apiCalled = document.getElementById("apiCalled");
             apiCalled.style.display = "block";
+
+            const endTime = performance.now(); // Record end time
+            const timeTaken = endTime - startTime; // Calculate time taken
+            const timeDiv = document.getElementById("time_taken");
+            timeDiv.textContent = `Time taken: ${timeTaken.toFixed(
+              2
+            )} milliseconds`; // Display time taken
           } else {
             console.error(
               "There was a problem with the fetch operation:",
@@ -132,18 +143,40 @@
           console.error("Error:", error);
         }
       }
+
       function displayResults(data) {
         const resultsDiv = document.getElementById("results");
         resultsDiv.innerHTML = "";
 
-        const message = document.createElement("p");
-        message.textContent = data.message;
-        resultsDiv.appendChild(message);
-
         for (const documentId in data.documents) {
-          const documentInfo = document.createElement("p");
-          documentInfo.textContent = `Document ID: ${documentId}, Score: ${data.documents[documentId]}, URL: ${data.document_url[documentId]}`;
-          resultsDiv.appendChild(documentInfo);
+          const documentDiv = document.createElement("div");
+          documentDiv.classList.add("search-result");
+
+          const title = document.createElement("h3");
+          const titleLink = document.createElement("a");
+          titleLink.href = data.document_url[documentId];
+
+          // Check if the data is a string before using substring
+          const titleText =
+            typeof data.documents[documentId] === "string"
+              ? data.documents[documentId].substring(0, 50) + "..."
+              : "No title available"; // Or any appropriate fallback
+          titleLink.textContent = `Title: ${titleText}`;
+          title.appendChild(titleLink);
+
+          const description = document.createElement("p");
+
+          // Check if the data is a string before using substring
+          const descriptionText =
+            typeof data.documents[documentId] === "string"
+              ? data.documents[documentId].substring(0, 100) + "..."
+              : "No description available"; // Or any appropriate fallback
+          description.textContent = `Description: ${descriptionText}`;
+
+          documentDiv.appendChild(title);
+          documentDiv.appendChild(description);
+
+          resultsDiv.appendChild(documentDiv);
         }
       }
     </script>

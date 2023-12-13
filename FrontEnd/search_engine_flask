@@ -5,11 +5,11 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 import re
 from flask_cors import CORS
-
-
+import time
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+CORS(app)
+
 
 def load_Lexicon():
     file_path = "Forward_Index/Lexicon.json"
@@ -59,6 +59,8 @@ def search_query():
     print("API CALLED")
     data = request.get_json()
     query = data.get('query')
+    start_time = time.time()  # Record start time
+
 
     stop_words = set(stopwords.words('english'))
 
@@ -119,13 +121,15 @@ def search_query():
             document_url = document_urls[document_id]
             print(document_id, " ",
                   sorted_documents[document_id], " ", document_url)
+    end_time = time.time()  # Record end time
+    time_taken = end_time - start_time  # Calculate time taken
 
     response = {
         "message": "Received Query",
-        "word_id": word_id,
-        "barrel_id": barrel_id+1,
-        "documents": sorted_documents,
-        "document_url": document_urls
+        "documents": sorted_documents,  # Modify this to include the actual search results
+        "document_url": document_urls,  # Modify this to include the URLs for search results
+        "time_taken": time_taken  # Include time taken in the response
+
     }
 
     return jsonify(response)
