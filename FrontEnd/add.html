@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add Content - Awais' Search Engine</title>
+  <style>
+     body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      width: 60%;
+      margin: 50px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #4285f4;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="url"],
+    input[type="date"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    #button{
+      background-color: #4285f4;
+      color: #fff;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+      transition: background-color 0.3s ease;
+      margin-top: 1dvb;
+    }
+
+    #button:hover {
+      background-color: #3b79d6;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>Add a New Page</h1>
+    <form id="addForm" onsubmit="submitContent(event)">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title"><br><br>
+      
+      <label for="content">Content:</label>
+      <textarea id="content" name="content" rows="5"></textarea><br><br>
+      
+      <label for="author">Author:</label>
+      <input type="text" id="author" name="author"><br><br>
+      
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date"><br><br>
+      
+      <label for="source">Source:</label>
+      <input type="text" id="source" name="source"><br><br>
+      
+      <label for="url">URL:</label>
+      <input type="url" id="url" name="url"><br><br>
+
+      <a href="search.html">
+      <button id="button" type="button">Go Back</button>
+      </a>
+      <button type="submit" id="button">Add Content</button>
+    </form>
+  </div>
+
+  <script>
+    async function submitContent(event) {
+      event.preventDefault();
+      
+      const title = document.getElementById("title").value;
+      const content = document.getElementById("content").value;
+      const author = document.getElementById("author").value;
+      const date = document.getElementById("date").value;
+      const source = document.getElementById("source").value;
+      const url = document.getElementById("url").value;
+
+      const data = {
+        title: title,
+        content: content,
+        author: author,
+        date: date,
+        source: source,
+        url: url
+      };
+
+      try {
+        const response = await fetch("http://127.0.0.1:5000/add_content", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        });
+
+        if (response.ok) {
+          alert("Content added successfully!");
+          // Redirect to another page after successful addition (if needed)
+          // window.location.href = "another_page.html";
+        } else {
+          console.error(
+            "There was a problem with adding content:",
+            response.statusText
+          );
+          alert("Failed to add content. Please try again.");
+        }
+      } catch (error) {
+        console.error("Error:", error);
+        alert("An error occurred. Please try again later.");
+      }
+    }
+  </script>
+</body>
+</html>

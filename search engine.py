@@ -109,7 +109,3 @@ for word in clean_query:
     #     # print(document_id)
     #     print(document_id," ", sorted_documents_based_on_frequency[document_id], " ", document_url)
 
-    # print(documents.keys())
-    # for document in documents:
-    #     document_id = documents[document.key]
-    #     print(document_id)

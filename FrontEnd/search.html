@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Awais' Search Engine</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+      }
+
+      #container {
+        width: 60%;
+        margin: 50px auto;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+      }
+
+      h1 {
+        font-size: 28px;
+        font-weight: bold;
+        color: #4285f4;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      #searchQuery {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #4285f4;
+        color: #fff;
+        border: none;
+        padding: 12px 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+        transition: background-color 0.3s ease;
+        margin-top: 1dvb;
+      }
+
+      button:hover {
+        background-color: #3b79d6;
+      }
+
+      #results {
+        margin-top: 30px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        background-color: #fff;
+        margin-bottom: 20px;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      li h3 {
+        margin-bottom: 8px;
+        font-size: 20px;
+        color: #4285f4;
+      }
+
+      li p {
+        font-size: 14px;
+        color: #333;
+      }
+
+      #apiCalled {
+        color: green;
+        text-align: center;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Awais' Search Engine</h1>
+      <input type="text" id="searchQuery" placeholder="Search the web" />
+      <button onclick="search()">Search</button>
+      <p id="apiCalled">API was called</p>
+      <div id="time_taken"></div>
+      <div id="results" style="display: none">
+        <ul id="resultsList"></ul>
+      </div>
+      <a href="add.html">
+        <button>Add New Document</button>
+    </div>
+    <script>
+      async function search() {
+        const query = document.getElementById("searchQuery").value;
+        const data = { query: query };
+
+        try {
+          const startTime = performance.now(); // Record start time
+          const response = await fetch("http://127.0.0.1:5000/search", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+          });
+
+          if (response.ok) {
+            const responseData = await response.json();
+            displayResults(responseData);
+            const resultsDiv = document.getElementById("results");
+            resultsDiv.style.display = "block";
+            const apiCalled = document.getElementById("apiCalled");
+            apiCalled.style.display = "block";
+
+            const endTime = performance.now(); // Record end time
+            const timeTaken = endTime - startTime; // Calculate time taken
+            const timeDiv = document.getElementById("time_taken");
+            timeDiv.textContent = `Time taken: ${timeTaken.toFixed(
+              2
+            )} milliseconds`; // Display time taken
+          } else {
+            console.error(
+              "There was a problem with the fetch operation:",
+              response.statusText
+            );
+          }
+        } catch (error) {
+          console.error("Error:", error);
+        }
+      }
+
+      function displayResults(data) {
+        const resultsDiv = document.getElementById("results");
+        resultsDiv.innerHTML = "";
+
+        for (const documentId in data.documents) {
+          const documentDiv = document.createElement("div");
+          documentDiv.classList.add("search-result");
+
+          const title = document.createElement("h3");
+          const titleLink = document.createElement("a");
+          titleLink.href = data.document_url[documentId];
+
+          // Check if the data is a string before using substring
+          const titleText =
+            typeof data.documents[documentId] === "string"
+              ? data.documents[documentId].substring(0, 50) + "..."
+              : "No title available"; // Or any appropriate fallback
+          titleLink.textContent = `Title: ${titleText}`;
+          title.appendChild(titleLink);
+
+          const description = document.createElement("p");
+
+          // Check if the data is a string before using substring
+          const descriptionText =
+            typeof data.documents[documentId] === "string"
+              ? data.documents[documentId].substring(0, 100) + "..."
+              : "No description available"; // Or any appropriate fallback
+          description.textContent = `Description: ${descriptionText}`;
+
+          documentDiv.appendChild(title);
+          documentDiv.appendChild(description);
+
+          resultsDiv.appendChild(documentDiv);
+        }
+      }
+    </script>
+  </body>
+</html>
