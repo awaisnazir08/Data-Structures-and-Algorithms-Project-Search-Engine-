@@ -161,7 +161,7 @@ while(documents_shown < 30 and max_count >=1):
             for value in getting_frequencies:
                 frequency += value['fr']
                 positions.append(value['ps'])
-            # frequency /= len(getting_frequencies)
+            frequency /= len(getting_frequencies)
             standard_deviation = calculate_standard_deviation(positions)
             score = calculate_score(frequency, standard_deviation)
             heapq.heappush(priority_queue, (-score, doc[0]))
@@ -181,27 +181,3 @@ end_time = time.time()
 
 execution_time = end_time - start_time
 print(f"Code took {execution_time:.6f} seconds to run.")
-    # print(documents_shown)
-# print(sorted_items[0]['count'])
-# for element in sorted_items:
-#     print(element)
-# #use a priority queue to maintain the top documents based on frequency
-# for document_id, data in documents.items():
-#     frequency = data["fr"]
-#     heapq.heappush(priority_queue, (-frequency, document_id))  # Use -fr for max heap
-
-# #extract and print the top documents from the priority queue
-# for _ in range(30):
-#     if priority_queue:
-#         frequency, document_id = heapq.heappop(priority_queue)
-#         document_url = document_urls[document_id]
-#         print(document_id, " ", -frequency, " ", document_url)
-
-
-
-
-# # s = score(7, 5)
-# print(score(7, 15))
-# print(score(10, 2))
-# print(score(6, 0.2))
-# print(score(20, 20))
