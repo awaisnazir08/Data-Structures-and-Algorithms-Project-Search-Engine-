@@ -3,8 +3,9 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 import re
-import heapq  # Import heapq module for priority queue
-
+import heapq
+import sys
+import time
 def load_Lexicon():
     file_path = "Forward_Index/Lexicon.json"
     try:
@@ -51,9 +52,9 @@ stop_words = set(stopwords.words('english'))
 #object for the lemmatizer class
 lemmatizer = WordNetLemmatizer()
 
-inverted_index_file_paths = []
-for i in range(1, 101):
-    inverted_index_file_paths.append(f'Inverted_Index/Inverted_index_files/inverted_index_barrel_{i}.json')
+# inverted_index_file_paths = []
+# for i in range(1, 101):
+#     inverted_index_file_paths.append(f'Inverted_Index/Inverted_index_files/inverted_index_barrel_{i}.json')
 
 lexicon_dictionary = load_Lexicon()
 
@@ -63,6 +64,7 @@ document_urls = load_documentIndex()
 loaded_inverted_indices = {}
 query = input("Enter the query to search: ")
 
+start_time = time.time()
 #tokenizing the combined words
 query_tokenized = word_tokenize(query)
 
@@ -78,13 +80,17 @@ clean_query = [word for word in query_tokenized if word not in stop_words]
 #lemmatization
 clean_query = [lemmatizer.lemmatize(word) for word in clean_query]
 
-priority_queue = []
+# priority_queue = []
 document_score = {}
 for word in clean_query:
-    word_id = lexicon_dictionary[word]
-    print(word_id)
+    try: 
+        word_id = lexicon_dictionary[word]
+    except:
+        print(f'{word} is not present in any document!')
+        continue
+    # print(word_id)
     barrel_id = word_id % 2000
-    print(barrel_id + 1)
+    # print(barrel_id + 1)
 
     #check if the inverted index for this barrel is already loaded
     if barrel_id in loaded_inverted_indices:
@@ -96,13 +102,16 @@ for word in clean_query:
 
     documents = get_document_ids(word_id, word_data_in_barrel)
 
-
     for document in documents.keys():
         if document not in document_score:
             document_score[document] = {"count": 1, "values": [documents[document]]}
         else:
             document_score[document]["count"] += 1
             document_score[document]["values"].append(documents[document])
+
+if(len(document_score)== 0):
+    print("The searched word is not present in any document!\nPlease search another word..!!")
+    sys.exit()
 
 max_count_document = max(document_score.items(), key=lambda x: x[1]["count"])
 max_count = max_count_document[1]["count"]
@@ -111,22 +120,38 @@ print(max_count)
 # document_score_items.sort(key=lambda x: x[1]['count'], reverse=True)
 sorted_items = sorted(document_score.items(), key=lambda x: x[1]['count'], reverse=False)
 
-for doc in sorted_items:
-    # print(doc[1]["count"])
-    if doc[1]["count"] == max_count:
-        getting_frequencies = doc[1]['values']
-        # print(getting_frequencies)
-        frequency = 0
-        for value in getting_frequencies:
-            frequency += value['fr']
-        # frequency /= len(getting_frequencies)
-        print(frequency)
-        heapq.heappush(priority_queue, (-frequency, doc[0]))  # Use -fr for max heap
-for _ in range(30):
-    if priority_queue:
-        frequency, document_id = heapq.heappop(priority_queue)
-        document_url = document_urls[document_id]
-        print(document_id, " ", -frequency, " ", document_url)
+documents_shown = 0
+
+while(documents_shown < 30 and max_count >=1):
+    priority_queue = []
+    for doc in sorted_items:
+        # print(doc[1]["count"])
+        if doc[1]["count"] == max_count:
+            getting_frequencies = doc[1]['values']
+            # print(getting_frequencies)
+            frequency = 0
+            for value in getting_frequencies:
+                frequency += value['fr']
+            # frequency /= len(getting_frequencies)
+            # print(frequency)
+            heapq.heappush(priority_queue, (-frequency, doc[0]))
+    # documents_shown += len(priority_queue)
+    max_count -= 1
+    for _ in range(len(priority_queue)):
+        if priority_queue:
+            if(documents_shown >= 30):
+                break
+            frequency, document_id = heapq.heappop(priority_queue)
+            document_url = document_urls[document_id]
+            print(document_id, " ", -frequency, " ", document_url)
+            documents_shown += 1
+
+
+end_time = time.time()
+
+execution_time = end_time - start_time
+print(f"Code took {execution_time:.6f} seconds to run.")
+    # print(documents_shown)
 # print(sorted_items[0]['count'])
 # for element in sorted_items:
 #     print(element)
