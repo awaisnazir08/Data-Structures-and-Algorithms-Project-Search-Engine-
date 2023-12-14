@@ -98,14 +98,16 @@ for word in clean_query:
         loaded_inverted_indices[barrel_id] = word_data_in_barrel
 
     documents = get_document_ids(word_id, word_data_in_barrel)
-    for document in documents:
-        print(documents[document])
-    # sorted_documents_based_on_frequency = dict(sorted(documents.items(), key=lambda item: item[1]["fr"], reverse=True)[:30])
+    sorted_documents_based_on_frequency = dict(sorted(documents.items(), key=lambda item: item[1]["fr"], reverse=True)[:30])
 
-    # for document_id in sorted_documents_based_on_frequency.keys():
-    #     document_url = document_urls[document_id]
-    #     # print(document_url)
-        
-    #     # print(document_id)
-    #     print(document_id," ", sorted_documents_based_on_frequency[document_id], " ", document_url)
+    for document_id in sorted_documents_based_on_frequency.keys():
+        document_url = document_urls[document_id]
+        # print(document_url)
 
+        # print(document_id)
+        print(document_id," ", sorted_documents_based_on_frequency[document_id], " ", document_url)
+
+    # print(documents.keys())
+    # for document in documents:
+    #     document_id = documents[document.key]
+    #     print(document_id)

@@ -45,12 +45,6 @@ def get_document_ids(word_id, word_data_in_barrel):
         return {}
 
 
-
-# class SearchEngine:
-#     def __init__(self):
-
-
-
 #setting up the english stop words from the NLTK
 stop_words = set(stopwords.words('english'))
 
@@ -85,7 +79,6 @@ clean_query = [word for word in query_tokenized if word not in stop_words]
 clean_query = [lemmatizer.lemmatize(word) for word in clean_query]
 
 priority_queue = []
-all_documents = {}
 document_score = {}
 for word in clean_query:
     word_id = lexicon_dictionary[word]
@@ -102,9 +95,6 @@ for word in clean_query:
         loaded_inverted_indices[barrel_id] = word_data_in_barrel
 
     documents = get_document_ids(word_id, word_data_in_barrel)
-    all_documents.update(documents)
-
-
 
 
     for document in documents.keys():
@@ -114,10 +104,32 @@ for word in clean_query:
             document_score[document]["count"] += 1
             document_score[document]["values"].append(documents[document])
 
+max_count_document = max(document_score.items(), key=lambda x: x[1]["count"])
+max_count = max_count_document[1]["count"]
+print(max_count)
+# document_score_items = list(document_score.items())
+# document_score_items.sort(key=lambda x: x[1]['count'], reverse=True)
 sorted_items = sorted(document_score.items(), key=lambda x: x[1]['count'], reverse=False)
 
-for element in sorted_items:
-    print(element)
+for doc in sorted_items:
+    # print(doc[1]["count"])
+    if doc[1]["count"] == max_count:
+        getting_frequencies = doc[1]['values']
+        # print(getting_frequencies)
+        frequency = 0
+        for value in getting_frequencies:
+            frequency += value['fr']
+        # frequency /= len(getting_frequencies)
+        print(frequency)
+        heapq.heappush(priority_queue, (-frequency, doc[0]))  # Use -fr for max heap
+for _ in range(30):
+    if priority_queue:
+        frequency, document_id = heapq.heappop(priority_queue)
+        document_url = document_urls[document_id]
+        print(document_id, " ", -frequency, " ", document_url)
+# print(sorted_items[0]['count'])
+# for element in sorted_items:
+#     print(element)
 # #use a priority queue to maintain the top documents based on frequency
 # for document_id, data in documents.items():
 #     frequency = data["fr"]
@@ -131,17 +143,17 @@ for element in sorted_items:
 #         print(document_id, " ", -frequency, " ", document_url)
 
 
-def score(frequency, sd):
-    # Calculate frequency
+# def score(frequency, sd):
+#     # Calculate frequency
 
 
-    # Combine frequency and standard deviation into a score
-    score = frequency / (1 + sd)
+#     # Combine frequency and standard deviation into a score
+#     score = frequency / (1 + sd)
 
-    return score
+#     return score
 
-# s = score(7, 5)
-print(score(7, 15))
-print(score(10, 2))
-print(score(6, 0.2))
-print(score(20, 20))
+# # s = score(7, 5)
+# print(score(7, 15))
+# print(score(10, 2))
+# print(score(6, 0.2))
+# print(score(20, 20))
