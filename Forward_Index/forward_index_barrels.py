@@ -7,10 +7,13 @@ from nltk.stem import WordNetLemmatizer
 from nltk.probability import FreqDist
 import hashlib
 
+
+def calculate_mean_position(locations):
+    if not locations:
+        return None
+    return sum(locations) // len(locations)
 # class to create and manage a file that maps unique document ids to their unique urls
 # the file is sorted according to the document ids
-
-
 class Docid_Url_Mapping:
     # constructor
     def __init__(self):
@@ -155,7 +158,7 @@ class URLResolver:
 class Forward_Index:
     # constructor
     def __init__(self):
-        self.number_of_barrels = 64
+        self.number_of_barrels = 2000
         self.forward_index_paths = []
         self.forward_indices = []
         for i in range(1, self.number_of_barrels + 1):
@@ -282,11 +285,14 @@ for json_file in json_files:
                 title = title.lower()
                 # Finding the position of each word
                 for word in frequency_distribution.keys():
-                    positions[word] = []
+                    # positions[word] = []
+                    locations = []
                     for pos, w in enumerate(clean_words):
                         if w == word:
-                            positions[word].append(pos)
-
+                            # positions[word].append(pos)
+                            locations.append(pos)
+                    mean_position = calculate_mean_position(locations)
+                    positions[word] = mean_position
                 # Building the JSON object structure for every article
                 article_entry = {
                     "d_id": doc_id,
@@ -330,3 +336,4 @@ docid_url_mapping.save_document_index()
 
 # save the docId and date mapping file
 docid_date_mapping.save_docId_date_file()
+

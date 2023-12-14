@@ -27,6 +27,7 @@ Project First Submission.rar
 <<<<<<< HEAD
 =======
 Forward_index_files
+Forward_index_files2
 Inverted_index_files
 Lexicon.json
 docId_date_mapping.json
@@ -37,3 +38,4 @@ import json.py
 page rank.py
 Forward_Index/Forward_index_files2/forward_index.json
 tempCodeRunnerFile.py
+Forward_Index/Forward_index_files2/forward_indexing_barrel_1.json
