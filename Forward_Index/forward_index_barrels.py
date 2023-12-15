@@ -43,7 +43,7 @@ class Docid_Url_Mapping:
     # save the new updated file data into the file
     def save_document_index(self):
         with open(self.document_index_path, 'w') as file:
-            json.dump(self.mappings, file, indent=2)
+            json.dump(self.mappings, file)
 
 # class to create and manage a file that maps document ids to the dates when they were published
 # the file is sorted according to the document ids
@@ -77,7 +77,7 @@ class Docid_Date_Mapping:
     # updated data saved into the file
     def save_docId_date_file(self):
         with open(self.docId_date_file_path, 'w') as file:
-            json.dump(self.mappings, file, indent=2)
+            json.dump(self.mappings, file)
 
 # this class creates and manages a dictionary that stores all the unique words and assigns them
 # new unique word_id in sorted order
@@ -114,7 +114,7 @@ class Lexicon:
     # the file is sorted according to the word ids in ascending order
     def save_lexicon_file(self):
         with open(self.lexicon_file_path, 'w', encoding='utf-8') as file:
-            json.dump(self.word_to_id, file, indent=2)
+            json.dump(self.word_to_id, file)
 
 # this class implements the checksum functionality in the forward index
 # the checksum file is created to make sure that no duplicate articles/urls are stored in the forward index
@@ -181,7 +181,7 @@ class Forward_Index:
     def save_forward_index_file(self, index, path):
         # Write the JSON structure to a file
         with open(path, 'w', encoding='utf-8') as json_file:
-            json.dump(index, json_file, indent=2)
+            json.dump(index, json_file)
 
     # Add the entry to the forward_index dictionary
     # def add_to_forward_index(self, article_entry):

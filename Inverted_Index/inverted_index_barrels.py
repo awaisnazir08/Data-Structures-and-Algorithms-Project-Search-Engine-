@@ -29,7 +29,7 @@ class InvertedIndex:
     def save_inverted_index_file(self, index, path):
         # Write inverted index to a JSON file
         with open(path, 'w') as json_file:
-            json.dump(index, json_file, indent=4)
+            json.dump(index, json_file)
 
     def save_all_inverted_index_files(self):
         for index, path in zip(self.inverted_indices, self.inverted_index_file_paths):
