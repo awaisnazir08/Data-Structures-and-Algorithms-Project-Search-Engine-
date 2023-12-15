@@ -89,7 +89,7 @@ for word in clean_query:
         print(f'{word} is not present in any document!')
         continue
     # print(word_id)
-    barrel_id = word_id % 2000
+    barrel_id = word_id % 3000
     # print(barrel_id + 1)
 
     #check if the inverted index for this barrel is already loaded

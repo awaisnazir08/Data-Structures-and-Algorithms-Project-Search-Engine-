@@ -2,8 +2,6 @@ import json
 import os
 
 # function to load the forward index file
-
-
 def load_forward_index(file_path):
     # forward_index_file_paths = './Forward_Index/forward_indexing.json'
     try:
@@ -17,7 +15,7 @@ def load_forward_index(file_path):
 class InvertedIndex:
     # constructor
     def __init__(self):
-        self.number_of_inverted_index_barrels = 2000
+        self.number_of_inverted_index_barrels = 3000
         self.inverted_index_file_paths = []
         self.inverted_indices = []
         for i in range(1, self.number_of_inverted_index_barrels + 1):

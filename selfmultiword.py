@@ -106,7 +106,8 @@ query_tokenized = [word.lower() for word in query_tokenized]
 clean_query = [word for word in query_tokenized if word not in stop_words]
 
 #lemmatization
-clean_query = [lemmatizer.lemmatize(word) for word in clean_query]
+clean_query = [lemmatizer.lemmatize(word) for word
+                in clean_query]
 
 # priority_queue = []
 document_score = {}
@@ -117,7 +118,7 @@ for word in clean_query:
         print(f'{word} is not present in any document!')
         continue
     # print(word_id)
-    barrel_id = word_id % 2000
+    barrel_id = word_id % 3000
     # print(barrel_id + 1)
 
     #check if the inverted index for this barrel is already loaded
