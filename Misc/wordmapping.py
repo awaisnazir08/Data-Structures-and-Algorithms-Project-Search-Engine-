@@ -45,7 +45,7 @@ def count_objects(folder_path):
                     total_count += num_objects
 
                     if total_count >= 100000:
-                        return True  # Reached 100,000 objects
+                        return True
 
                 except json.JSONDecodeError as e:
                     print(f"Error reading {filename}: {e}")
