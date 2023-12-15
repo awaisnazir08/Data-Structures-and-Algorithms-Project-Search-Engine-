@@ -11,7 +11,7 @@ class Lexicon:
         self.word_to_id = {}
         self.current_id = 1
 
-        # Load existing data from Lexicon.json (if exists)
+        # Load existing data from Lexicon.json (if  exists)
         try:
             with open('Lexicon.json', 'r') as file:
                 existing_data = json.load(file)
