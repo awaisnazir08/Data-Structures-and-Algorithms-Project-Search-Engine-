@@ -8,6 +8,7 @@ import sys
 import time
 import statistics
 
+
 def calculate_standard_deviation(data):
     """
     Calculate the population standard deviation of a given array.
@@ -26,14 +27,12 @@ def calculate_standard_deviation(data):
         return None
 
 def calculate_score(frequency, sd):
-    # Calculate frequency
-
-
     # Combine frequency and standard deviation into a score
     score = frequency / (1 + sd)
 
     return score
 
+#function that loads the lexicon dictionary
 def load_Lexicon():
     file_path = "Forward_Index/Lexicon.json"
     try:
@@ -80,9 +79,6 @@ stop_words = set(stopwords.words('english'))
 #object for the lemmatizer class
 lemmatizer = WordNetLemmatizer()
 
-# inverted_index_file_paths = []
-# for i in range(1, 101):
-#     inverted_index_file_paths.append(f'Inverted_Index/Inverted_index_files/inverted_index_barrel_{i}.json')
 
 lexicon_dictionary = load_Lexicon()
 
@@ -145,15 +141,12 @@ if(len(document_score)== 0):
 max_count_document = max(document_score.items(), key=lambda x: x[1]["count"])
 max_count = max_count_document[1]["count"]
 print(max_count)
-# document_score_items = list(document_score.items())
-# document_score_items.sort(key=lambda x: x[1]['count'], reverse=True)
-sorted_items = sorted(document_score.items(), key=lambda x: x[1]['count'], reverse=False)
 
 documents_shown = 0
 
 while(documents_shown < 30 and max_count >=1):
     priority_queue = []
-    for doc in sorted_items:
+    for doc in document_score.items():
         if doc[1]["count"] == max_count:
             getting_frequencies = doc[1]['values']
             # print(getting_frequencies)

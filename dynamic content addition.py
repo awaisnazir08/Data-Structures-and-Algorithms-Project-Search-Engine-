@@ -153,48 +153,37 @@ class URLResolver:
             json.dump(sorted_data, file)
 
 # creates and manages the forward index file
-
-
 class Forward_Index:
     # constructor
     def __init__(self):
-        self.number_of_barrels = 2000
-        self.forward_index_paths = []
-        self.forward_indices = []
-        for i in range(1, self.number_of_barrels + 1):
-            self.forward_index_paths.append(
-                f'Forward_Index/Forward_index_files/forward_indexing_barrel_{i}.json')
-        for path in self.forward_index_paths:
-            self.forward_indices.append(self.load_forward_index(path))
+        self.forward_index_path = 'Forward_Index/new_forward_index.json'
+        self.forward_index_data = []
 
-    # if the forward index already exists, then loads it, else creates a dictionary for a new file
-    def load_forward_index(self, path):
-        try:
-            # If forward index already exists
-            with open(path, 'r') as file:
-                return json.load(file)
-        except FileNotFoundError:
-            # Create a dictionary for storing the information
-            return {"forward_index": []}
+    # # if the forward index already exists, then loads it, else creates a dictionary for a new file
+    # def load_forward_index(self):
+    #     try:
+    #         # If forward index already exists
+    #         with open(self.forward_index_path, 'r') as file:
+    #             return json.load(file)
+    #     except FileNotFoundError:
+    #         # Create a dictionary for storing the information
+    #         return {"forward_index": []}
 
     # saves the forward index data into the file
-    def save_forward_index_file(self, index, path):
-        # Write the JSON structure to a file
-        with open(path, 'w', encoding='utf-8') as json_file:
-            json.dump(index, json_file)
+    # def save_forward_index_file(self, data):
+    #     # Write the JSON structure to a file
+    #     with open('Forward_Index/new_forward_index.json', 'w', encoding='utf-8') as json_file:
+    #         json.dump(data, json_file)
 
-    # Add the entry to the forward_index dictionary
-    # def add_to_forward_index(self, article_entry):
-    #     self.forward_index["forward_index"].append(article_entry)
+    # # Add the entry to the forward_index dictionary
+    # def add_into_barrels(self, article_entry):
+    #     doc_id = article_entry["d_id"]
+    #     barrel = doc_id % self.number_of_barrels
+    #     self.forward_indices[barrel]["forward_index"].append(article_entry)
 
-    def add_into_barrels(self, article_entry):
-        doc_id = article_entry["d_id"]
-        barrel = doc_id % self.number_of_barrels
-        self.forward_indices[barrel]["forward_index"].append(article_entry)
-
-    def save_all_forward_index_files(self):
-        for index, path in zip(self.forward_indices, self.forward_index_paths):
-            self.save_forward_index_file(index, path)
+    # def save_all_forward_index_files(self):
+    #     for index, path in zip(self.forward_indices, self.forward_index_paths):
+    #         self.save_forward_index_file(index, path)
 
 
 # setting up the english stop words from the NLTK
@@ -317,16 +306,15 @@ for json_file in json_files:
                         "fr": word_frequency,
                         "ps": positions[word]
                     }
-                    article_entry["words"].append(
-                        each_word_detail_in_an_article)
-                forwardIndex.add_into_barrels(article_entry)
+                    article_entry["words"].append(each_word_detail_in_an_article)
+                forwardIndex.forward_index_data.append(article_entry)
 
 
 # Save the updated URL checksums file
 url_resolver.sort_file_with_respect_to_checksums_and_save()
 
 # Write the JSON structure to forward index files
-forwardIndex.save_all_forward_index_files()
+# forwardIndex.save_all_forward_index_files()
 
 # saving the lexicon dictionary
 lex.save_lexicon_file()
