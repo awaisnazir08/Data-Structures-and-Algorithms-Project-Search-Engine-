@@ -21,6 +21,6 @@ def count_objects(folder_path):
     print(f"the total count is {total_count}")
 
 # Replace 'your_folder_path' with the path to your folder containing JSON files
-folder_path = 'nela-gt-2022/newsdata'
+folder_path = 'nela-gt-2022/newsdata/new'
 
 count_objects(folder_path)

@@ -119,8 +119,7 @@ def search_query():
 
         for document_id in sorted_documents.keys():
             document_url = document_urls[document_id]
-            print(document_id, " ",
-                  sorted_documents[document_id], " ", document_url)
+            print(document_id, " ", sorted_documents[document_id], " ", document_url)
     end_time = time.time()  # Record end time
     time_taken = end_time - start_time  # Calculate time taken
 

@@ -118,8 +118,6 @@ class Lexicon:
 
 # this class implements the checksum functionality in the forward index
 # the checksum file is created to make sure that no duplicate articles/urls are stored in the forward index
-
-
 class URLResolver:
     # constructor
     def __init__(self):
@@ -152,39 +150,6 @@ class URLResolver:
         with open(self.checksums_file_path, 'w') as file:
             json.dump(sorted_data, file)
 
-# creates and manages the forward index file
-class Forward_Index:
-    # constructor
-    def __init__(self):
-        self.forward_index_path = 'Forward_Index/new_forward_index.json'
-        self.forward_index_data = []
-
-    # # if the forward index already exists, then loads it, else creates a dictionary for a new file
-    # def load_forward_index(self):
-    #     try:
-    #         # If forward index already exists
-    #         with open(self.forward_index_path, 'r') as file:
-    #             return json.load(file)
-    #     except FileNotFoundError:
-    #         # Create a dictionary for storing the information
-    #         return {"forward_index": []}
-
-    # saves the forward index data into the file
-    # def save_forward_index_file(self, data):
-    #     # Write the JSON structure to a file
-    #     with open('Forward_Index/new_forward_index.json', 'w', encoding='utf-8') as json_file:
-    #         json.dump(data, json_file)
-
-    # # Add the entry to the forward_index dictionary
-    # def add_into_barrels(self, article_entry):
-    #     doc_id = article_entry["d_id"]
-    #     barrel = doc_id % self.number_of_barrels
-    #     self.forward_indices[barrel]["forward_index"].append(article_entry)
-
-    # def save_all_forward_index_files(self):
-    #     for index, path in zip(self.forward_indices, self.forward_index_paths):
-    #         self.save_forward_index_file(index, path)
-
 
 #class for inverted index barrel generation
 class InvertedIndex:
@@ -193,31 +158,19 @@ class InvertedIndex:
         #number of barrels for inverted index
         self.number_of_inverted_index_barrels = 3000
 
-        #list for storing the file path for each barrel
-        self.inverted_index_file_paths = []
-
         #list for storing the data to be stored in each barrel
         self.inverted_indices = {}
 
-        #loop to store the file paths in the list
-        for i in range(1, self.number_of_inverted_index_barrels + 1):
-            self.inverted_index_file_paths.append(
-                f'Inverted_Index/Inverted_index_files/inverted_index_barrel_{i}.json')
-        
-        #loop to store the data of each barrel in a list corresponding to the correct index
-        # for path in self.inverted_index_file_paths:
-        #     self.inverted_indices.append(self.load_inverted_index(path))
-
     #function for saving each barrel data in the corresponding barrel file
-    def save_inverted_index_file(self, index, path):
+    def save_inverted_index_file(self, key, value):
         # Write inverted index to a JSON file
-        with open(path, 'w') as json_file:
-            json.dump(index, json_file)
+        with open(f'Inverted_Index/Inverted_index_files/inverted_index_barrel_{key + 1}.json', 'w') as json_file:
+            json.dump(value, json_file)
 
     #function that calls each barrel file one by one and then saves them
     def save_all_inverted_index_files(self):
-        for index, path in zip(self.inverted_indices, self.inverted_index_file_paths):
-            self.save_inverted_index_file(index, path)
+        for key, value in self.inverted_indices.items():
+            self.save_inverted_index_file(key, value)
 
     # function to load the inverted index file if already exists, else creates a dictionary for inverted index
     def load_inverted_index(self, path):
@@ -256,12 +209,10 @@ class InvertedIndex:
                 barrel = int_word_id % self.number_of_inverted_index_barrels
                 
                 #check if the inverted index for this barrel is already loaded, then do not reload
-                if barrel in self.inverted_indices:
-                    word_data_in_barrel = self.inverted_indices[barrel]
-                else:
+                if barrel not in self.inverted_indices:
                     #load the inverted index for this barrel
-                    word_data_in_barrel = self.load_inverted_index(f'Inverted_Index/Inverted_index_files/inverted_index_barrel_{barrel + 1}.json')
-                    self.inverted_indices[barrel] = word_data_in_barrel
+                    # word_data_in_barrel = 
+                    self.inverted_indices[barrel] = self.load_inverted_index(f'Inverted_Index/Inverted_index_files/inverted_index_barrel_{barrel + 1}.json')
 
                 if word_id is not None:
                     # if the inverted index file is empty, initialize it with a key named word_ID
@@ -286,8 +237,8 @@ stop_words = set(stopwords.words('english'))
 # object for the lemmatizer class
 lemmatizer = WordNetLemmatizer()
 
-# initializing the constructor for the Forward index clas
-forwardIndex = Forward_Index()
+#list for storing the data as forward index to create the inverted index later on
+forward_index_data = []
 
 # initializing the constructor for the Lexicon class
 lex = Lexicon()
@@ -302,7 +253,7 @@ docid_date_mapping = Docid_Date_Mapping()
 url_resolver = URLResolver()
 
 # Directory containing JSON files of the dataset
-json_dir = "./nela-gt-2022/newsdata" #new files path
+json_dir = "./nela-gt-2022/newsdata/new" #new files path
 
 # getiing all JSON files in the directory using the os module
 json_files = [file for file in os.listdir(json_dir) if file.endswith(".json")]
@@ -396,7 +347,7 @@ for json_file in json_files:
                         "ps": positions[word]
                     }
                     article_entry["words"].append(each_word_detail_in_an_article)
-                forwardIndex.forward_index_data.append(article_entry)
+                forward_index_data.append(article_entry)
 
 
 # Save the updated URL checksums file
@@ -416,7 +367,7 @@ docid_date_mapping.save_docId_date_file()
 
 
 generate_inverted_index = InvertedIndex()
-generate_inverted_index.create_inverted_index(forwardIndex.forward_index_data)
+generate_inverted_index.create_inverted_index(forward_index_data)
 
 generate_inverted_index.save_all_inverted_index_files()
 
