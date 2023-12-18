@@ -7,11 +7,11 @@ from nltk.stem import WordNetLemmatizer
 from nltk.probability import FreqDist
 import hashlib
 
-
 def calculate_mean_position(locations):
     if not locations:
         return None
     return sum(locations) // len(locations)
+
 # class to create and manage a file that maps unique document ids to their unique urls
 # the file is sorted according to the document ids
 class Docid_Url_Mapping:
@@ -186,6 +186,100 @@ class Forward_Index:
     #         self.save_forward_index_file(index, path)
 
 
+#class for inverted index barrel generation
+class InvertedIndex:
+    # constructor
+    def __init__(self):
+        #number of barrels for inverted index
+        self.number_of_inverted_index_barrels = 3000
+
+        #list for storing the file path for each barrel
+        self.inverted_index_file_paths = []
+
+        #list for storing the data to be stored in each barrel
+        self.inverted_indices = {}
+
+        #loop to store the file paths in the list
+        for i in range(1, self.number_of_inverted_index_barrels + 1):
+            self.inverted_index_file_paths.append(
+                f'Inverted_Index/Inverted_index_files/inverted_index_barrel_{i}.json')
+        
+        #loop to store the data of each barrel in a list corresponding to the correct index
+        # for path in self.inverted_index_file_paths:
+        #     self.inverted_indices.append(self.load_inverted_index(path))
+
+    #function for saving each barrel data in the corresponding barrel file
+    def save_inverted_index_file(self, index, path):
+        # Write inverted index to a JSON file
+        with open(path, 'w') as json_file:
+            json.dump(index, json_file)
+
+    #function that calls each barrel file one by one and then saves them
+    def save_all_inverted_index_files(self):
+        for index, path in zip(self.inverted_indices, self.inverted_index_file_paths):
+            self.save_inverted_index_file(index, path)
+
+    # function to load the inverted index file if already exists, else creates a dictionary for inverted index
+    def load_inverted_index(self, path):
+        try:
+            with open(path, 'r') as file:
+                return json.load(file)
+        except FileNotFoundError:
+            return {"word_ID": {}}
+
+    # this function creates the structure to be inserted into the inverted index file
+    def create_inverted_index(self, forward_index):
+        # iterating through each document in the forward index
+        for doc in forward_index:
+            # getting the document id and words associated with each document
+            doc_id = doc["d_id"]
+            words = doc.get("words", [])
+            doc_id = str(doc_id)
+
+            # getting the information for each word present in a particular document
+            for word in words:
+                word_id = word.get("w_id")
+
+                #converting the word id into int
+                int_word_id = int(word_id)
+
+                #converting word id back to string
+                word_id = str(word_id)
+
+                #getting the frequency
+                frequency = word.get("fr")
+
+                #getting the position
+                positions = word.get("ps")
+
+                #formula for deciding the barrel in which the word data will be stored
+                barrel = int_word_id % self.number_of_inverted_index_barrels
+                
+                #check if the inverted index for this barrel is already loaded, then do not reload
+                if barrel in self.inverted_indices:
+                    word_data_in_barrel = self.inverted_indices[barrel]
+                else:
+                    #load the inverted index for this barrel
+                    word_data_in_barrel = self.load_inverted_index(f'Inverted_Index/Inverted_index_files/inverted_index_barrel_{barrel + 1}.json')
+                    self.inverted_indices[barrel] = word_data_in_barrel
+
+                if word_id is not None:
+                    # if the inverted index file is empty, initialize it with a key named word_ID
+                    if "word_ID" not in self.inverted_indices[barrel]:
+                        self.inverted_indices[barrel]["word_ID"] = {}
+                    # if word is already not present in the inverted index, then create its key
+                    if word_id not in self.inverted_indices[barrel]["word_ID"]:
+                        self.inverted_indices[barrel]["word_ID"][word_id] = {}
+                    # if a document id for a given word is already present, don't duplicate. else add the details for word in a document in a dictionary
+                    if doc_id not in self.inverted_indices[barrel]["word_ID"][word_id]:
+                        word_info = {
+                            "fr": frequency,
+                            "ps": positions
+                        }
+                        # add the details of the word for that document in the inverted index of the word
+                        self.inverted_indices[barrel]["word_ID"][word_id][doc_id] = word_info
+
+
 # setting up the english stop words from the NLTK
 stop_words = set(stopwords.words('english'))
 
@@ -194,7 +288,6 @@ lemmatizer = WordNetLemmatizer()
 
 # initializing the constructor for the Forward index clas
 forwardIndex = Forward_Index()
-
 
 # initializing the constructor for the Lexicon class
 lex = Lexicon()
@@ -209,7 +302,7 @@ docid_date_mapping = Docid_Date_Mapping()
 url_resolver = URLResolver()
 
 # Directory containing JSON files of the dataset
-json_dir = "./nela-gt-2022/newsdata"
+json_dir = "./nela-gt-2022/newsdata" #new files path
 
 # getiing all JSON files in the directory using the os module
 json_files = [file for file in os.listdir(json_dir) if file.endswith(".json")]
@@ -236,8 +329,7 @@ for json_file in json_files:
                 # Assign a new docID
                 doc_id = len(url_resolver.url_checksums) + 1
                 url_resolver.add_document(url_checksum, doc_id)
-                print(
-                    f"Assigned new docID {doc_id} for article with URL '{url}'")
+                print(f"Assigned new docID {doc_id} for article with URL '{url}'")
 
                 # extracting information from the dataset articles
                 content = article.get('content')
@@ -251,19 +343,16 @@ for json_file in json_files:
                 words_tokenized = word_tokenize(title_and_content_merged)
 
                 # Remove special characters, dots, etc.
-                words_tokenized = [
-                    word for word in words_tokenized if re.match("^[a-zA-Z0-9_]*$", word)]
+                words_tokenized = [word for word in words_tokenized if re.match("^[a-zA-Z0-9_]*$", word)]
 
                 # Convert to lowercase
                 words_tokenized = [word.lower() for word in words_tokenized]
 
                 # Remove stop words
-                clean_words = [
-                    word for word in words_tokenized if word not in stop_words]
+                clean_words = [word for word in words_tokenized if word not in stop_words]
 
                 # Lemmatization
-                clean_words = [lemmatizer.lemmatize(
-                    word) for word in clean_words]
+                clean_words = [lemmatizer.lemmatize(word) for word in clean_words]
 
                 # Calculate word frequency and occurrence positions
                 frequency_distribution = FreqDist(clean_words)
@@ -324,3 +413,10 @@ docid_url_mapping.save_document_index()
 
 # save the docId and date mapping file
 docid_date_mapping.save_docId_date_file()
+
+
+generate_inverted_index = InvertedIndex()
+generate_inverted_index.create_inverted_index(forwardIndex.forward_index_data)
+
+generate_inverted_index.save_all_inverted_index_files()
+
