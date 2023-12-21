@@ -1,3 +1,6 @@
+from nltk.probability import FreqDist
+import hashlib
+import os
 import json
 from flask import Flask, request, jsonify
 from nltk.tokenize import word_tokenize
@@ -7,6 +10,7 @@ import re
 from flask_cors import CORS
 import time
 import heapq
+import os
 app = Flask(__name__)
 CORS(app)
 
@@ -67,7 +71,7 @@ loaded_inverted_indices = {}
 
 @app.route('/search', methods=['POST'])
 def search_query():
-    print("API CALLED")
+    print("API CALL")
     data = request.get_json()
     if 'query' not in data:
         response = {
@@ -222,6 +226,7 @@ class Docid_Url_Mapping:
         with open(self.document_index_path, 'w') as file:
             json.dump(self.mappings, file)
 
+
 class Docid_Date_Mapping:
     # constructor
     def __init__(self):
@@ -251,6 +256,7 @@ class Docid_Date_Mapping:
     def save_docId_date_file(self):
         with open(self.docId_date_file_path, 'w') as file:
             json.dump(self.mappings, file)
+
 
 class Lexicon:
     # constructor
@@ -286,7 +292,6 @@ class Lexicon:
             json.dump(self.word_to_id, file)
 
 
-import os
 class URLResolver:
     # constructor
     def __init__(self):
@@ -403,7 +408,6 @@ class InvertedIndex:
 # setting up the english stop words from the NLTK
 stop_words = set(stopwords.words('english'))
 
-import hashlib
 # object for the lemmatizer class
 lemmatizer = WordNetLemmatizer()
 
@@ -422,7 +426,17 @@ docid_date_mapping = Docid_Date_Mapping()
 # Initializing the constructor for the URLResolver class
 url_resolver = URLResolver()
 
-from nltk.probability import FreqDist
+
+def delete_temp_file(file_path):
+    try:
+        if os.path.exists(file_path):
+            os.remove(file_path)
+            print(f"Temporary file {file_path} deleted successfully.")
+        else:
+            print(f"File {file_path} does not exist.")
+    except OSError as e:
+        print(f"Error deleting file {file_path}: {e}")
+
 
 @app.route('/add', methods=['POST'])
 def add():
@@ -434,74 +448,101 @@ def add():
         }
         return jsonify(response), 400
 
-    uploaded_file = request.files['file']
-
-    if uploaded_file.filename.endswith('.json'):
+    uploaded_file = request.files[  'file']
+    print("file upload hogayi")
+    if uploaded_file.filename.endswith(".json"):
         try:
-            data = json.load(uploaded_file)
+            print("try ke andar aagaya")
+            json_dir = 'temp/'
+            if not os.path.exists(json_dir):
+                os.makedirs(json_dir)
+            temp_file_path = os.path.join(json_dir, uploaded_file.filename)
+            uploaded_file.save(temp_file_path)
+            print("File saved")
+
+            json_files = [file for file in os.listdir(
+                json_dir) if file.endswith(".json")]
 
             # Placeholder lists for processing data
             forward_index_data = []  # Placeholder for forward index data
 
-            # Process each article in the uploaded JSON file
-            for article in data:
-                url = article.get('url')
-                if url.endswith('/'):
-                    url = url.rstrip('/')
+            # Load data from each JSON file one by one
+            for json_file in json_files:
+                with open(os.path.join(json_dir, json_file), "r") as f:
+                    data = json.load(f)
+                    for article in data:
+                        url = article.get('url')
+                        if url.endswith('/'):
+                            url = url.rstrip('/')
 
-                url_checksum = hashlib.blake2s(url.encode()).hexdigest()
-                doc_id = url_resolver.resolve_doc_id(url_checksum)
+                        url_checksum = hashlib.blake2s(
+                            url.encode()).hexdigest()
+                        doc_id = url_resolver.resolve_doc_id(url_checksum)
 
-                if doc_id is None:
-                    doc_id = len(url_resolver.url_checksums) + 1
-                    url_resolver.add_document(url_checksum, doc_id)
-                    print(f"Assigned new docID {doc_id} for article with URL '{url}'")
-
-                    content = article.get('content')
-                    title = article.get('title')
-                    date = article.get('date')
-
-                    title_and_content_merged = f"{title} {content}"
-                    words_tokenized = word_tokenize(title_and_content_merged)
-                    words_tokenized = [word for word in words_tokenized if re.match("^[a-zA-Z0-9_]*$", word)]
-                    words_tokenized = [word.lower() for word in words_tokenized]
-                    clean_words = [word for word in words_tokenized if word not in stop_words]
-                    clean_words = [lemmatizer.lemmatize(word) for word in clean_words]
-                    frequency_distribution = FreqDist(clean_words)
-                    positions = {}
-
-                    title = title.lower()
-                    for word in frequency_distribution.keys():
-                        locations = []
-                        for pos, w in enumerate(clean_words):
-                            if w == word:
-                                locations.append(pos)
-                        mean_position = calculate_mean_position(locations)
-                        positions[word] = mean_position
-
-                    article_entry = {
-                        "d_id": doc_id,
-                        "words": []
-                    }
-
-                    docid_url_mapping.add_to_document_index(doc_id, url)
-                    docid_date_mapping.add_to_docId_date_file(doc_id, date)
-
-                    for word in frequency_distribution.keys():
-                        word_id = lex.get_word_id(word)
-                        if word in title:
-                            word_frequency = frequency_distribution[word] + 20
+                        if doc_id is not None:
+                            print(
+                                f"Article with URL '{url}' already has docID {doc_id}")
                         else:
-                            word_frequency = frequency_distribution[word]
-                        each_word_detail_in_an_article = {
-                            "w_id": word_id,
-                            "fr": word_frequency,
-                            "ps": positions[word]
-                        }
-                        article_entry["words"].append(each_word_detail_in_an_article)
+                            doc_id = len(url_resolver.url_checksums) + 1
+                            url_resolver.add_document(url_checksum, doc_id)
+                            print(
+                                f"Assigned new docID {doc_id} for article with URL '{url}'")
 
-                    forward_index_data.append(article_entry)
+                            content = article.get('content')
+                            title = article.get('title')
+                            date = article.get('date')
 
+                            title_and_content_merged = f"{title} {content}"
+                            words_tokenized = word_tokenize(
+                                title_and_content_merged)
+                            words_tokenized = [
+                                word for word in words_tokenized if re.match("^[a-zA-Z0-9_]*$", word)]
+                            words_tokenized = [word.lower()
+                                               for word in words_tokenized]
+                            clean_words = [
+                                word for word in words_tokenized if word not in stop_words]
+                            clean_words = [lemmatizer.lemmatize(
+                                word) for word in clean_words]
+                            frequency_distribution = FreqDist(clean_words)
+                            positions = {}
+
+                            title = title.lower()
+                            for word in frequency_distribution.keys():
+                                locations = []
+                                for pos, w in enumerate(clean_words):
+                                    if w == word:
+                                        locations.append(pos)
+                                mean_position = calculate_mean_position(
+                                    locations)
+                                positions[word] = mean_position
+
+                            article_entry = {
+                                "d_id": doc_id,
+                                "words": []
+                            }
+
+                            docid_url_mapping.add_to_document_index(
+                                doc_id, url)
+                            docid_date_mapping.add_to_docId_date_file(
+                                doc_id, date)
+
+                            for word in frequency_distribution.keys():
+                                word_id = lex.get_word_id(word)
+                                if word in title:
+                                    word_frequency = frequency_distribution[word] + 20
+                                else:
+                                    word_frequency = frequency_distribution[word]
+                                each_word_detail_in_an_article = {
+                                    "w_id": word_id,
+                                    "fr": word_frequency,
+                                    "ps": positions[word]
+                                }
+                                article_entry["words"].append(
+                                    each_word_detail_in_an_article)
+
+                            forward_index_data.append(article_entry)
+
+            # After processing all JSON files
             url_resolver.sort_file_with_respect_to_checksums_and_save()
             lex.save_lexicon_file()
             docid_url_mapping.save_document_index()
@@ -510,18 +551,19 @@ def add():
             generate_inverted_index = InvertedIndex()
             generate_inverted_index.create_inverted_index(forward_index_data)
             generate_inverted_index.save_all_inverted_index_files()
-
             response = {
                 "message": "Data inserted successfully"
             }
             print("Data inserted")
+            delete_temp_file(temp_file_path)
             return jsonify(response), 200
 
         except Exception as e:
             error_response = {
-                "error": "Error processing JSON file",
+                "error": "That file already exists",
                 "message": str(e)
             }
+            print(e)
             return jsonify(error_response), 500
 
     else:

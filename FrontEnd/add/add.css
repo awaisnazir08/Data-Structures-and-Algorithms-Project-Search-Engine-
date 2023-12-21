@@ -24,7 +24,8 @@ body {
   
   input[type="file"],
   #uploadBtn,
-  #button {
+  #button,
+  #jsonFile {
     background-color: #4285f4;
     text-decoration: none;
     color: #fff;
@@ -41,7 +42,8 @@ body {
   
   input[type="file"]:hover,
   #uploadBtn:hover,
-  #button:hover {
+  #button:hover,
+  #jsonFile {
     background-color: #3b79d6;
   }
 
@@ -50,11 +52,5 @@ body {
     text-decoration: none; /* Remove underline */
   }
 
-  #jsonFile {
-    color: #fff;
-    text-align: center;
-    width: 94.5%; /* Changing file input text color to black */
-    text-decoration: none;
 
-  }
   
