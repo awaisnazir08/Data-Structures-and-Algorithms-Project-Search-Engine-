@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JSON File Upload</title>
+<link rel="stylesheet" href="add.css">
+</head>
+
+<body>
+  <div id="container">
+  <h1>Upload a JSON File</h1>
+  <input type="file" id="jsonFile" accept=".json">
+  <button id="uploadBtn">Upload</button>
+      <a href="../search/search.html">
+      <button id="button">Go Back</button>
+
+</div>
+
+      <script>
+        const fileInput = document.getElementById('jsonFile');
+        const uploadBtn = document.getElementById('uploadBtn');
+
+        uploadBtn.addEventListener('click', () => {
+          const file = fileInput.files[0];
+          if (!file) {
+            alert('Please select a JSON file.');
+            return;
+          }
+
+          const formData = new FormData();
+          formData.append('file', file);
+
+          fetch('http://127.0.0.1:5000/add', {
+            method: 'POST',
+            body: formData
+          })
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Upload failed: ' + response.status);
+            }
+            return response.json();
+          })
+          .then(data => {
+            console.log('File uploaded successfully! Response:', data);
+          })
+          .catch(error => {
+            console.error('Error:', error);
+          });
+        });
+      </script>
+</body>
+</html>

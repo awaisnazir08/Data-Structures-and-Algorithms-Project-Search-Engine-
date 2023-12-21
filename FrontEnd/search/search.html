@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Awais' Search Engine</title>
+    <link rel="stylesheet" href="search.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Awais' Search Engine</h1>
+      <input type="text" id="searchQuery" placeholder="Search the web" />
+      <button onclick="search()" id="search">Search</button>
+      <p id="apiCalled"></p>
+      <div id="time_taken"></div>
+      <div id="results" style="display: none">
+        <ul id="resultsList"></ul>
+      </div>
+      <div id="pagination">
+        <button onclick="prevPage()" id="prevPage">Previous</button>
+        <span id="currentPage"></span>
+        <button onclick="nextPage()" id="nextPage">Next</button>
+      </div>
+
+      <a href="../add/add.html">
+        <button id="add">Add New Document</button>
+        <script src="search.js"></script>
+      </a>
+    </div>
+  </div>
+</div>
+</body>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 60%;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4285f4;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#searchQuery {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+#add,
+#search {
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  margin-top: 1dvb;
+}
+
+#add:hover,
+#search:hover {
+  background-color: #3b79d6;
+}
+
+#results {
+  margin-top: 30px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+li h3 {
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #4285f4;
+}
+
+li p {
+  font-size: 14px;
+  color: #333;
+}
+
+#apiCalled {
+  color: red;
+  text-align: center;
+  display: none;
+}
+/* Assuming your HTML structure has elements with IDs 'prevPage', 'currentPage', and 'nextPage' for the pagination elements */
+#pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: none;
+  }
+
+  #prevPage,
+  #nextPage {
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Adjust margin and padding as needed */
+    padding: 8px 16px;
+  }
+
+  #currentPage {
+    flex: 1; /* To push it to the center */
+    text-align: center;
+    /* Additional styling for the current page text, adjust as needed */
+  }

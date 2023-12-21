@@ -1,0 +1,60 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+
+  #container {
+    width: 60%;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4285f4;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="file"],
+  #uploadBtn,
+  #button {
+    background-color: #4285f4;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  input[type="file"]:hover,
+  #uploadBtn:hover,
+  #button:hover {
+    background-color: #3b79d6;
+  }
+
+  /* Adjusting specific elements */
+  a {
+    text-decoration: none; /* Remove underline */
+  }
+
+  #jsonFile {
+    color: #fff;
+    text-align: center;
+    width: 94.5%; /* Changing file input text color to black */
+    text-decoration: none;
+
+  }
+  
