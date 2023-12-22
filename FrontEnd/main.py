@@ -387,7 +387,7 @@ docid_date_mapping = Docid_Date_Mapping()
 # Initializing the constructor for the URLResolver class
 url_resolver = URLResolver()
 
-
+# deleting the temporary file created
 def delete_temp_file(file_path):
     try:
         if os.path.exists(file_path):
