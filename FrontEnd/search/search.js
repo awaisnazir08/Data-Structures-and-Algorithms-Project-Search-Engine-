@@ -1,14 +1,13 @@
 let currentPage = 1;
 const resultsPerPage = 10;
 let documents = [];
-let documentUrls = {};
 
 async function search() {
   const query = document.getElementById("searchQuery").value;
   const data = { query: query };
-
-
   try {
+    documents = [];
+
     const startTime = performance.now();
     const response = await fetch("http://127.0.0.1:5000/search", {
       method: "POST",
@@ -18,23 +17,23 @@ async function search() {
       body: JSON.stringify(data),
     });
 
-    if (response.status === 401) {
+    if (response.status === 404) {
       const apiCalled = document.getElementById("apiCalled");
       apiCalled.style.display = "block";
-      apiCalled.textContent = "No such word found in the dictionary.";
+      const resultsDiv = document.getElementById("results");
+      resultsDiv.style.display = "none";
+      const paginationDiv = document.getElementById("pagination");
+      paginationDiv.style.display = "none";
+      const timeDiv = document.getElementById("time_taken");
+      timeDiv.style.display = "none";
+      apiCalled.textContent =
+        "The word is not present in the dictionary\nTry searching for other words";
       return;
     }
-    if (response.status === 402) {
-      const apiCalled = document.getElementById("apiCalled");
-      apiCalled.style.display = "block";
-      apiCalled.textContent = "Searched query is not present in any document";
-      return;
-    }
+
     if (response.ok) {
       const responseData = await response.json();
-      console.log(responseData);
       documents = responseData.documents || [];
-      documentUrls = responseData.document_url || {};
       displayResultsPerPage(1);
 
       const resultsDiv = document.getElementById("results");
@@ -58,42 +57,42 @@ async function search() {
 }
 
 function displayResultsPerPage(page) {
-    const startIdx = (page - 1) * resultsPerPage;
-    const endIdx = startIdx + resultsPerPage;
-    const totalResults = documents.length;
+  const startIdx = (page - 1) * resultsPerPage;
+  const endIdx = startIdx + resultsPerPage;
+  const totalResults = documents.length;
 
-    const slicedResults = documents.slice(startIdx, endIdx);
+  const slicedResults = documents.slice(startIdx, endIdx);
 
-    const resultsDiv = document.getElementById("results");
-    resultsDiv.innerHTML = "";
+  const resultsDiv = document.getElementById("results");
+  resultsDiv.innerHTML = "";
 
-    slicedResults.forEach((documentData) => {
-      const documentId = documentData[1]; // Accessing the document ID from the nested array
-      const documentUrl = documentUrls[documentId] || "#";
+  slicedResults.forEach((documentData) => {
+    const documentUrl = documentData.document_url || "#";
 
-      const documentDiv = document.createElement("div");
-      documentDiv.classList.add("search-result");
+    const documentDiv = document.createElement("div");
+    documentDiv.classList.add("search-result");
 
-      const urlAnchor = document.createElement("a");
-      urlAnchor.textContent = documentUrl;
-      urlAnchor.href = documentUrl;
-      urlAnchor.target = "_blank";
+    const urlAnchor = document.createElement("a");
+    urlAnchor.textContent = documentUrl;
+    urlAnchor.href = documentUrl;
+    urlAnchor.target = "_blank";
 
-      const urlParagraph = document.createElement("p");
-      urlParagraph.appendChild(urlAnchor);
+    const urlParagraph = document.createElement("p");
+    urlParagraph.appendChild(urlAnchor);
 
-      documentDiv.appendChild(urlParagraph);
-      resultsDiv.appendChild(documentDiv);
-    });
+    documentDiv.appendChild(urlParagraph);
+    resultsDiv.appendChild(documentDiv);
+  });
 
-    const paginationDiv = document.getElementById("pagination");
-    paginationDiv.style.display = "block";
+  const paginationDiv = document.getElementById("pagination");
+  paginationDiv.style.display = "block";
 
-    const currentPageSpan = document.getElementById("currentPage");
-    currentPageSpan.textContent = `Page: ${currentPage} / ${Math.ceil(
-      totalResults / resultsPerPage
-    )}`;
-  }
+  const currentPageSpan = document.getElementById("currentPage");
+  currentPageSpan.textContent = `Page: ${currentPage} / ${Math.ceil(
+    totalResults / resultsPerPage
+  )}`;
+}
+
 function nextPage() {
   const totalPages = Math.ceil(documents.length / resultsPerPage);
   if (currentPage < totalPages) {
