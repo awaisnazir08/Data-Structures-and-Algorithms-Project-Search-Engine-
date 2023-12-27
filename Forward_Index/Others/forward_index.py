@@ -190,7 +190,7 @@ url_resolver = URLResolver()
 json_dir = "./nela-gt-2022/newsdata"
 
 #getiing all JSON files in the directory using the os module
-json_files = [file for file in os.listdir(json_dir) if file.endswith(".json")]
+json_files = [file for file in os.listdir(json_dir) if file.endswith(".json")]  #by using list comprehension
 
 # Load data from each JSON file one by one
 for json_file in json_files:

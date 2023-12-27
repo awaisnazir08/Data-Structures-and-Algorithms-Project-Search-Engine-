@@ -368,9 +368,7 @@ class InvertedIndex:
                     if doc_id not in self.inverted_indices[barrel]["word_ID"][word_id]:
                         word_info = {"fr": frequency, "ps": positions}
                         # add the details of the word for that document in the inverted index of the word
-                        self.inverted_indices[barrel]["word_ID"][word_id][
-                            doc_id
-                        ] = word_info
+                        self.inverted_indices[barrel]["word_ID"][word_id][doc_id] = word_info
 
 
 # setting up the english stop words from the NLTK
@@ -430,8 +428,7 @@ def add():
             print("File saved")
 
             json_files = [
-                file for file in os.listdir(json_dir) if file.endswith(".json")
-            ]
+                file for file in os.listdir(json_dir) if file.endswith(".json")]
 
             # Placeholder lists for processing data
             forward_index_data = []  # Placeholder for forward index data
