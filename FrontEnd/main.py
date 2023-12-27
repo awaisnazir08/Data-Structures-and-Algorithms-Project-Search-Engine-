@@ -528,7 +528,7 @@ def add():
         except Exception as e:
             error_response = {"error": "That file already exists", "message": str(e)}
             print(e)
-            return jsonify(error_response), 500
+            return jsonify(error_response), 201
 
     else:
         response = {
@@ -537,6 +537,5 @@ def add():
         }
         return jsonify(response), 400
 
-
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=8000)

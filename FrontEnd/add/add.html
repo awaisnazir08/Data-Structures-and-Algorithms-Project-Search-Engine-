@@ -1,52 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>JSON File Upload</title>
-<link rel="stylesheet" href="add.css">
-</head>
+  <head>
+    <title>JSON File Upload</title>
+    <link rel="stylesheet" href="add.css" />
+  </head>
 
-<body>
-  <div id="container">
-    <h1>Upload a JSON File</h1>
-    <button id = "ChooseFileButton"><label for="jsonFile" id="fileLabel">Choose a file...</label></button>
-    <input type="file" id="jsonFile" accept=".json" style="display: none;">
-    <button id="uploadBtn">Upload</button>
-    <a href="../search/search.html">
-      <button id="button">Go Back</button>
-    </a>
-  </div>
+  <body>
+    <div id="container">
+      <h1>Upload a JSON File</h1>
+      <button id="ChooseFileButton">
+        <label for="jsonFile" id="fileLabel">Choose a file...</label>
+      </button>
+      <input type="file" id="jsonFile" accept=".json" style="display: none" />
+      <button id="uploadBtn" onclick="uploadFile()">Upload</button>
+      <div class="loader" id="processing"></div> <!-- This is the loading spinner -->
+      <div id="message" style="display: none;"></div>
+    </div>
 
-      <script>
-        const fileInput = document.getElementById('jsonFile');
-        const uploadBtn = document.getElementById('uploadBtn');
+    <script src="add.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-        uploadBtn.addEventListener('click', () => {
-          const file = fileInput.files[0];
-          if (!file) {
-            alert('Please select a JSON file.');
-            return;
-          }
-
-          const formData = new FormData();
-          formData.append('file', file);
-
-          fetch('http://127.0.0.1:5000/add', {
-            method: 'POST',
-            body: formData
-          })
-          .then(response => {
-            if (!response.ok) {
-              throw new Error('Upload failed: ' + response.status);
-            }
-            return response.json();
-          })
-          .then(data => {
-            console.log('File uploaded successfully! Response:', data);
-          })
-          .catch(error => {
-            console.error('Error:', error);
-          });
-        });
-      </script>
-</body>
+  </body>
 </html>
