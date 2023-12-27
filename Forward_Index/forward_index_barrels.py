@@ -1,8 +1,8 @@
-import json
-import os
-import re
-from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
+import json #FOR JSON file
+import os  #path join
+import re  #for removing special characters
+from nltk.tokenize import word_tokenize  #
+from nltk.corpus import stopwords  #
 from nltk.stem import WordNetLemmatizer
 from nltk.probability import FreqDist
 import hashlib
