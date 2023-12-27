@@ -1,82 +1,99 @@
 body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
 
-  #container {
-    width: 60%;
-    margin: 50px auto;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-  }
+#container {
+  width: 60%;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
 
-  h1 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #4285f4;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  input[type="file"],
-  #uploadBtn,
-  #button,
-  #jsonFile {
-    background-color: #4285f4;
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4285f4;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="file"],
+#uploadBtn,
+#button,
+#jsonFile {
+  background-color: #4285f4;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  display: block;
+  margin: 10px auto;
+}
+
+input[type="file"]:hover,
+#uploadBtn:hover,
+#button:hover,
+#jsonFile {
+  background-color: #3b79d6;
+}
+
+/* Adjusting specific elements */
+a {
+  text-decoration: none; /* Remove underline */
+}
+
+#ChooseFileButton {
+  /* Basic styling */
+  background-color: #4285f4; /* Green background */
+  color: white; /* White text */
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  display: block;
+  margin: 10px auto;
+
+  /* Remove label text underlining */
+  #fileLabel {
     text-decoration: none;
-    color: #fff;
-    border: none;
-    padding: 12px 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-    width: 100%;
-    display: block;
-    margin: 10px auto;
   }
-  
-  input[type="file"]:hover,
-  #uploadBtn:hover,
-  #button:hover,
-  #jsonFile {
-    background-color: #3b79d6;
-  }
+}
+#fileLabel {
+  cursor: pointer;
+}
+#ChooseFileButton:hover {
+  background-color: #3b79d6;
+}
 
-  /* Adjusting specific elements */
-  a {
-    text-decoration: none; /* Remove underline */
-  }
+/* Styling for the loading spinner */
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  margin: 20px auto; /* Adjust this margin as needed */
+  display: none;
+}
 
-  #ChooseFileButton {
-    /* Basic styling */
-    background-color: #4CAF50;  /* Green background */
-    color: white;              /* White text */
-    padding: 10px 20px;        /* Add padding */
-    border: none;              /* Remove default border */
-    border-radius: 5px;        /* Rounded corners */
-    cursor: pointer;           /* Hand cursor on hover */
-  
-    /* Font styling */
-    font-family: sans-serif;
-    font-size: 14px;
-    text-align: center;
-  
-    /* Remove label text underlining */
-    #fileLabel {
-      text-decoration: none;
-    }
-  }
-   #fileLabel{
-    cursor: pointer;
-   }
-  
-
-
-
-
-  
+/* Animation for the spinner */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
