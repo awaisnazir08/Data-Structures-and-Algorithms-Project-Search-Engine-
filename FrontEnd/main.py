@@ -525,7 +525,7 @@ def add():
                 "message": str(e)
             }
             print(e)
-            return jsonify(error_response), 500
+            return jsonify(error_response), 201
 
     else:
         response = {
