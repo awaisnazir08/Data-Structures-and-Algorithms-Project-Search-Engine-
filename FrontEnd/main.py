@@ -97,7 +97,6 @@ def search_query():
     clean_query = [lemmatizer.lemmatize(word) for word in clean_query]
     #dictionary that will store the documents along with their scores for ranking
     document_score = {}
-
     for word in clean_query:
         try:
             word_id = lexicon_dictionary[word]
@@ -147,36 +146,42 @@ def search_query():
     max_count = max_count_document[1]["count"]
     #variable that keeps track of the number of documents that have been displayed
     documents_shown = 0
+
     search_results = []
     #a list that will store the documents of same score and then will be used for sorting
-    priority_queue = []
+    while(documents_shown < 30 and max_count >=1):
+
+        priority_queue = []
     #loop to iterate over each document that has been retreived
-    for doc in document_score.items():
-        if doc[1]["count"] == max_count:
-            getting_frequencies = doc[1]["values"]
-            frequency = 0
-            '''
-            summing up the frequencies of each document that has the same
-            number of words out of the number of words searched,
-            this is being used for ranking
-            '''
-            for value in getting_frequencies:
-               frequency += value["fr"]
-            #pushing the document ids into heap based on the frequency in descending order
-            heapq.heappush(priority_queue, (-frequency, doc[0]))
-    #popping the document ids from the heap
-    for _ in range(len(priority_queue)):
-        if priority_queue:
-            frequency, document_id = heapq.heappop(priority_queue)
-            document_url = document_urls[document_id]
-            search_results.append(
-                {
-                    "document_id": document_id,
-                    "frequency": -frequency,
-                    "document_url": document_url,
-                 }
-             )
-            documents_shown += 1
+        for doc in document_score.items():
+            if doc[1]["count"] == max_count:
+                getting_frequencies = doc[1]["values"]
+                frequency = 0
+                '''
+                summing up the frequencies of each document that has the same
+                number of words out of the number of words searched,
+                this is being used for ranking
+                '''
+                for value in getting_frequencies:
+                    frequency += value["fr"]
+                #pushing the document ids into heap based on the frequency in descending order
+                heapq.heappush(priority_queue, (-frequency, doc[0]))
+        #popping the document ids from the heap
+        max_count -=1
+        for _ in range(len(priority_queue)):
+            if priority_queue:
+                if(documents_shown >=30):
+                    break
+                frequency, document_id = heapq.heappop(priority_queue)
+                document_url = document_urls[document_id]
+                search_results.append(
+                    {
+                        "document_id": document_id,
+                        "frequency": -frequency,
+                        "document_url": document_url,
+                    }
+                )
+                documents_shown += 1
     #ending the program execution time
     end_time = time.time()
     #calculating the time taken
