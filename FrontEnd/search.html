@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>تازہ اخبار
     </title>
-    <link rel="stylesheet" href="search.css" />
+    <link rel="stylesheet" href="./css/search.css" />
   </head>
   <body>
     <div class="container">
@@ -14,7 +14,10 @@
       <input type="text" id="searchQuery" placeholder="Search the web" />
       <button onclick="search()" id="search">Search</button>
       <p id="apiCalled"></p>
+      <div id="flexx" style="display: flex;">
       <div id="time_taken"></div>
+      <div id="docs_shown"></div>
+      </div>
       <div id="results" style="display: none">
         <ul id="resultsList"></ul>
       </div>
@@ -24,11 +27,11 @@
         <button onclick="nextPage()" id="nextPage">Next</button>
       </div>
 
-      <a href="../add/add.html">
+      <a href="./add.html">
         <button id="add">Add New Document</button>
-        <script src="search.js"></script>
+        <script src="./js/search.js"></script>
       </a>
-      <i><p style="text-align: center; text-decoration: none;">Search for anything here except your autistic thoughts</p></i>
+      <i><p style="text-align: center; text-decoration: none;">Have fun searching!</p></i>
     </div>
   </div>
 </div>
