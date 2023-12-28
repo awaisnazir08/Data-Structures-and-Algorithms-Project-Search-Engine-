@@ -48,8 +48,9 @@ async function search() {
       const timeTaken = endTime - startTime;
       const docs_shown = responseData.number;
       const t = responseData.execution_time;
+      const total = timeTaken+t;
       const timeDiv = document.getElementById("time_taken");
-      timeDiv.textContent = `Time taken: ${t.toFixed(2)} ms`;
+      timeDiv.textContent = `Time taken: ${total.toFixed(2)} ms`;
       const docs = document.getElementById("docs_shown");
       docs.textContent = `Documents Shown: ${docs_shown}`; // Display number of documents shown
       docs.style.display = "block";
