@@ -96,7 +96,6 @@ def search_query():
     #lemmatization
     clean_query = [lemmatizer.lemmatize(word) for word in clean_query]
     #dictionary that will store the documents along with their scores for ranking
-    document_score = {}
     for word in clean_query:
         try:
             word_id = lexicon_dictionary[word]
@@ -117,6 +116,8 @@ def search_query():
         #getting the information for all the documents that have a particular word searched
         documents = get_documents(word_id, word_data_in_barrel)
         #scoring the documents based on the number of words they contain out of the number of searched words
+        document_score = {}
+
         for document in documents.keys():
             '''
             if document appears first time, then give it a score one
