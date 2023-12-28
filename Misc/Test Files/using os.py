@@ -1,21 +1,20 @@
 import os
 import json
 # Directory containing JSON files
-json_dir = "./nela-gt-2022/newsdata" 
+json_dir = "Inverted_Index/Inverted_index_files/inverted_index_barrel_5.json" 
 
 # with open(json_dir, 'r') as f:
 #     data = json.load(f)
 #     print(len(data))
 count = 0
 # Get all JSON files in the directory
-json_files = [file for file in os.listdir(json_dir) if file.endswith(".json")]
 # print(len(json_files))
 # Process each JSON file
-for json_file in json_files:
     # Load data from JSON file
-    with open(os.path.join(json_dir, json_file), "r") as f:
-        data = json.load(f)
-        count+=len(data)
-        # print(len(data))
+with open(json_dir, "r") as f:
+    data = json.load(f)
+    for w in data['word_ID']:
+        count+=1
+    # print(len(data))
 
 print(count)    
