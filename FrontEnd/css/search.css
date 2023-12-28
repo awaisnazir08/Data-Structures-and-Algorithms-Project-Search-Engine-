@@ -22,6 +22,9 @@ h1 {
   margin-bottom: 20px;
 }
 
+#time_taken{
+  width: 40%;
+}
 #searchQuery {
   width: 100%;
   padding: 10px;
@@ -95,8 +98,21 @@ li p {
   width: 100%;
   display: none;
   position: relative;
-  max-width: 270px;
+  max-width: 290px;
   margin:auto;
+}
+div #flexx {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Distributes items, putting space between them */
+  align-items: center; /* Aligns items vertically in the center */
+  /* Add any other necessary styles for your layout */
+}
+
+#docs_shown {
+  /* Add any necessary individual styling */
+display: flex;
+align-self: flex-end;
 }
 
   #prevPage,

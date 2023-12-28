@@ -18,6 +18,7 @@ async function search() {
     });
 
     if (response.status === 404) {
+
       const apiCalled = document.getElementById("apiCalled");
       apiCalled.style.display = "block";
       const resultsDiv = document.getElementById("results");
@@ -25,6 +26,8 @@ async function search() {
       const paginationDiv = document.getElementById("pagination");
       paginationDiv.style.display = "none";
       const timeDiv = document.getElementById("time_taken");
+      const docs = document.getElementById("docs_shown");
+      docs.style.display = "none";
       timeDiv.style.display = "none";
       apiCalled.textContent =
         "The word is not present in the dictionary\nTry searching for other words";
@@ -35,15 +38,21 @@ async function search() {
       const responseData = await response.json();
       documents = responseData.documents || [];
       displayResultsPerPage(1);
-
+      const flexx = document.getElementById("flexx");
+      flexx.style.display="flex";
       const resultsDiv = document.getElementById("results");
       resultsDiv.style.display = "block";
       const apiCalled = document.getElementById("apiCalled");
       apiCalled.style.display = "none";
       const endTime = performance.now();
       const timeTaken = endTime - startTime;
+      const docs_shown = responseData.number;
+      const t = responseData.execution_time;
       const timeDiv = document.getElementById("time_taken");
-      timeDiv.textContent = `Time taken: ${timeTaken.toFixed(2)} milliseconds`;
+      timeDiv.textContent = `Time taken: ${t.toFixed(2)} ms`;
+      const docs = document.getElementById("docs_shown");
+      docs.textContent = `Documents Shown: ${docs_shown}`; // Display number of documents shown
+      docs.style.display = "block";
     } else {
       console.error(
         "There was a problem with the fetch operation:",

@@ -54,19 +54,17 @@ a {
 
 #ChooseFileButton {
   /* Basic styling */
-  background-color: #4285f4; /* Green background */
+  background-color: #4caf50; /* Green background */
   color: white; /* White text */
-  text-decoration: none;
-  color: #fff;
-  border: none;
-  padding: 12px 18px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-  width: 100%;
-  display: block;
-  margin: 10px auto;
+  padding: 10px 20px; /* Add padding */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Hand cursor on hover */
+
+  /* Font styling */
+  font-family: sans-serif;
+  font-size: 14px;
+  text-align: center;
 
   /* Remove label text underlining */
   #fileLabel {
@@ -75,9 +73,6 @@ a {
 }
 #fileLabel {
   cursor: pointer;
-}
-#ChooseFileButton:hover {
-  background-color: #3b79d6;
 }
 
 /* Styling for the loading spinner */
@@ -94,6 +89,10 @@ a {
 
 /* Animation for the spinner */
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

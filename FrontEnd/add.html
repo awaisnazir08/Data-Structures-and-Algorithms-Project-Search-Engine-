@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JSON File Upload</title>
+    <link rel="stylesheet" href="./css/add.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>Upload a JSON File</h1>
+      <!-- Updated label for displaying the chosen file name -->
+      <button id = "ChooseFileButton"><label for="jsonFile" id="fileLabel">Choose a file...</label></button>
+      <input type="file" id="jsonFile" accept=".json" style="display: none" />
+      <button id="uploadBtn" onclick="uploadFile()">Upload</button>
+      <div class="loader" id="processing"></div>
+      <!-- This is the loading spinner -->
+      <div id="message" style="display: none"></div>
+      <a href="./search.html">
+        <button id="button">Go Back</button>
+      </a>
+    </div>
+
+    <script src="./js/add.js"></script>
+  </body>
+</html>
