@@ -90,9 +90,6 @@ clean_query = [word for word in query_tokenized if word not in stop_words]
 #lemmatization
 clean_query = [lemmatizer.lemmatize(word) for word in clean_query]
 
-#dictionary that will store the documents along with their scores for ranking 
-document_score = {}
-
 
 for word in clean_query:
     try: 
@@ -114,7 +111,9 @@ for word in clean_query:
 
     #getting the information for all the documents that have a particular word searched
     documents = get_documents(word_id, word_data_in_barrel)
-
+    
+    #dictionary that will store the documents along with their scores for ranking 
+    document_score = {}
     #scoring the documents based on the number of words they contain out of the number of searched words
     for document in documents.keys():
 
