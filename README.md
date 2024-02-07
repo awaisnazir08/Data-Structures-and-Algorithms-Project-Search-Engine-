@@ -40,12 +40,9 @@ python3 main.py
 ```
 4. Start a live server to run the `search.html` file using a tool like Live Server in Visual Studio Code or any other preferred method.
 
-## Demo
+## Screenshot
 
-<video width="640" height="360" controls>
-  <source src="public\demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![my screenshot](public/demo.png)
 
 ## Contributing
 
