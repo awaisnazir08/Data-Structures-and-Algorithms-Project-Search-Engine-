@@ -336,4 +336,3 @@ docid_url_mapping.save_document_index()
 
 # save the docId and date mapping file
 docid_date_mapping.save_docId_date_file()
-

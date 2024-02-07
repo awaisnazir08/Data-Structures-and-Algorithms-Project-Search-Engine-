@@ -50,4 +50,9 @@ async function uploadFile() {
     messagediv.textContent = `Error: ${error.message}. Please try again.`;
     messagediv.style.display = "block";
   }
+
 }
+
+setTimeout(function() {
+  document.getElementById('show').style.display = 'block';
+}, 5000);

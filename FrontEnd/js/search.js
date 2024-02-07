@@ -52,7 +52,7 @@ async function search() {
       const timeDiv = document.getElementById("time_taken");
       timeDiv.textContent = `Time taken: ${total.toFixed(2)} ms`;
       const docs = document.getElementById("docs_shown");
-      docs.textContent = `Documents Shown: ${docs_shown}`; // Display number of documents shown
+      docs.textContent = ``; // Display number of documents shown
       docs.style.display = "block";
     } else {
       console.error(

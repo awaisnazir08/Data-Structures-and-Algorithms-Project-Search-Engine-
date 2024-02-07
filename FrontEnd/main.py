@@ -15,7 +15,9 @@ import os
 app = Flask(__name__)
 CORS(app)
 
-#function to load the lexicon for finding the word id corresponding to the searched word
+# function to load the lexicon for finding the word id corresponding to the searched word
+
+
 def load_Lexicon():
     file_path = "Forward_Index/Lexicon.json"
     try:
@@ -24,7 +26,9 @@ def load_Lexicon():
     except (FileExistsError, FileNotFoundError):
         return None
 
-#function to load the document index file for finding the urls of documents corresponding to the searched word
+# function to load the document index file for finding the urls of documents corresponding to the searched word
+
+
 def load_documentIndex():
     file_path = "Forward_Index/document_index.json"
     try:
@@ -33,7 +37,9 @@ def load_documentIndex():
     except (FileExistsError, FileNotFoundError):
         return None
 
-#function to load the file for finding the dates of documents published corresponding to the searched word
+# function to load the file for finding the dates of documents published corresponding to the searched word
+
+
 def load_document_date_file():
     file_path = "Forward_Index/docId_date_mapping.json"
     try:
@@ -42,7 +48,9 @@ def load_document_date_file():
     except (FileExistsError, FileNotFoundError):
         return None
 
-#function to load the relevant barrel into ram for finding the document ids and data corresponding to the searched word
+# function to load the relevant barrel into ram for finding the document ids and data corresponding to the searched word
+
+
 def load_inverted_index_barrel(path):
     try:
         with open(path, "r") as file:
@@ -50,10 +58,13 @@ def load_inverted_index_barrel(path):
     except (FileExistsError, FileNotFoundError):
         return None
 
+
 '''
 function for getting all the documents along with their ids and data
 for those documents that contain the searched word
 '''
+
+
 def get_documents(word_id, word_data_in_barrel):
     if str(word_id) in word_data_in_barrel["word_ID"]:
         word_data = word_data_in_barrel["word_ID"][str(word_id)]
@@ -61,19 +72,20 @@ def get_documents(word_id, word_data_in_barrel):
     else:
         return {}
 
-#setting up the english stop words from the NLTK
+
+# setting up the english stop words from the NLTK
 stop_words = set(stopwords.words('english'))
 
-#object for the lemmatizer class
+# object for the lemmatizer class
 lemmatizer = WordNetLemmatizer()
 
-#object for loading the lexicon dictionary
+# object for loading the lexicon dictionary
 lexicon_dictionary = load_Lexicon()
 
-#object for loading the file that contains the documents are their urls
+# object for loading the file that contains the documents are their urls
 document_urls = load_documentIndex()
 
-#dictionary for storing the data of each barrel that needs to be loaded for getting the word data
+# dictionary for storing the data of each barrel that needs to be loaded for getting the word data
 loaded_inverted_indices = {}
 
 
@@ -81,42 +93,43 @@ loaded_inverted_indices = {}
 def search_query():
     data = request.get_json()
     query = data.get("query")
-    #starting the timer to calculate the execution time
+    # starting the timer to calculate the execution time
     start_time = time.time()
-    #tokenizing the combined words
+    # tokenizing the combined words
     query_tokenized = word_tokenize(query)
-    #remove special characters, dots, etc.
+    # remove special characters, dots, etc.
     query_tokenized = [
         word for word in query_tokenized if re.match("^[a-zA-Z0-9_]*$", word)
     ]
-    #convert to lowercase
+    # convert to lowercase
     query_tokenized = [word.lower() for word in query_tokenized]
-    #remove stop words
+    # remove stop words
     clean_query = [word for word in query_tokenized if word not in stop_words]
-    #lemmatization
+    # lemmatization
     clean_query = [lemmatizer.lemmatize(word) for word in clean_query]
-    #dictionary that will store the documents along with their scores for ranking
+    # dictionary that will store the documents along with their scores for ranking
+    document_score = {}
+
     for word in clean_query:
         try:
-            word_id = lexicon_dictionary[word]
+            word_id = lexicon_dictionary[word] #type: ignore
         except:
             print(f"{word} is not present in any document!")
             continue
-        #getting the relevant barrel id that contains the searched word
+        # getting the relevant barrel id that contains the searched word
         barrel_id = word_id % 3000
-        #check if the inverted index for this barrel is already loaded, then do not reload
+        # check if the inverted index for this barrel is already loaded, then do not reload
         if barrel_id in loaded_inverted_indices:
             word_data_in_barrel = loaded_inverted_indices[barrel_id]
         else:
-            #load the inverted index for this barrel
+            # load the inverted index for this barrel
             word_data_in_barrel = load_inverted_index_barrel(
                 f"Inverted_Index/Inverted_index_files/inverted_index_barrel_{barrel_id + 1}.json"
             )
             loaded_inverted_indices[barrel_id] = word_data_in_barrel
-        #getting the information for all the documents that have a particular word searched
+        # getting the information for all the documents that have a particular word searched
         documents = get_documents(word_id, word_data_in_barrel)
-        #scoring the documents based on the number of words they contain out of the number of searched words
-        document_score = {}
+        # scoring the documents based on the number of words they contain out of the number of searched words
 
         for document in documents.keys():
             '''
@@ -125,7 +138,8 @@ def search_query():
             total number of words searched
             '''
             if document not in document_score:
-                document_score[document] = {"count": 1, "values": [documents[document]]}
+                document_score[document] = {
+                    "count": 1, "values": [documents[document]]}
             else:
                 '''
                 increasing the score of the documents by one everytime
@@ -134,26 +148,27 @@ def search_query():
                 '''
                 document_score[document]["count"] += 1
                 document_score[document]["values"].append(documents[document])
-    #condition to check if no document appears, this means that the searched query has no relevant articles available
+    # condition to check if no document appears, this means that the searched query has no relevant articles available
     if len(document_score) == 0:
         response = {
             "message": "The searched query is not present in any document!",
             "details": "Please search for other words..!!",
         }
         return jsonify(response), 404
-    #getting the max scored document
-    max_count_document = max(document_score.items(), key=lambda x: x[1]["count"])
-    #getting the score of the max scored documet
+    # getting the max scored document
+    max_count_document = max(document_score.items(),
+                             key=lambda x: x[1]["count"])
+    # getting the score of the max scored documet
     max_count = max_count_document[1]["count"]
-    #variable that keeps track of the number of documents that have been displayed
+    # variable that keeps track of the number of documents that have been displayed
     documents_shown = 0
 
     search_results = []
-    #a list that will store the documents of same score and then will be used for sorting
-    while(documents_shown < 30 and max_count >=1):
+    # a list that will store the documents of same score and then will be used for sorting
+    while (documents_shown < 30 and max_count >= 1):
 
         priority_queue = []
-    #loop to iterate over each document that has been retreived
+    # loop to iterate over each document that has been retreived
         for doc in document_score.items():
             if doc[1]["count"] == max_count:
                 getting_frequencies = doc[1]["values"]
@@ -165,16 +180,16 @@ def search_query():
                 '''
                 for value in getting_frequencies:
                     frequency += value["fr"]
-                #pushing the document ids into heap based on the frequency in descending order
+                # pushing the document ids into heap based on the frequency in descending order
                 heapq.heappush(priority_queue, (-frequency, doc[0]))
-        #popping the document ids from the heap
-        max_count -=1
+        # popping the document ids from the heap
+        max_count -= 1
         for _ in range(len(priority_queue)):
             if priority_queue:
-                if(documents_shown >=30):
+                if (documents_shown >= 30):
                     break
                 frequency, document_id = heapq.heappop(priority_queue)
-                document_url = document_urls[document_id]
+                document_url = document_urls[document_id] #type: ignore
                 search_results.append(
                     {
                         "document_id": document_id,
@@ -183,11 +198,11 @@ def search_query():
                     }
                 )
                 documents_shown += 1
-    #ending the program execution time
+    # ending the program execution time
     end_time = time.time()
-    #calculating the time taken
+    # calculating the time taken
     execution_time = end_time - start_time
-    #sending the response to the frontend
+    # sending the response to the frontend
     response = {
         "message": "Search results",
         "query": query,
@@ -215,12 +230,15 @@ def calculate_mean_position(locations):
 
 # class to create and manage a file that maps unique document ids to their unique urls
 # the file is sorted according to the document ids
+
+
 class Docid_Url_Mapping:
-    #constructor
+    # constructor
     def __init__(self):
         self.document_index_path = "Forward_Index/document_index.json"
         self.mappings = self.load_document_index()
     # add a new url with a unique document id into the file
+
     def add_to_document_index(self, doc_id, url):
         # check to see if a url is already present, it will not add it again
         if str(doc_id) not in self.mappings:
@@ -232,6 +250,7 @@ class Docid_Url_Mapping:
             print("Already exists..!!")
     # if a file is already created and program is run again, the file wont be created again
     # instead, it will just be loaded
+
     def load_document_index(self):
         try:
             # Open the file in append mode
@@ -240,18 +259,22 @@ class Docid_Url_Mapping:
         except FileNotFoundError:
             return {}
     # save the new updated file data into the file
+
     def save_document_index(self):
         with open(self.document_index_path, "w") as file:
             json.dump(self.mappings, file)
 
 # class to create and manage a file that maps document ids to the dates when they were published
 # the file is sorted according to the document ids
+
+
 class Docid_Date_Mapping:
     # constructor
     def __init__(self):
         self.docId_date_file_path = "Forward_Index/docId_date_mapping.json"
         self.mappings = self.load_docId_date_file()
     # adding new unique document id and its corresponding date in the file
+
     def add_to_docId_date_file(self, doc_id, date):
         if str(doc_id) not in self.mappings:
             self.mappings[doc_id] = date
@@ -262,6 +285,7 @@ class Docid_Date_Mapping:
             print("Already exists..!!")
     # if file already exists, it will simply be re-loaded for addition
     # if file doesn't exist, it will be created
+
     def load_docId_date_file(self):
         try:
             # Open the file in append mode
@@ -270,14 +294,17 @@ class Docid_Date_Mapping:
         except (FileNotFoundError, json.JSONDecodeError):
             return {}
     # updated data saved into the file
+
     def save_docId_date_file(self):
         with open(self.docId_date_file_path, "w") as file:
             json.dump(self.mappings, file)
 
 # this class creates and manages a dictionary that stores all the unique words and assigns them
 # new unique word_id in sorted order
+
+
 class Lexicon:
-    #constructor
+    # constructor
     def __init__(self):
         self.word_to_id = {}
         self.current_id = 1
@@ -294,6 +321,7 @@ class Lexicon:
             pass
     # gets a word, checks if it doesn't exist, then assigns a new unique word id to the word and stores it
     # if the word exists, it will not be stored again
+
     def get_word_id(self, word):
         if word in self.word_to_id:
             return self.word_to_id[word]
@@ -303,12 +331,15 @@ class Lexicon:
             return self.word_to_id[word]
     # Write the updated word-to-ID mappings to new.json
     # the file is sorted according to the word ids in ascending order
+
     def save_lexicon_file(self):
         with open(self.lexicon_file_path, "w", encoding="utf-8") as file:
             json.dump(self.word_to_id, file)
 
 # this class implements the checksum functionality in the forward index
 # the checksum file is created to make sure that no duplicate articles/urls are stored in the forward index
+
+
 class URLResolver:
     def __init__(self):
         self.checksums_file_path = "Forward_Index/checksums.json"
@@ -335,7 +366,8 @@ class URLResolver:
 
     # sorts the checksum file according to the checksums, so we can implement binary search easily while finding a document id
     def sort_file_with_respect_to_checksums_and_save(self):
-        sorted_data = dict(sorted(self.url_checksums.items(), key=lambda x: x[0]))
+        sorted_data = dict(
+            sorted(self.url_checksums.items(), key=lambda x: x[0]))
         with open(self.checksums_file_path, "w") as file:
             json.dump(sorted_data, file)
 
@@ -467,19 +499,20 @@ def add():
 
     uploaded_file = request.files["file"]
     print("file upload hogayi")
-    if uploaded_file.filename.endswith(".json"):
+    if uploaded_file.filename.endswith(".json"): #type: ignore
         try:
             print("try ke andar aagaya")
             json_dir = "FrontEnd/temp/"
             if not os.path.exists(json_dir):
                 os.makedirs(json_dir)
-            temp_file_path = os.path.join(json_dir, uploaded_file.filename)
+            temp_file_path = os.path.join(json_dir, uploaded_file.filename)  # type: ignore
             if os.path.exists(temp_file_path):
                 response = {
                     "error": "File already exists",
                     "message": "A file with the same name already exists.",
                 }
-                return jsonify(response), 409  # HTTP 409 Conflict for existing file
+                # HTTP 409 Conflict for existing file
+                return jsonify(response), 409
             uploaded_file.save(temp_file_path)
             print("File saved")
 
@@ -498,7 +531,8 @@ def add():
                         if url.endswith("/"):
                             url = url.rstrip("/")
 
-                        url_checksum = hashlib.blake2s(url.encode()).hexdigest()
+                        url_checksum = hashlib.blake2s(
+                            url.encode()).hexdigest()
                         doc_id = url_resolver.resolve_doc_id(url_checksum)
 
                         if doc_id is not None:
@@ -517,13 +551,15 @@ def add():
                             date = article.get("date")
 
                             title_and_content_merged = f"{title} {content}"
-                            words_tokenized = word_tokenize(title_and_content_merged)
+                            words_tokenized = word_tokenize(
+                                title_and_content_merged)
                             words_tokenized = [
                                 word
                                 for word in words_tokenized
                                 if re.match("^[a-zA-Z0-9_]*$", word)
                             ]
-                            words_tokenized = [word.lower() for word in words_tokenized]
+                            words_tokenized = [word.lower()
+                                               for word in words_tokenized]
                             clean_words = [
                                 word
                                 for word in words_tokenized
@@ -541,13 +577,16 @@ def add():
                                 for pos, w in enumerate(clean_words):
                                     if w == word:
                                         locations.append(pos)
-                                mean_position = calculate_mean_position(locations)
+                                mean_position = calculate_mean_position(
+                                    locations)
                                 positions[word] = mean_position
 
                             article_entry = {"d_id": doc_id, "words": []}
 
-                            docid_url_mapping.add_to_document_index(doc_id, url)
-                            docid_date_mapping.add_to_docId_date_file(doc_id, date)
+                            docid_url_mapping.add_to_document_index(
+                                doc_id, url)
+                            docid_date_mapping.add_to_docId_date_file(
+                                doc_id, date)
 
                             for word in frequency_distribution.keys():
                                 word_id = lex.get_word_id(word)
@@ -581,7 +620,8 @@ def add():
             return jsonify(response), 200
 
         except Exception as e:
-            error_response = {"error": "Failed to process the file", "message": str(e)}
+            error_response = {
+                "error": "Failed to process the file", "message": str(e)}
             print(e)
             return jsonify(error_response), 500
     else:
@@ -591,6 +631,7 @@ def add():
         }
 
         return jsonify(response), 400
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
